@@ -5,7 +5,7 @@ import HeroSection from '@/components/hero-section';
 import FeatureCardsGrid from '@/components/feature-cards';
 import ReviewsSection from '@/components/reviews-section';
 import CTASection from '@/components/cta-section';
-import { Heart, Sparkles, Candles, Music } from 'lucide-react';
+import { Heart, Sparkles, Flame, Music } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Romantic Cafe in Delhi | Perfect for Dates | Blu Turkey Cafe',
@@ -32,7 +32,7 @@ export default function RomanticCafePage() {
       highlight: 'Instagram-worthy spaces',
     },
     {
-      icon: Candles,
+      icon: Flame,
       title: 'Premium Atmosphere',
       description: 'Warm, inviting environment with carefully curated music and refined aesthetics.',
       highlight: 'Romantic mood guaranteed',

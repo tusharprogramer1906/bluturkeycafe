@@ -5,7 +5,7 @@ import HeroSection from '@/components/hero-section';
 import FeatureCardsGrid from '@/components/feature-cards';
 import ReviewsSection from '@/components/reviews-section';
 import CTASection from '@/components/cta-section';
-import { Cake, Users, Gift, Party } from 'lucide-react';
+import { Cake, Users, Gift, PartyPopper } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Birthday Celebration Cafe Delhi | Group Events | Blu Turkey Cafe',
@@ -38,7 +38,7 @@ export default function BirthdayCafePage() {
       highlight: 'Tailored for your party',
     },
     {
-      icon: Party,
+      icon: PartyPopper,
       title: 'Memorable Experience',
       description: 'Professional staff dedicated to making your birthday celebration unforgettable.',
       highlight: 'Full party experience',
