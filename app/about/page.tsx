@@ -193,35 +193,6 @@ export default function AboutPage() {
       {/* Customer Reviews */}
       <ReviewsSection reviews={reviews} />
 
-      {/* Meet the Team Section */}
-      <section className="py-12 md:py-20 px-4 md:px-8 max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-8">
-          Our Passionate Team
-        </h2>
-
-        <p className="text-center text-foreground/70 mb-12 max-w-2xl mx-auto">
-          Behind every great cafe is a passionate team. Our baristas, staff, and team members are united by a shared commitment 
-          to excellence and a love for specialty coffee culture. They're the heart of Blu Turkey Cafe.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="text-center p-6 bg-card rounded-lg border border-border">
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl">👤</span>
-              </div>
-              <h3 className="font-semibold text-foreground mb-1">Team Member {i}</h3>
-              <p className="text-sm text-accent font-semibold mb-2">Specialty Coffee Expert</p>
-              <p className="text-xs text-foreground/60">Passionate about coffee and creating exceptional experiences</p>
-            </div>
-          ))}
-        </div>
-
-        <p className="text-center text-sm text-foreground/60 mt-8">
-          Each team member brings unique skills and perspectives, united by our shared mission and values.
-        </p>
-      </section>
-
       {/* CTA */}
       <CTASection
         title="Join Our Coffee Community"

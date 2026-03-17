@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import InstagramFollowSection from '@/components/InstagramFollowSection';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <>
+      <InstagramFollowSection />
+      <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 py-12 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
@@ -72,5 +75,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
