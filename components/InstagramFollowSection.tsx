@@ -7,28 +7,29 @@ const INSTAGRAM_URL = 'https://www.instagram.com/blu_turkey_cafe';
 
 const instagramPosts = [
   {
-    src: '/images/blu-turkey-cafe-window-seating-delhi.webp',
+    src: '/images/blu-turkey-cafe-seating-ambience.webp',
     alt: 'Window seating area at Blu Turkey Cafe in Delhi',
   },
   {
-    src: '/images/blu-turkey-cafe-coffee-counter-delhi.webp',
+    src: '/images/blu-turkey-cafe-reception-workspace.webp',
     alt: 'Coffee counter at Blu Turkey Cafe Delhi',
   },
+
   {
-    src: '/images/blu-turkey-cafe-dessert-display-delhi.webp',
-    alt: 'Dessert display at Blu Turkey Cafe Delhi',
-  },
-  {
-    src: '/images/blu-turkey-cafe-interior-view-delhi.webp',
+    src: '/images/blu-turkey-specialty-latte-coffee.webp',
     alt: 'Interior view of Blu Turkey Cafe in Delhi',
   },
   {
-    src: '/images/blu-turkey-cafe-bakery-counter-delhi.webp',
-    alt: 'Bakery counter at Blu Turkey Cafe Delhi',
+    src: '/images/menu/blu-turkey-creamy-white-sauce-pasta-delhi.webp',
+    alt: 'Creamy White Sauce Pasta at Blu Turkey Cafe Delhi',
   },
   {
-    src: '/images/blu-turkey-cafe-cake-display-delhi.webp',
-    alt: 'Cake display at Blu Turkey Cafe Delhi',
+    src: '/images/menu/blu-turkey-croissant-sandwich-delhi.webp',
+    alt: 'Croissant Sandwich at Blu Turkey Cafe Delhi',
+  },
+  {
+    src: '/images/menu/blu-turkey-chicken-tikka-pizza-delhi.webp',
+    alt: 'Croissant Sandwich at Blu Turkey Cafe Delhi',
   },
 ];
 

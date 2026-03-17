@@ -171,16 +171,24 @@ export default function BestCafePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
+            '@type': 'CafeOrCoffeeShop',
             name: 'Blu Turkey Cafe - Best Cafe in Delhi',
             url: 'https://bluturkey.com/best-cafe-in-delhi',
             description: 'Best cafe in Delhi for specialty coffee and premium ambiance',
+            priceRange: '₹400–₹600',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Ground Floor, Amara Hotel, C-30',
+              addressLocality: 'Greater Kailash I',
+              addressRegion: 'Delhi',
+              postalCode: '110048',
+              addressCountry: 'IN',
+            },
             aggregateRating: {
               '@type': 'AggregateRating',
               ratingValue: '4.9',
-              reviewCount: '156',
+              reviewCount: 150,
             },
-            priceRange: '₹150-₹300',
           }),
         }}
       />

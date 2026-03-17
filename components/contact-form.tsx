@@ -45,9 +45,7 @@ export default function ContactForm() {
             <div>
               <h4 className="font-semibold text-foreground mb-1">Location</h4>
               <p className="text-foreground/70">
-                New Delhi
-                <br />
-                India
+                Ground Floor, of Amara Hotel, C-30, Blu Turkey Cafe, Greater Kailash I, New Delhi, Delhi 110048
               </p>
             </div>
           </div>
@@ -57,8 +55,8 @@ export default function ContactForm() {
             <div>
               <h4 className="font-semibold text-foreground mb-1">Phone</h4>
               <p className="text-foreground/70">
-                <a href="tel:+911234567890" className="hover:text-primary transition-colors">
-                  +91 123 456 7890
+                <a href="tel:+919971124279" className="hover:text-primary transition-colors">
+                  099711 24279
                 </a>
               </p>
             </div>
@@ -135,7 +133,7 @@ export default function ContactForm() {
             value={formState.phone}
             onChange={handleChange}
             className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder-foreground/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
-            placeholder="+91 98765 43210"
+            placeholder="099711 24279"
           />
         </div>
 

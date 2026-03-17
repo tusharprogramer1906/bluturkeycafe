@@ -4,6 +4,7 @@ import Footer from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 import ContactForm from '@/components/contact-form';
 import LocationMap from '@/components/location-map';
+import { GoogleRatingBadge, PriceRangeBadge } from '@/components/business-badges';
 
 export const metadata: Metadata = {
   title: 'Contact Blu Turkey Cafe | Visit Us | Get In Touch',
@@ -25,11 +26,18 @@ export default function ContactPage() {
         subtitle="We'd Love to Hear From You"
         title="Contact Blu Turkey Cafe"
         description="Whether you have a question, want to book an event, or just want to say hello – we're here to help. Get in touch with us today."
+        showRatingBadge
       />
 
       {/* Contact Content */}
       <main className="py-12 md:py-20 px-4 md:px-8">
-        <ContactForm />
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-wrap gap-4 justify-center mb-12">
+            <GoogleRatingBadge />
+            <PriceRangeBadge />
+          </div>
+          <ContactForm />
+        </div>
       </main>
 
       {/* Map Section */}
@@ -40,7 +48,7 @@ export default function ContactPage() {
           </h2>
 
           <LocationMap
-            address="New Delhi, Delhi, India"
+            address="Ground Floor, of Amara Hotel, C-30, Blu Turkey Cafe, Greater Kailash I, New Delhi, Delhi 110048"
             businessName="Blu Turkey Cafe"
             latitude={28.5244}
             longitude={77.1855}
@@ -107,16 +115,24 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
+            '@type': 'CafeOrCoffeeShop',
             name: 'Blu Turkey Cafe',
             url: 'https://bluturkey.com/contact',
-            telephone: '+91-123-456-7890',
+            telephone: '+91-99711-24279',
             email: 'info@bluturkey.com',
+            priceRange: '₹400–₹600',
             address: {
               '@type': 'PostalAddress',
-              streetAddress: 'New Delhi',
+              streetAddress: 'Ground Floor, Amara Hotel, C-30',
+              addressLocality: 'Greater Kailash I',
               addressRegion: 'Delhi',
+              postalCode: '110048',
               addressCountry: 'IN',
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.9',
+              reviewCount: 150,
             },
             openingHoursSpecification: [
               {

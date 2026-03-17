@@ -34,7 +34,9 @@ export default function GalleryPage() {
           text: 'View Menu',
           href: '/menu',
         }}
-        showCoffeeCup={false}
+        showCoffeeCup={true}
+        imageAlt="Blu Turkey Cafe coffee splash cup in Greater Kailash Delhi"
+        imageTitle="Signature Coffee Cup – Blu Turkey Cafe Delhi"
       />
 
       {/* Full Gallery Section */}
@@ -59,8 +61,16 @@ export default function GalleryPage() {
             description: 'Photo gallery showcasing the interior ambience, signature coffee, food offerings, and celebration events at Blu Turkey Cafe Delhi.',
             url: 'https://bluturkey.com/cafe-gallery',
             author: {
-              '@type': 'LocalBusiness',
+              '@type': 'CafeOrCoffeeShop',
               name: 'Blu Turkey Cafe',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Ground Floor, Amara Hotel, C-30',
+                addressLocality: 'Greater Kailash I',
+                addressRegion: 'Delhi',
+                postalCode: '110048',
+                addressCountry: 'IN',
+              },
             },
           }),
         }}

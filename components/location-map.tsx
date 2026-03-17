@@ -13,17 +13,32 @@ interface LocationMapProps {
 export default function LocationMap({
   latitude = 28.5244,
   longitude = 77.1855,
-  address = 'New Delhi, Delhi, India',
+  address = 'Ground Floor, of Amara Hotel, C-30, Blu Turkey Cafe, Greater Kailash I, New Delhi, Delhi 110048',
   businessName = 'Blu Turkey Cafe',
 }: LocationMapProps) {
-  // Convert the shortened Google Maps URL to an embeddable format
-  const googleMapsUrl = 'https://share.google/Tz7pzH9bsiR9zN9pn';
-  const googleMapsEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.7490518155405!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1e5bd3e5bd3d%3A0x5e5e5e5e5e5e5e5e!2sBlu%20Turkey%20Cafe!5e0!3m2!1sen!2sin!4v1234567890`;
+  const googleMapsUrl = 'https://maps.app.goo.gl/gpTadszLu4q26g6X7';
+  // Embed using address so map and "Open In Maps" point to correct location
+  const googleMapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed`;
 
   return (
     <div className="w-full">
       {/* Map Iframe */}
-      <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg border-2 border-border mb-8">
+      <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-lg border-2 border-border mb-8">
+        {/* Open In Maps button - overlay so it always uses our link */}
+        <a
+          href={googleMapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-4 left-4 z-10 inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-lg shadow-lg font-medium text-foreground hover:bg-gray-50 transition-colors text-sm"
+          aria-label="Open in Google Maps"
+        >
+          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+          Open In Maps
+        </a>
         <iframe
           src={googleMapsEmbedUrl}
           width="100%"
@@ -70,8 +85,8 @@ export default function LocationMap({
               </div>
               <div>
                 <h3 className="font-semibold text-primary mb-1">Call Us</h3>
-                <a href="tel:+919876543210" className="text-foreground/70 text-sm hover:text-primary transition-colors">
-                  +91 98765 43210
+                <a href="tel:+919971124279" className="text-foreground/70 text-sm hover:text-primary transition-colors">
+                  099711 24279
                 </a>
               </div>
             </div>

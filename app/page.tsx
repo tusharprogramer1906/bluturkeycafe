@@ -3,11 +3,13 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 import FeatureCardsGrid from '@/components/feature-cards';
-import SignatureCoffee from '@/components/signature-coffee';
 import ReviewsSection from '@/components/reviews-section';
 import CTASection from '@/components/cta-section';
 import GalleryPreview from '@/components/gallery-preview';
 import GalleryConversionCTA from '@/components/gallery-conversion-cta';
+import MostLovedSection from '@/components/most-loved-section';
+import MenuRecommendationSection from '@/components/menu-recommendation-section';
+import OrderOnlineSection from '@/components/order-online-section';
 import {
   Coffee,
   MapPin,
@@ -51,31 +53,6 @@ export default function Home() {
       title: 'Premium Ambiance',
       description: 'Thoughtfully designed interiors with cozy corners and elegant styling for the perfect atmosphere.',
       highlight: 'Instagram-worthy spaces',
-    },
-  ];
-
-  const coffeeBlends = [
-    {
-      name: 'Turkish Espresso Blend',
-      description: 'Bold and intense espresso with notes of dark chocolate and hazelnut',
-      price: '₹180',
-      badge: 'Bestseller',
-    },
-    {
-      name: 'Delhi Sunrise',
-      description: 'Smooth cappuccino with velvety microfoam and subtle caramel notes',
-      price: '₹160',
-    },
-    {
-      name: 'Blue Velvet Latte',
-      description: 'Creamy latte infused with vanilla and a hint of blue spirulina',
-      price: '₹200',
-      badge: 'New',
-    },
-    {
-      name: 'Signature Cold Brew',
-      description: 'Smooth, refreshing cold brew perfect for summer afternoons',
-      price: '₹150',
     },
   ];
 
@@ -126,6 +103,7 @@ export default function Home() {
       <HeroSection
         title="Where Every Sip Defies Gravity"
         description="Discover Delhi's premier specialty coffee destination."
+        showRatingBadge
         primaryCta={{
           text: 'View Menu',
           href: '/menu',
@@ -144,19 +122,23 @@ export default function Home() {
         columns={4}
       />
 
+      {/* Most Loved at Blu Turkey Cafe */}
+      <MostLovedSection       />
+
+      {/* AI Menu Recommendation */}
+      <MenuRecommendationSection />
+
       {/* Gallery Preview Section */}
       <GalleryPreview
         title="Explore Our Cafe"
         subtitle="A visual journey through the premium spaces, signature coffee, delicious offerings, and memorable moments at Blu Turkey Cafe."
       />
 
-      {/* Signature Coffee Section */}
-      {/* <SignatureCoffee coffeeItems={coffeeBlends} /> */}
+      {/* Order Online */}
+      <OrderOnlineSection />
 
       {/* Reviews Section */}
       <ReviewsSection reviews={reviews} />
-
-
 
       {/* Gallery Conversion CTA */}
       <GalleryConversionCTA />
@@ -175,32 +157,34 @@ export default function Home() {
         }}
       />
 
-      {/* SEO Schema Markup */}
+      {/* SEO Schema Markup - Restaurant for Local SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
+            '@type': 'Restaurant',
             name: 'Blu Turkey Cafe',
             image: 'https://bluturkey.com/images/blu-turkey-logo.png',
             description:
               'Premium specialty coffee cafe in Delhi. Perfect for romantic dates, birthday celebrations, and coffee enthusiasts.',
             url: 'https://bluturkey.com',
+            priceRange: '₹400–₹600',
+            servesCuisine: 'Cafe',
             address: {
               '@type': 'PostalAddress',
-              streetAddress: 'New Delhi',
+              streetAddress: 'Ground Floor, Amara Hotel, C-30',
+              addressLocality: 'Greater Kailash I',
               addressRegion: 'Delhi',
-              addressCountry: 'IN',
+              postalCode: '110048',
+              addressCountry: 'India',
             },
-            telephone: '+91-123-456-7890',
+            telephone: '+91-99711-24279',
             email: 'info@bluturkey.com',
-            priceRange: '₹150-₹300',
-            servesCuisine: 'Coffee & Cafe',
             aggregateRating: {
               '@type': 'AggregateRating',
               ratingValue: '4.9',
-              reviewCount: '156',
+              reviewCount: 150,
             },
           }),
         }}

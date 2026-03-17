@@ -20,8 +20,8 @@ export default function MenuShowcase() {
           <div className="flex flex-col items-center">
             <div className="relative w-full aspect-square overflow-hidden rounded-xl shadow-xl mb-4">
               <Image
-                src="/images/blu-turkey-cafe-coffee-counter-delhi.webp"
-                alt="Coffee counter at Blu Turkey Cafe Delhi"
+                src="/images/blu-turkey-specialty-latte-coffee.webp"
+                alt="Seating ambience at Blu Turkey Cafe Delhi"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -38,8 +38,8 @@ export default function MenuShowcase() {
           <div className="flex flex-col items-center">
             <div className="relative w-full aspect-square overflow-hidden rounded-xl shadow-xl mb-4">
               <Image
-                src="/images/blu-turkey-cafe-seating-area-delhi.webp"
-                alt="Seating area at Blu Turkey Cafe Delhi"
+                src="/images/blu-turkey-cafe-seating-ambience.webp"
+                alt="Reception and workspace at Blu Turkey Cafe Delhi"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -56,8 +56,8 @@ export default function MenuShowcase() {
           <div className="flex flex-col items-center">
             <div className="relative w-full aspect-square overflow-hidden rounded-xl shadow-xl mb-4">
               <Image
-                src="/images/blu-turkey-cafe-interior-view-delhi.webp"
-                alt="Interior view of Blu Turkey Cafe in Delhi"
+                src="/images/blu-turkey-cafe-reception-workspace.webp"
+                alt="Specialty latte coffee at Blu Turkey Cafe Delhi"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, 33vw"

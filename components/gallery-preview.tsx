@@ -16,24 +16,24 @@ interface GalleryPreviewProps {
 
 const defaultImages: GalleryPreviewImage[] = [
   {
-    src: '/images/blu-turkey-cafe-window-seating-delhi.webp',
+    src: '/images/blu-turkey-cafe-seating-ambience.webp',
     alt: 'Window seating area at Blu Turkey Cafe in Delhi',
     category: 'Cafe Ambience',
   },
   {
-    src: '/images/blu-turkey-cafe-coffee-counter-delhi.webp',
+    src: '/images/blu-turkey-specialty-latte-coffee.webp',
     alt: 'Coffee counter at Blu Turkey Cafe Delhi',
     category: 'Signature Coffee',
   },
   {
-    src: '/images/blu-turkey-cafe-interior-view-delhi.webp',
+    src: '/images/blu-turkey-cafe-reception-workspace.webp',
     alt: 'Interior view of Blu Turkey Cafe in Delhi',
     category: 'Cafe Workspace',
   },
   {
-    src: '/images/blu-turkey-cafe-dessert-display-delhi.webp',
-    alt: 'Dessert display at Blu Turkey Cafe Delhi',
-    category: 'Events & Celebrations',
+    src: '/images/menu/blu-turkey-creamy-white-sauce-pasta-delhi.webp',
+    alt: 'Creamy White Sauce Pasta at Blu Turkey Cafe Delhi',
+    category: 'Creamy White Sauce Pasta',
   },
 ];
 
@@ -84,15 +84,23 @@ export default function GalleryPreview({
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div className="flex justify-center">
+        {/* CTA Button & Internal Links */}
+        <div className="flex flex-col items-center gap-4">
           <Link
             href="/cafe-gallery"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg min-h-[48px]"
           >
-            View Full Gallery
+            See our cafe ambience gallery
             <ArrowRight size={18} />
           </Link>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <Link href="/menu" className="text-primary font-medium hover:underline">
+              Explore our full cafe menu
+            </Link>
+            <Link href="/contact" className="text-primary font-medium hover:underline">
+              Visit Blu Turkey Cafe in GK1
+            </Link>
+          </div>
         </div>
       </div>
     </section>

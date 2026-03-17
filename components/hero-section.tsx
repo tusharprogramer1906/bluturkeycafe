@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { GoogleRatingBadge } from '@/components/business-badges';
 
 interface HeroSectionProps {
   title?: string;
@@ -18,6 +19,9 @@ interface HeroSectionProps {
   };
   backgroundImage?: string;
   showCoffeeCup?: boolean;
+  showRatingBadge?: boolean;
+  imageAlt?: string;
+  imageTitle?: string;
 }
 
 export default function HeroSection({
@@ -28,6 +32,9 @@ export default function HeroSection({
   secondaryCta = { text: 'Visit Cafe', href: '/contact' },
   backgroundImage,
   showCoffeeCup = true,
+  showRatingBadge = false,
+  imageAlt = 'Blu Turkey Coffee Cup',
+  imageTitle,
 }: HeroSectionProps) {
   const [mounted, setMounted] = useState(false);
 
@@ -75,7 +82,8 @@ export default function HeroSection({
               <div className="relative animate-float block">
                 <Image
                   src="/blu_turkey.png"
-                  alt="Blu Turkey Coffee Cup"
+                  alt={imageAlt}
+                  title={imageTitle}
                   width={560}
                   height={616}
                   className="w-full h-auto object-contain drop-shadow-2xl"
@@ -110,10 +118,16 @@ export default function HeroSection({
           </p>
 
           <div
-            className={`flex flex-col sm:flex-row gap-4 justify-center md:justify-start transition-all duration-700 delay-200 ${
+            className={`flex flex-col gap-4 transition-all duration-700 delay-200 ${
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
+            {showRatingBadge && (
+              <div className="flex justify-center md:justify-start">
+                <GoogleRatingBadge />
+              </div>
+            )}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
               href={primaryCta.href}
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-2xl font-semibold text-amber-50 bg-[#3d2820] border border-amber-700/40 hover:bg-[#4a3328] hover:border-amber-600/50 transition-all duration-300"
@@ -126,6 +140,7 @@ export default function HeroSection({
             >
               {secondaryCta.text}
             </Link>
+            </div>
           </div>
         </div>
       </div>

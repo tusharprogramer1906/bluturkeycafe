@@ -17,10 +17,10 @@ export default function GalleryConversionCTA() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-3 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center justify-center gap-3 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl min-h-[48px]"
           >
             <MapPin size={20} />
-            Get Directions
+            Visit Blu Turkey Cafe in GK1
           </Link>
           <Link
             href="/menu"

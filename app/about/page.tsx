@@ -6,6 +6,7 @@ import FeatureCardsGrid from '@/components/feature-cards';
 import ReviewsSection from '@/components/reviews-section';
 import CTASection from '@/components/cta-section';
 import { Heart, Leaf, Users, Zap } from 'lucide-react';
+import { GoogleRatingBadge, PriceRangeBadge } from '@/components/business-badges';
 
 export const metadata: Metadata = {
   title: 'About Blu Turkey Cafe | Our Story & Mission',
@@ -76,6 +77,14 @@ export default function AboutPage() {
         title="About Blu Turkey Cafe"
         description="Born from a passion for specialty coffee and a vision to create meaningful spaces in Delhi. Welcome to our story."
       />
+
+      {/* Trust Badges */}
+      <section className="py-8 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto flex flex-wrap gap-4 justify-center">
+          <GoogleRatingBadge />
+          <PriceRangeBadge />
+        </div>
+      </section>
 
       {/* Our Story */}
       <section className="py-12 md:py-20 px-4 md:px-8 max-w-4xl mx-auto">
@@ -209,7 +218,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Organization',
+            '@type': 'CafeOrCoffeeShop',
             name: 'Blu Turkey Cafe',
             url: 'https://bluturkey.com',
             logo: 'https://bluturkey.com/images/blu-turkey-logo.png',
@@ -218,10 +227,24 @@ export default function AboutPage() {
             founded: '2023',
             foundingLocation: 'New Delhi, India',
             areaServed: 'New Delhi, India',
+            priceRange: '₹400–₹600',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Ground Floor, Amara Hotel, C-30',
+              addressLocality: 'Greater Kailash I',
+              addressRegion: 'Delhi',
+              postalCode: '110048',
+              addressCountry: 'IN',
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.9',
+              reviewCount: 150,
+            },
             contactPoint: {
               '@type': 'ContactPoint',
               contactType: 'Customer Service',
-              telephone: '+91-123-456-7890',
+              telephone: '+91-99711-24279',
               email: 'info@bluturkey.com',
             },
           }),
