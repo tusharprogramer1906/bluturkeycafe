@@ -17,7 +17,7 @@ export default function LocationMap({
   businessName = 'Blu Turkey Cafe',
 }: LocationMapProps) {
   // Convert the shortened Google Maps URL to an embeddable format
-  const googleMapsUrl = 'https://maps.app.goo.gl/LDZBVJHjJqbMk1Z57';
+  const googleMapsUrl = 'https://share.google/Tz7pzH9bsiR9zN9pn';
   const googleMapsEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.7490518155405!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1e5bd3e5bd3d%3A0x5e5e5e5e5e5e5e5e!2sBlu%20Turkey%20Cafe!5e0!3m2!1sen!2sin!4v1234567890`;
 
   return (

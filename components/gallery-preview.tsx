@@ -16,23 +16,23 @@ interface GalleryPreviewProps {
 
 const defaultImages: GalleryPreviewImage[] = [
   {
-    src: '/images/blu-turkey-cafe-seating-ambience.webp',
-    alt: 'Modern cafe seating with vibrant lime green walls and elegant wooden furniture at Blu Turkey Cafe',
+    src: '/images/blu-turkey-cafe-window-seating-delhi.webp',
+    alt: 'Window seating area at Blu Turkey Cafe in Delhi',
     category: 'Cafe Ambience',
   },
   {
-    src: '/images/blu-turkey-specialty-latte-coffee.webp',
-    alt: 'Beautiful specialty latte with professional latte art served at Blu Turkey Cafe',
+    src: '/images/blu-turkey-cafe-coffee-counter-delhi.webp',
+    alt: 'Coffee counter at Blu Turkey Cafe Delhi',
     category: 'Signature Coffee',
   },
   {
-    src: '/images/blu-turkey-cafe-reception-workspace.webp',
-    alt: 'Professional reception and workspace area at Blu Turkey Cafe with modern design',
+    src: '/images/blu-turkey-cafe-interior-view-delhi.webp',
+    alt: 'Interior view of Blu Turkey Cafe in Delhi',
     category: 'Cafe Workspace',
   },
   {
-    src: '/images/blu-turkey-cafe-seating-ambience.webp',
-    alt: 'Premium cafe seating area perfect for celebrations and gatherings at Blu Turkey Cafe',
+    src: '/images/blu-turkey-cafe-dessert-display-delhi.webp',
+    alt: 'Dessert display at Blu Turkey Cafe Delhi',
     category: 'Events & Celebrations',
   },
 ];
@@ -71,6 +71,7 @@ export default function GalleryPreview({
                 fill
                 className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
                 sizes="(max-width: 768px) 50vw, 25vw"
+                loading="lazy"
               />
 
               {/* Category Badge */}

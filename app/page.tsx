@@ -4,7 +4,7 @@ import Footer from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 import FeatureCardsGrid from '@/components/feature-cards';
 import SignatureCoffee from '@/components/signature-coffee';
-import ReviewsSection from '@/components/reviews-section'; 
+import ReviewsSection from '@/components/reviews-section';
 import CTASection from '@/components/cta-section';
 import GalleryPreview from '@/components/gallery-preview';
 import GalleryConversionCTA from '@/components/gallery-conversion-cta';
@@ -144,17 +144,19 @@ export default function Home() {
         columns={4}
       />
 
-      {/* Signature Coffee Section */}
-      <SignatureCoffee coffeeItems={coffeeBlends} />
-
-      {/* Reviews Section */}
-      <ReviewsSection reviews={reviews} />
-
       {/* Gallery Preview Section */}
       <GalleryPreview
         title="Explore Our Cafe"
         subtitle="A visual journey through the premium spaces, signature coffee, delicious offerings, and memorable moments at Blu Turkey Cafe."
       />
+
+      {/* Signature Coffee Section */}
+      {/* <SignatureCoffee coffeeItems={coffeeBlends} /> */}
+
+      {/* Reviews Section */}
+      <ReviewsSection reviews={reviews} />
+
+
 
       {/* Gallery Conversion CTA */}
       <GalleryConversionCTA />

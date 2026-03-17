@@ -7,28 +7,28 @@ const INSTAGRAM_URL = 'https://www.instagram.com/blu_turkey_cafe';
 
 const instagramPosts = [
   {
-    src: '/images/blu-turkey-cafe-seating-ambience.webp',
-    alt: 'Cafe ambience at Blu Turkey Cafe Delhi',
+    src: '/images/blu-turkey-cafe-window-seating-delhi.webp',
+    alt: 'Window seating area at Blu Turkey Cafe in Delhi',
   },
   {
-    src: '/images/blu-turkey-specialty-latte-coffee.webp',
-    alt: 'Coffee served at Blu Turkey Cafe Delhi',
+    src: '/images/blu-turkey-cafe-coffee-counter-delhi.webp',
+    alt: 'Coffee counter at Blu Turkey Cafe Delhi',
   },
   {
-    src: '/images/blu-turkey-cafe-desserts.jpg',
-    alt: 'Desserts at Blu Turkey Cafe Delhi',
+    src: '/images/blu-turkey-cafe-dessert-display-delhi.webp',
+    alt: 'Dessert display at Blu Turkey Cafe Delhi',
   },
   {
-    src: '/images/blu-turkey-cafe-birthday-celebration.jpg',
-    alt: 'Customer celebration moment at Blu Turkey Cafe',
+    src: '/images/blu-turkey-cafe-interior-view-delhi.webp',
+    alt: 'Interior view of Blu Turkey Cafe in Delhi',
   },
   {
-    src: '/images/blu-turkey-cafe-reception-workspace.webp',
-    alt: 'Reception area at Blu Turkey Cafe Delhi',
+    src: '/images/blu-turkey-cafe-bakery-counter-delhi.webp',
+    alt: 'Bakery counter at Blu Turkey Cafe Delhi',
   },
   {
-    src: '/images/blu-turkey-cappuccino-coffee.jpg',
-    alt: 'Cappuccino coffee at Blu Turkey Cafe Delhi',
+    src: '/images/blu-turkey-cafe-cake-display-delhi.webp',
+    alt: 'Cake display at Blu Turkey Cafe Delhi',
   },
 ];
 
