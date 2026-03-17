@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import PageLoader from '@/components/PageLoader'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -48,10 +47,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={playfair.variable}>
       <body className="font-sans antialiased">
-        <PageLoader>
-          {children}
-          <Analytics />
-        </PageLoader>
+        {children}
+        <Analytics />
       </body>
     </html>
   )

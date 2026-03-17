@@ -37,7 +37,7 @@ export default function HeroSection({
 
   return (
     <section
-      className="relative min-h-[600px] md:min-h-[700px] lg:min-h-[80vh] overflow-hidden"
+      className="relative min-h-[100vh] w-full overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, #0d0f18 0%, #1a1512 40%, #2d1810 100%)',
       }}
@@ -57,21 +57,52 @@ export default function HeroSection({
         ))}
       </div>
 
-      {/* Two-column layout */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 lg:px-12 h-full min-h-[600px] md:min-h-[700px] lg:min-h-[80vh] flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-        {/* Left: Text content */}
-        <div className="flex-1 flex flex-col justify-center px-0 md:pr-8 order-2 md:order-1 text-center md:text-left">
+      {/* Hero container: full height, flex, centered */}
+      <div className="relative z-10 w-full min-h-[100vh] flex flex-col md:flex-row items-center justify-between px-4 md:px-8 lg:px-12 max-w-7xl mx-auto gap-[1.2rem] md:gap-12 py-8 md:py-0">
+        {/* Mobile: Cup first, then text. Desktop: Text left, Cup right */}
+        {/* Cup - order 1 on mobile (top), order 2 on desktop (right) */}
+        {showCoffeeCup && (
+          <div
+            className={`flex flex-1 items-center justify-center md:justify-end order-1 md:order-2 w-full md:w-auto transition-all duration-1000 delay-300 ${
+              mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+            }`}
+          >
+            <div className="relative w-[min(560px,100%)] max-w-full mx-auto md:mx-0">
+              <div
+                className="absolute inset-0 -m-16 bg-amber-500/10 rounded-full blur-3xl"
+                aria-hidden
+              />
+              <div className="relative animate-float block">
+                <Image
+                  src="/blu_turkey.png"
+                  alt="Blu Turkey Coffee Cup"
+                  width={560}
+                  height={616}
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 560px"
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Text content - order 2 on mobile (below cup), order 1 on desktop (left) */}
+        <div className="flex-1 flex flex-col justify-center px-0 md:pr-8 order-2 md:order-1 text-center md:text-left gap-[1.2rem]">
           <h1
-            className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-amber-50/95 mb-4 md:mb-6 leading-tight tracking-tight transition-all duration-700 ${
+            className={`font-bold text-amber-50/95 leading-tight tracking-tight transition-all duration-700 ${
               mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
             }`}
-            style={{ fontFamily: 'var(--font-playfair), serif' }}
+            style={{
+              fontFamily: 'var(--font-playfair), serif',
+              fontSize: 'clamp(2rem, 4vw, 3.8rem)',
+            }}
           >
             {title}
           </h1>
 
           <p
-            className={`text-lg md:text-xl text-amber-100/70 mb-6 md:mb-8 max-w-xl mx-auto md:mx-0 transition-all duration-700 delay-100 ${
+            className={`text-lg md:text-xl text-amber-100/70 max-w-xl mx-auto md:mx-0 transition-all duration-700 delay-100 ${
               mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
             }`}
           >
@@ -97,34 +128,6 @@ export default function HeroSection({
             </Link>
           </div>
         </div>
-
-        {/* Right: Coffee cup with splash */}
-        {showCoffeeCup && (
-          <div
-            className={`flex-1 flex items-center justify-center md:justify-end order-1 md:order-2 transition-all duration-1000 delay-300 ${
-              mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
-            }`}
-          >
-            <div className="relative w-full max-w-md md:max-w-lg lg:max-w-xl">
-              {/* Glow behind cup */}
-              <div
-                className="absolute inset-0 -m-16 bg-amber-500/10 rounded-full blur-3xl"
-                aria-hidden
-              />
-              <div className="relative animate-float">
-                <Image
-                  src="/blu_turkey.png"
-                  alt="Blu Turkey Coffee Cup - Premium coffee with signature splash"
-                  width={500}
-                  height={550}
-                  className="w-full h-auto object-contain drop-shadow-2xl"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );

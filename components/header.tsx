@@ -29,7 +29,7 @@ export default function Header() {
             className="rounded-full"
             priority
           />
-          <span className="hidden sm:inline font-bold text-lg text-primary">Blu Turkey</span>
+          <span className="hidden sm:inline font-bold text-lg text-primary">Blu Turkey Cafe</span>
         </Link>
 
         {/* Desktop Navigation */}
