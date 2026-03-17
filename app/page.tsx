@@ -20,10 +20,13 @@ import {
 export const metadata: Metadata = {
   title: 'Blu Turkey Cafe - Best Coffee & Specialty Cafe in Delhi',
   description: 'Discover Blu Turkey Cafe, the premier specialty coffee destination in Delhi. Perfect for romantic dates, birthday celebrations, and coffee enthusiasts. Premium ambiance, signature coffee blends, and exceptional service.',
+  alternates: {
+    canonical: 'https://bluturkeycafe.com',
+  },
   openGraph: {
     title: 'Blu Turkey Cafe - Premium Specialty Coffee in Delhi',
     description: 'Experience exceptional specialty coffee and ambiance at Blu Turkey Cafe.',
-    url: 'https://bluturkey.com',
+    url: 'https://bluturkeycafe.com',
     type: 'website',
   },
 };
@@ -154,39 +157,6 @@ export default function Home() {
         secondaryButton={{
           text: 'View Hours',
           href: '/contact',
-        }}
-      />
-
-      {/* SEO Schema Markup - Restaurant for Local SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Restaurant',
-            name: 'Blu Turkey Cafe',
-            image: 'https://bluturkey.com/images/blu-turkey-logo.png',
-            description:
-              'Premium specialty coffee cafe in Delhi. Perfect for romantic dates, birthday celebrations, and coffee enthusiasts.',
-            url: 'https://bluturkey.com',
-            priceRange: '₹400–₹600',
-            servesCuisine: 'Cafe',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Ground Floor, Amara Hotel, C-30',
-              addressLocality: 'Greater Kailash I',
-              addressRegion: 'Delhi',
-              postalCode: '110048',
-              addressCountry: 'India',
-            },
-            telephone: '+91-99711-24279',
-            email: 'info@bluturkey.com',
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: 150,
-            },
-          }),
         }}
       />
 

@@ -11,10 +11,13 @@ import { GoogleRatingBadge, PriceRangeBadge } from '@/components/business-badges
 export const metadata: Metadata = {
   title: 'About Blu Turkey Cafe | Our Story & Mission',
   description: 'Learn about Blu Turkey Cafe. Our story, mission to serve premium specialty coffee, and commitment to creating memorable experiences in Delhi.',
+  alternates: {
+    canonical: 'https://bluturkeycafe.com/about',
+  },
   openGraph: {
     title: 'About Blu Turkey Cafe',
     description: 'Discover the story behind Blu Turkey Cafe',
-    url: 'https://bluturkey.com/about',
+    url: 'https://bluturkeycafe.com/about',
   },
 };
 

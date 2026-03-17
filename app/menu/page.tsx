@@ -10,10 +10,13 @@ import CTASection from '@/components/cta-section';
 export const metadata: Metadata = {
   title: 'Menu - Blu Turkey Cafe | Specialty Coffee & Drinks',
   description: 'Explore our extensive menu featuring signature coffee blends, specialty drinks, and delicious snacks. Premium quality at Blu Turkey Cafe in Delhi.',
+  alternates: {
+    canonical: 'https://bluturkeycafe.com/menu',
+  },
   openGraph: {
     title: 'Menu - Blu Turkey Cafe',
     description: 'Our specialty coffee and cafe menu in Delhi',
-    url: 'https://bluturkey.com/menu',
+    url: 'https://bluturkeycafe.com/menu',
   },
 };
 

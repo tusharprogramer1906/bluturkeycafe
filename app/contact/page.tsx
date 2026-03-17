@@ -9,10 +9,13 @@ import { GoogleRatingBadge, PriceRangeBadge } from '@/components/business-badges
 export const metadata: Metadata = {
   title: 'Contact Blu Turkey Cafe | Visit Us | Get In Touch',
   description: 'Contact Blu Turkey Cafe in Delhi. Find our location, hours, phone number, and email. Book events or send us your inquiry.',
+  alternates: {
+    canonical: 'https://bluturkeycafe.com/contact',
+  },
   openGraph: {
     title: 'Contact Blu Turkey Cafe',
     description: 'Get in touch with Blu Turkey Cafe in Delhi',
-    url: 'https://bluturkey.com/contact',
+    url: 'https://bluturkeycafe.com/contact',
   },
 };
 
