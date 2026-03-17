@@ -3,6 +3,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 import ContactForm from '@/components/contact-form';
+import LocationMap from '@/components/location-map';
 
 export const metadata: Metadata = {
   title: 'Contact Blu Turkey Cafe | Visit Us | Get In Touch',
@@ -33,44 +34,17 @@ export default function ContactPage() {
 
       {/* Map Section */}
       <section className="py-12 md:py-20 px-4 md:px-8 bg-gradient-to-br from-primary/5 to-accent/5">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-8">
-            Visit Our Cafe
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
+            Find Us on the Map
           </h2>
 
-          <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg border-2 border-border flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-foreground/60 mb-4">
-                Interactive map coming soon
-              </p>
-              <p className="text-sm text-foreground/50">
-                Blu Turkey Cafe, New Delhi, India
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 bg-card rounded-lg border border-border text-center">
-              <h3 className="font-semibold text-primary mb-2">Easy to Find</h3>
-              <p className="text-sm text-foreground/70">
-                Centrally located in New Delhi with easy access and ample parking available
-              </p>
-            </div>
-
-            <div className="p-6 bg-card rounded-lg border border-border text-center">
-              <h3 className="font-semibold text-primary mb-2">Always Open</h3>
-              <p className="text-sm text-foreground/70">
-                Mon-Fri: 8 AM - 10 PM | Sat-Sun: 9 AM - 11 PM. Check hours before visiting!
-              </p>
-            </div>
-
-            <div className="p-6 bg-card rounded-lg border border-border text-center">
-              <h3 className="font-semibold text-primary mb-2">Warm Welcome</h3>
-              <p className="text-sm text-foreground/70">
-                Our friendly staff is ready to welcome you and make your visit memorable
-              </p>
-            </div>
-          </div>
+          <LocationMap
+            address="New Delhi, Delhi, India"
+            businessName="Blu Turkey Cafe"
+            latitude={28.5244}
+            longitude={77.1855}
+          />
         </div>
       </section>
 

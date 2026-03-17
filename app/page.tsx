@@ -4,7 +4,7 @@ import Footer from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 import FeatureCardsGrid from '@/components/feature-cards';
 import SignatureCoffee from '@/components/signature-coffee';
-import ReviewsSection from '@/components/reviews-section';
+import ReviewsSection from '@/components/reviews-section'; 
 import CTASection from '@/components/cta-section';
 import GalleryPreview from '@/components/gallery-preview';
 import GalleryConversionCTA from '@/components/gallery-conversion-cta';
@@ -124,16 +124,15 @@ export default function Home() {
 
       {/* Hero Section */}
       <HeroSection
-        subtitle="Welcome to Delhi's Premier Specialty Cafe"
-        title="Blu Turkey Cafe"
-        description="Experience exceptional specialty coffee, premium ambiance, and unforgettable moments. Perfect for dates, celebrations, and coffee lovers."
+        title="Where Every Sip Defies Gravity"
+        description="Discover Delhi's premier specialty coffee destination."
         primaryCta={{
-          text: 'Explore Menu',
+          text: 'View Menu',
           href: '/menu',
         }}
         secondaryCta={{
-          text: 'Learn More',
-          href: '/about',
+          text: 'Visit Cafe',
+          href: '/contact',
         }}
       />
 
