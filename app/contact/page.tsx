@@ -122,7 +122,7 @@ export default function ContactPage() {
             name: 'Blu Turkey Cafe',
             url: 'https://bluturkey.com/contact',
             telephone: '+91-99711-24279',
-            email: 'info@bluturkey.com',
+            email: 'bluturkeycafe@gmail.com',
             priceRange: '₹400–₹600',
             address: {
               '@type': 'PostalAddress',

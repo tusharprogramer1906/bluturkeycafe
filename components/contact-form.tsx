@@ -13,6 +13,8 @@ export default function ContactForm() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -67,8 +69,8 @@ export default function ContactForm() {
             <div>
               <h4 className="font-semibold text-foreground mb-1">Email</h4>
               <p className="text-foreground/70">
-                <a href="mailto:info@bluturkey.com" className="hover:text-primary transition-colors">
-                  info@bluturkey.com
+                <a href="mailto:bluturkeycafe@gmail.com" className="hover:text-primary transition-colors">
+                  bluturkeycafe@gmail.com
                 </a>
               </p>
             </div>
@@ -79,9 +81,7 @@ export default function ContactForm() {
             <div>
               <h4 className="font-semibold text-foreground mb-1">Hours</h4>
               <p className="text-foreground/70">
-                Mon - Fri: 8 AM - 10 PM
-                <br />
-                Sat - Sun: 9 AM - 11 PM
+                Mon - Sun 9:30 AM - 11 PM
               </p>
             </div>
           </div>
@@ -176,14 +176,21 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+          disabled={isSubmitting}
+          className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
         >
-          Send Message
+          {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>
 
         {submitted && (
           <div className="p-4 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
-            Thank you! We'll get back to you shortly.
+            Thank you! We&apos;ll get back to you shortly.
+          </div>
+        )}
+
+        {error && (
+          <div className="p-4 bg-red-100 text-red-800 rounded-lg text-sm font-semibold">
+            {error}
           </div>
         )}
       </form>

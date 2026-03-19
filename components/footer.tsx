@@ -55,8 +55,7 @@ export default function Footer() {
               <li className="flex gap-2 items-start">
                 <Clock size={16} className="mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>Mon - Fri: 8 AM - 10 PM</p>
-                  <p>Sat - Sun: 9 AM - 11 PM</p>
+                  <p>Mon - Sun 9:30 AM - 11 PM</p>
                 </div>
               </li>
             </ul>
@@ -76,7 +75,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-2 items-start">
                 <Mail size={16} className="mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@bluturkey.com" className="hover:opacity-75 transition-opacity">info@bluturkey.com</a>
+                <a href="mailto:bluturkeycafe@gmail.com" className="hover:opacity-75 transition-opacity">bluturkeycafe@gmail.com</a>
               </li>
             </ul>
           </div>

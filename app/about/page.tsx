@@ -248,7 +248,7 @@ export default function AboutPage() {
               '@type': 'ContactPoint',
               contactType: 'Customer Service',
               telephone: '+91-99711-24279',
-              email: 'info@bluturkey.com',
+              email: 'bluturkeycafe@gmail.com',
             },
           }),
         }}

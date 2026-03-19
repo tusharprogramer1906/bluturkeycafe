@@ -97,8 +97,8 @@ export default function LocationMap({
               </div>
               <div>
                 <h3 className="font-semibold text-primary mb-1">Email Us</h3>
-                <a href="mailto:info@bluturkey.com" className="text-foreground/70 text-sm hover:text-primary transition-colors">
-                  info@bluturkey.com
+                <a href="mailto:bluturkeycafe@gmail.com" className="text-foreground/70 text-sm hover:text-primary transition-colors">
+                  bluturkeycafe@gmail.com
                 </a>
               </div>
             </div>
@@ -110,8 +110,7 @@ export default function LocationMap({
               <div>
                 <h3 className="font-semibold text-primary mb-1">Working Hours</h3>
                 <p className="text-foreground/70 text-sm">
-                  Mon-Fri: 8 AM - 10 PM<br />
-                  Sat-Sun: 9 AM - 11 PM
+                  Mon - Sun 9:30 AM - 11 PM
                 </p>
               </div>
             </div>
