@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Cafe in Delhi | Blu Turkey Cafe',
     description: 'Experience the best cafe in Delhi with premium specialty coffee and ambiance',
-    url: 'https://bluturkey.com/best-cafe-in-delhi',
+    url: 'https://bluturkeycafe.com/best-cafe-in-delhi',
   },
 };
 
@@ -173,7 +173,7 @@ export default function BestCafePage() {
             '@context': 'https://schema.org',
             '@type': 'CafeOrCoffeeShop',
             name: 'Blu Turkey Cafe - Best Cafe in Delhi',
-            url: 'https://bluturkey.com/best-cafe-in-delhi',
+            url: 'https://bluturkeycafe.com/best-cafe-in-delhi',
             description: 'Best cafe in Delhi for specialty coffee and premium ambiance',
             priceRange: '₹400–₹600',
             address: {

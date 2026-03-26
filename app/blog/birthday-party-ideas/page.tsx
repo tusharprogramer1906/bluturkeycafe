@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hosting the Perfect Birthday Celebration: Cafe Venue Ideas',
     description: 'Birthday party planning tips and cafe venue selection',
-    url: 'https://bluturkey.com/blog/birthday-party-ideas',
+    url: 'https://bluturkeycafe.com/blog/birthday-party-ideas',
   },
 };
 

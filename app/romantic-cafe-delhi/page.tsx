@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Romantic Cafe in Delhi | Blu Turkey Cafe',
     description: 'Perfect romantic cafe destination for dates and special occasions in Delhi',
-    url: 'https://bluturkey.com/romantic-cafe-delhi',
+    url: 'https://bluturkeycafe.com/romantic-cafe-delhi',
   },
 };
 
@@ -181,7 +181,7 @@ export default function RomanticCafePage() {
             '@context': 'https://schema.org',
             '@type': 'CafeOrCoffeeShop',
             name: 'Blu Turkey Cafe - Romantic Cafe in Delhi',
-            url: 'https://bluturkey.com/romantic-cafe-delhi',
+            url: 'https://bluturkeycafe.com/romantic-cafe-delhi',
             description: 'Romantic cafe in Delhi perfect for dates and couples',
             priceRange: '₹400–₹600',
             address: {

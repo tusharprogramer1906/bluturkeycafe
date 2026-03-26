@@ -120,7 +120,7 @@ export default function ContactPage() {
             '@context': 'https://schema.org',
             '@type': 'CafeOrCoffeeShop',
             name: 'Blu Turkey Cafe',
-            url: 'https://bluturkey.com/contact',
+            url: 'https://bluturkeycafe.com/contact',
             telephone: '+91-99711-24279',
             email: 'bluturkeycafe@gmail.com',
             priceRange: '₹400–₹600',

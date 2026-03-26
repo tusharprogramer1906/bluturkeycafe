@@ -87,7 +87,7 @@ export default function GalleryPreview({
         {/* CTA Button & Internal Links */}
         <div className="flex flex-col items-center gap-4">
           <Link
-            href="/cafe-gallery"
+            href="/gallery"
             className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg min-h-[48px]"
           >
             See our cafe ambience gallery

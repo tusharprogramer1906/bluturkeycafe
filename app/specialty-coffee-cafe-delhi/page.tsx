@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Specialty Coffee Cafe Delhi | Blu Turkey Cafe',
     description: 'Best specialty coffee cafe in Delhi with premium beans and expert baristas',
-    url: 'https://bluturkey.com/specialty-coffee-cafe-delhi',
+    url: 'https://bluturkeycafe.com/specialty-coffee-cafe-delhi',
   },
 };
 
@@ -211,7 +211,7 @@ export default function SpecialtyCoffeePage() {
             '@context': 'https://schema.org',
             '@type': 'CafeOrCoffeeShop',
             name: 'Blu Turkey Cafe - Specialty Coffee Cafe Delhi',
-            url: 'https://bluturkey.com/specialty-coffee-cafe-delhi',
+            url: 'https://bluturkeycafe.com/specialty-coffee-cafe-delhi',
             description: 'Best specialty coffee cafe in Delhi with premium beans and expert baristas',
             priceRange: '₹400–₹600',
             address: {

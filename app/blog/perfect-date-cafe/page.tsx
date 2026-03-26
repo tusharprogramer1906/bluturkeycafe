@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Creating the Perfect Date Night: Why Ambiance Matters',
     description: 'Tips for choosing the perfect romantic cafe',
-    url: 'https://bluturkey.com/blog/perfect-date-cafe',
+    url: 'https://bluturkeycafe.com/blog/perfect-date-cafe',
   },
 };
 

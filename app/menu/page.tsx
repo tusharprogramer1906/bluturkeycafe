@@ -260,7 +260,7 @@ export default function MenuPage() {
             '@context': 'https://schema.org',
             '@type': 'Restaurant',
             name: 'Blu Turkey Cafe',
-            url: 'https://bluturkey.com/menu',
+            url: 'https://bluturkeycafe.com/menu',
             servesCuisine: ['Cafe', 'Coffee', 'Breakfast', 'Desserts', 'Italian'],
             priceRange: '₹400–₹600',
             address: {

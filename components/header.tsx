@@ -11,7 +11,7 @@ export default function Header() {
   const navigationLinks = [
     { href: '/', label: 'Home' },
     { href: '/menu', label: 'Menu' },
-    { href: '/cafe-gallery', label: 'Gallery' },
+    { href: '/gallery', label: 'Gallery' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
   ];

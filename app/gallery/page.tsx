@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: 'Cafe Gallery - Blu Turkey Cafe Delhi',
   description: 'Explore the beautiful ambience, signature coffee, delicious food, and celebration moments at Blu Turkey Cafe. View our premium cafe gallery with high-quality photos.',
   alternates: {
-    canonical: 'https://bluturkeycafe.com/cafe-gallery',
+    canonical: 'https://bluturkeycafe.com/gallery',
   },
   openGraph: {
     title: 'Cafe Gallery - Blu Turkey Cafe',
     description: 'View stunning photos of our cafe, coffee, food, and events at Blu Turkey Cafe Delhi',
-    url: 'https://bluturkeycafe.com/cafe-gallery',
+    url: 'https://bluturkeycafe.com/gallery',
     type: 'website',
   },
 };
@@ -62,7 +62,7 @@ export default function GalleryPage() {
             '@type': 'ImageGallery',
             name: 'Blu Turkey Cafe Gallery',
             description: 'Photo gallery showcasing the interior ambience, signature coffee, food offerings, and celebration events at Blu Turkey Cafe Delhi.',
-            url: 'https://bluturkey.com/cafe-gallery',
+            url: 'https://bluturkeycafe.com/gallery',
             author: {
               '@type': 'CafeOrCoffeeShop',
               name: 'Blu Turkey Cafe',
@@ -75,7 +75,7 @@ export default function GalleryPage() {
                 addressCountry: 'IN',
               },
             },
-          }),
+          }).replace(/</g, '\\u003c'),
         }}
       />
 

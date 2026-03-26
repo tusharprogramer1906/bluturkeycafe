@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Brewing Methods Explained',
     description: 'Complete guide to coffee brewing methods',
-    url: 'https://bluturkey.com/blog/coffee-brewing-methods',
+    url: 'https://bluturkeycafe.com/blog/coffee-brewing-methods',
   },
 };
 

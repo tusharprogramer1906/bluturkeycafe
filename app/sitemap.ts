@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/cafe-gallery`,
+      url: `${baseUrl}/gallery`,
       lastModified: new Date(),
     },
     {

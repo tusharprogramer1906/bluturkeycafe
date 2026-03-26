@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Birthday Celebration Cafe Delhi | Blu Turkey Cafe',
     description: 'Best cafe for birthday celebrations and group events in Delhi',
-    url: 'https://bluturkey.com/birthday-celebration-cafe-delhi',
+    url: 'https://bluturkeycafe.com/birthday-celebration-cafe-delhi',
   },
 };
 
@@ -197,7 +197,7 @@ export default function BirthdayCafePage() {
             '@context': 'https://schema.org',
             '@type': 'CafeOrCoffeeShop',
             name: 'Blu Turkey Cafe - Birthday Celebration Cafe Delhi',
-            url: 'https://bluturkey.com/birthday-celebration-cafe-delhi',
+            url: 'https://bluturkeycafe.com/birthday-celebration-cafe-delhi',
             description: 'Best cafe for birthday celebrations and group events in Delhi',
             priceRange: '₹400–₹600',
             address: {

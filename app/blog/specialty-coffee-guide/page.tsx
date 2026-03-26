@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Ultimate Guide to Specialty Coffee',
     description: 'Understanding specialty coffee quality and flavor',
-    url: 'https://bluturkey.com/blog/specialty-coffee-guide',
+    url: 'https://bluturkeycafe.com/blog/specialty-coffee-guide',
   },
 };
 

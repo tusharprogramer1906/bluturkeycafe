@@ -41,7 +41,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/menu" className="hover:opacity-75 transition-opacity">Menu</Link></li>
-              <li><Link href="/cafe-gallery" className="hover:opacity-75 transition-opacity">Gallery</Link></li>
+              <li><Link href="/gallery" className="hover:opacity-75 transition-opacity">Gallery</Link></li>
               <li><Link href="/about" className="hover:opacity-75 transition-opacity">About Us</Link></li>
               <li><Link href="/contact" className="hover:opacity-75 transition-opacity">Contact</Link></li>
               <li><Link href="/blog" className="hover:opacity-75 transition-opacity">Blog</Link></li>

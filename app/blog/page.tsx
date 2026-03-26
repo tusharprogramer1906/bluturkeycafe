@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Blog - Blu Turkey Cafe',
     description: 'Coffee tips, cafe stories, and lifestyle articles',
-    url: 'https://bluturkey.com/blog',
+    url: 'https://bluturkeycafe.com/blog',
   },
 };
 
