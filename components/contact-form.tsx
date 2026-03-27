@@ -26,18 +26,17 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError(null);
 
-    const formData = new FormData();
+    console.log('Form submission started');
+
+    // Read directly from the form element — most reliable approach
+    const formData = new FormData(e.currentTarget);
     formData.append('access_key', 'e9cfe08e-2e6e-43ba-9214-d39470267487');
-    formData.append('name', formState.name);
-    formData.append('email', formState.email);
-    formData.append('phone', formState.phone);
-    formData.append('subject', `New Contact Form Submission - Blu Turkey Cafe (${formState.subject})`);
-    formData.append('message', formState.message);
+    formData.append('subject', 'New Contact - Blu Turkey Cafe');
     formData.append('from_name', 'Blu Turkey Website');
     formData.append('replyto', formState.email);
 
@@ -48,19 +47,20 @@ export default function ContactForm() {
         body: formData,
       });
 
+      console.log('Response status:', response.status);
       const data = await response.json();
-      console.log('Web3Forms Response:', data);
+      console.log('Response data:', data);
 
       if (data.success) {
         setSubmitted(true);
         setFormState({ name: '', email: '', phone: '', subject: '', message: '' });
         setTimeout(() => setSubmitted(false), 5000);
       } else {
-        setError(data.message || 'Something went wrong. Please try again.');
+        setError(data.message || 'Submission failed. Please try again.');
       }
     } catch (err) {
-      console.error('Form Error:', err);
-      setError('Failed to send message. Please check your connection and try again.');
+      console.error('Submission error:', err);
+      setError('Network error. Please check your connection and try again.');
     } finally {
       setIsSubmitting(false);
     }
