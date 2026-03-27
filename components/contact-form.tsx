@@ -26,13 +26,44 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, send to your backend
-    console.log('Form submitted:', formState);
-    setSubmitted(true);
-    setFormState({ name: '', email: '', phone: '', subject: '', message: '' });
-    setTimeout(() => setSubmitted(false), 3000);
+    setIsSubmitting(true);
+    setError(null);
+
+    const formData = new FormData();
+    formData.append('access_key', 'e9cfe08e-2e6e-43ba-9214-d39470267487');
+    formData.append('name', formState.name);
+    formData.append('email', formState.email);
+    formData.append('phone', formState.phone);
+    formData.append('subject', `New Contact Form Submission - Blu Turkey Cafe (${formState.subject})`);
+    formData.append('message', formState.message);
+    formData.append('from_name', 'Blu Turkey Website');
+    formData.append('replyto', formState.email);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: formData,
+      });
+
+      const data = await response.json();
+      console.log('Web3Forms Response:', data);
+
+      if (data.success) {
+        setSubmitted(true);
+        setFormState({ name: '', email: '', phone: '', subject: '', message: '' });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setError(data.message || 'Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      console.error('Form Error:', err);
+      setError('Failed to send message. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
