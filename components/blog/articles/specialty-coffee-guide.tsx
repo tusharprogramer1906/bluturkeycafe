@@ -1,61 +1,6 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import { ArrowLeft, Calendar, User } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'The Ultimate Guide to Specialty Coffee | Blu Turkey Cafe Blog',
-  description: 'Learn what makes specialty coffee different. Understand bean origin, roasting, brewing methods, and flavor profiles.',
-  openGraph: {
-    title: 'The Ultimate Guide to Specialty Coffee',
-    description: 'Understanding specialty coffee quality and flavor',
-    url: 'https://bluturkeycafe.com/blog/specialty-coffee-guide',
-  },
-};
-
-export default function BlogPost() {
+export default function BlogArticleContent() {
   return (
-    <>
-      <Header />
-
-      <main className="max-w-3xl mx-auto px-4 md:px-8 py-12 md:py-20">
-        {/* Back Button */}
-        <Link
-          href="/blog"
-          className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mb-8"
-        >
-          <ArrowLeft size={18} />
-          Back to Blog
-        </Link>
-
-        {/* Header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-accent uppercase tracking-wide bg-accent/10 px-3 py-1 rounded-full">
-              Coffee Guide
-            </span>
-            <span className="text-sm text-foreground/60">5 min read</span>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            The Ultimate Guide to Specialty Coffee: Understanding Quality & Flavor
-          </h1>
-
-          <div className="flex flex-wrap items-center gap-6 text-sm text-foreground/60 border-b border-border pb-6">
-            <div className="flex items-center gap-2">
-              <Calendar size={18} />
-              Mar 1, 2024
-            </div>
-            <div className="flex items-center gap-2">
-              <User size={18} />
-              Blu Turkey Coffee Team
-            </div>
-          </div>
-        </div>
-
-        {/* Content */}
-        <article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
+<article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
           <p className="text-lg leading-relaxed">
             Have you ever wondered why the coffee at specialty cafes tastes so different from regular coffee? There's a world 
             of difference between commodity coffee and specialty coffee – and understanding that difference will transform how 
@@ -164,20 +109,5 @@ export default function BlogPost() {
             and help you discover your perfect cup.
           </p>
         </article>
-
-        {/* Back to Blog */}
-        <div className="mt-12 pt-8 border-t border-border">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors"
-          >
-            <ArrowLeft size={18} />
-            Back to Blog
-          </Link>
-        </div>
-      </main>
-
-      <Footer />
-    </>
   );
 }

@@ -1,58 +1,6 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import { ArrowLeft, Calendar, User } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Creating the Perfect Date Night: Why Ambiance Matters | Blu Turkey Cafe',
-  description: 'Discover how the right cafe ambiance can transform a coffee date into an unforgettable romantic experience.',
-  openGraph: {
-    title: 'Creating the Perfect Date Night: Why Ambiance Matters',
-    description: 'Tips for choosing the perfect romantic cafe',
-    url: 'https://bluturkeycafe.com/blog/perfect-date-cafe',
-  },
-};
-
-export default function BlogPost() {
+export default function BlogArticleContent() {
   return (
-    <>
-      <Header />
-
-      <main className="max-w-3xl mx-auto px-4 md:px-8 py-12 md:py-20">
-        <Link
-          href="/blog"
-          className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mb-8"
-        >
-          <ArrowLeft size={18} />
-          Back to Blog
-        </Link>
-
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-accent uppercase tracking-wide bg-accent/10 px-3 py-1 rounded-full">
-              Lifestyle
-            </span>
-            <span className="text-sm text-foreground/60">4 min read</span>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Creating the Perfect Date Night: Why Ambiance Matters
-          </h1>
-
-          <div className="flex flex-wrap items-center gap-6 text-sm text-foreground/60 border-b border-border pb-6">
-            <div className="flex items-center gap-2">
-              <Calendar size={18} />
-              Feb 28, 2024
-            </div>
-            <div className="flex items-center gap-2">
-              <User size={18} />
-              Lifestyle Team
-            </div>
-          </div>
-        </div>
-
-        <article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
+<article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
           <p className="text-lg leading-relaxed">
             A perfect date doesn't happen by accident. While great conversation and genuine connection are essential, the 
             environment plays a crucial role in setting the right mood and creating memories that last.
@@ -137,19 +85,5 @@ export default function BlogPost() {
             where every detail has been thoughtfully considered to create the perfect romantic experience. That place is Blu Turkey Cafe.
           </p>
         </article>
-
-        <div className="mt-12 pt-8 border-t border-border">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors"
-          >
-            <ArrowLeft size={18} />
-            Back to Blog
-          </Link>
-        </div>
-      </main>
-
-      <Footer />
-    </>
   );
 }

@@ -1,28 +1,23 @@
 import type { MetadataRoute } from 'next'
+import { blogs } from '@/data/blogs'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://bluturkeycafe.com'
+  const now = new Date()
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/menu`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/gallery`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-    },
+  const staticPages: MetadataRoute.Sitemap = [
+    { url: baseUrl, lastModified: now },
+    { url: `${baseUrl}/menu`, lastModified: now },
+    { url: `${baseUrl}/gallery`, lastModified: now },
+    { url: `${baseUrl}/blog`, lastModified: now },
+    { url: `${baseUrl}/about`, lastModified: now },
+    { url: `${baseUrl}/contact`, lastModified: now },
   ]
+
+  const blogPages: MetadataRoute.Sitemap = blogs.map((b) => ({
+    url: `${baseUrl}/blog/${b.slug}`,
+    lastModified: now,
+  }))
+
+  return [...staticPages, ...blogPages]
 }

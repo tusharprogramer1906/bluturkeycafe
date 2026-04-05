@@ -1,58 +1,6 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import { ArrowLeft, Calendar, User } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Brewing Methods Explained: Espresso vs Pour Over vs French Press | Blu Turkey Cafe',
-  description: 'Explore different coffee brewing methods and how each brings out unique characteristics in specialty coffee beans.',
-  openGraph: {
-    title: 'Brewing Methods Explained',
-    description: 'Complete guide to coffee brewing methods',
-    url: 'https://bluturkeycafe.com/blog/coffee-brewing-methods',
-  },
-};
-
-export default function BlogPost() {
+export default function BlogArticleContent() {
   return (
-    <>
-      <Header />
-
-      <main className="max-w-3xl mx-auto px-4 md:px-8 py-12 md:py-20">
-        <Link
-          href="/blog"
-          className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mb-8"
-        >
-          <ArrowLeft size={18} />
-          Back to Blog
-        </Link>
-
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-accent uppercase tracking-wide bg-accent/10 px-3 py-1 rounded-full">
-              Coffee Guide
-            </span>
-            <span className="text-sm text-foreground/60">6 min read</span>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Brewing Methods Explained: Espresso vs Pour Over vs French Press
-          </h1>
-
-          <div className="flex flex-wrap items-center gap-6 text-sm text-foreground/60 border-b border-border pb-6">
-            <div className="flex items-center gap-2">
-              <Calendar size={18} />
-              Feb 25, 2024
-            </div>
-            <div className="flex items-center gap-2">
-              <User size={18} />
-              Coffee Experts
-            </div>
-          </div>
-        </div>
-
-        <article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
+<article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
           <p className="text-lg leading-relaxed">
             The way you brew coffee is just as important as the beans themselves. Different brewing methods extract different 
             compounds from coffee, resulting in entirely different flavor profiles and characteristics. Understanding these 
@@ -169,19 +117,5 @@ export default function BlogPost() {
             your favorite way to experience specialty coffee.
           </p>
         </article>
-
-        <div className="mt-12 pt-8 border-t border-border">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors"
-          >
-            <ArrowLeft size={18} />
-            Back to Blog
-          </Link>
-        </div>
-      </main>
-
-      <Footer />
-    </>
   );
 }

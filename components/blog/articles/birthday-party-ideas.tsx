@@ -1,58 +1,6 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import { ArrowLeft, Calendar, User } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Hosting the Perfect Birthday Celebration: Cafe Venue Ideas | Blu Turkey Cafe',
-  description: 'Learn how to choose the perfect cafe venue for your birthday and create lasting memories with friends and family.',
-  openGraph: {
-    title: 'Hosting the Perfect Birthday Celebration: Cafe Venue Ideas',
-    description: 'Birthday party planning tips and cafe venue selection',
-    url: 'https://bluturkeycafe.com/blog/birthday-party-ideas',
-  },
-};
-
-export default function BlogPost() {
+export default function BlogArticleContent() {
   return (
-    <>
-      <Header />
-
-      <main className="max-w-3xl mx-auto px-4 md:px-8 py-12 md:py-20">
-        <Link
-          href="/blog"
-          className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mb-8"
-        >
-          <ArrowLeft size={18} />
-          Back to Blog
-        </Link>
-
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-accent uppercase tracking-wide bg-accent/10 px-3 py-1 rounded-full">
-              Events
-            </span>
-            <span className="text-sm text-foreground/60">5 min read</span>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Hosting the Perfect Birthday Celebration: Cafe Venue Ideas
-          </h1>
-
-          <div className="flex flex-wrap items-center gap-6 text-sm text-foreground/60 border-b border-border pb-6">
-            <div className="flex items-center gap-2">
-              <Calendar size={18} />
-              Feb 22, 2024
-            </div>
-            <div className="flex items-center gap-2">
-              <User size={18} />
-              Event Planning
-            </div>
-          </div>
-        </div>
-
-        <article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
+<article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
           <p className="text-lg leading-relaxed">
             Birthdays are special occasions that deserve memorable celebrations. While the people matter most, the venue can 
             significantly enhance the experience. A cafe offers the perfect balance of comfort, style, and practicality for 
@@ -174,19 +122,5 @@ export default function BlogPost() {
             guests!
           </p>
         </article>
-
-        <div className="mt-12 pt-8 border-t border-border">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors"
-          >
-            <ArrowLeft size={18} />
-            Back to Blog
-          </Link>
-        </div>
-      </main>
-
-      <Footer />
-    </>
   );
 }

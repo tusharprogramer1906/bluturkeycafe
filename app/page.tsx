@@ -10,6 +10,7 @@ import GalleryConversionCTA from '@/components/gallery-conversion-cta';
 import MostLovedSection from '@/components/most-loved-section';
 import MenuRecommendationSection from '@/components/menu-recommendation-section';
 import OrderOnlineSection from '@/components/order-online-section';
+import LatestBlogsSection from '@/components/latest-blogs-section';
 import {
   Coffee,
   MapPin,
@@ -142,6 +143,9 @@ export default function Home() {
 
       {/* Reviews Section */}
       <ReviewsSection reviews={reviews} />
+
+      {/* Latest Blogs */}
+      <LatestBlogsSection />
 
       {/* Gallery Conversion CTA */}
       <GalleryConversionCTA />

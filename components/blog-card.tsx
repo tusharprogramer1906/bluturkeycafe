@@ -38,6 +38,10 @@ export default function BlogCard({
           {excerpt}
         </p>
 
+        <span className="inline-block text-sm font-semibold text-primary group-hover:text-accent transition-colors mb-2">
+          Read more →
+        </span>
+
         <div className="flex items-center justify-between pt-4 border-t border-border/50">
           <div className="flex items-center gap-4 text-xs text-foreground/60">
             <div className="flex items-center gap-1">
