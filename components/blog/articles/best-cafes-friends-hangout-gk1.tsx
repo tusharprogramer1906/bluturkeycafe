@@ -173,33 +173,6 @@ export default function BlogArticleContent() {
         but delivery can be a smart backup when you&apos;re craving something familiar.
       </p>
 
-      <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">FAQs</h2>
-
-      <h3 className="text-xl font-semibold text-primary">What should I search if I want group seating in GK1?</h3>
-      <p>
-        Try <strong>hangout cafes GK1</strong>, <strong>group cafes South Delhi</strong>, and &ldquo;cafes with sofa seating
-        GK1.&rdquo; Then confirm on recent photos or a quick call for larger groups.
-      </p>
-
-      <h3 className="text-xl font-semibold text-primary">Is GK1 better than other South Delhi areas for cafe hopping?</h3>
-      <p>
-        GK1 is especially strong for <strong>walkable cafe density</strong> and a more relaxed pace than some central hubs—great
-        for friends who want quality without a &ldquo;scene&rdquo; every single time.
-      </p>
-
-      <h3 className="text-xl font-semibold text-primary">Do good hangout cafes need a big dessert menu?</h3>
-      <p>
-        Not necessarily—but groups move from coffee to sugar fast. A dessert lineup helps you extend the hangout without changing
-        locations.
-      </p>
-
-      <h3 className="text-xl font-semibold text-primary">What makes Blu Turkey a strong pick for friends specifically?</h3>
-      <p>
-        It combines <strong>specialty coffee credibility</strong> with a menu wide enough for different cravings, plus a{' '}
-        <strong>cozy ambience</strong> that still feels social—ideal when your group wants flavor, comfort, and a place you&apos;ll
-        actually remember.
-      </p>
-
       <hr className="my-10 border-border" />
 
       <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">Plan your visit</h2>

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { cafeLocalBusinessJsonLd } from '@/lib/local-business-jsonld'
+import { SITE_URL, serializeJsonLd } from '@/lib/site'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"], display: 'swap' });
@@ -8,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"], display: 'swap' });
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "600", "700"], variable: "--font-playfair", display: 'swap' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bluturkeycafe.com'),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Blu Turkey Cafe | Best Cafe in Greater Kailash Delhi',
     template: '%s | Blu Turkey Cafe',
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
     title: 'Blu Turkey Cafe | Specialty Coffee & Cafe in GK1 Delhi',
     description:
       'Experience specialty coffee, croissants, waffles and desserts at Blu Turkey Cafe in Greater Kailash, New Delhi.',
-    url: 'https://bluturkeycafe.com',
+    url: SITE_URL,
     siteName: 'Blu Turkey Cafe',
     locale: 'en_IN',
     type: 'website',
@@ -59,48 +61,6 @@ export const metadata: Metadata = {
   },
 }
 
-const restaurantSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Restaurant',
-  name: 'Blu Turkey Cafe',
-  image: 'https://bluturkeycafe.com/images/blu-turkey-cafe-seating-area-delhi.webp',
-  url: 'https://bluturkeycafe.com',
-  telephone: '+91-99711-24279',
-  servesCuisine: ['Cafe', 'Coffee', 'Desserts', 'Continental'],
-  priceRange: '₹400–600',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Ground Floor, of Amara Hotel, C-30',
-    addressLocality: 'Greater Kailash I',
-    addressRegion: 'Delhi',
-    postalCode: '110048',
-    addressCountry: 'IN',
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '100',
-  },
-}
-
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'CafeOrCoffeeShop',
-  name: 'Blu Turkey Cafe',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Ground Floor, Amara Hotel, C-30',
-    addressLocality: 'Greater Kailash',
-    addressRegion: 'Delhi',
-    postalCode: '110048',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: '28.5494',
-    longitude: '77.2410',
-  },
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -111,11 +71,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantSchema).replace(/</g, '\\u003c') }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema).replace(/</g, '\\u003c') }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(cafeLocalBusinessJsonLd) }}
         />
         {children}
         <Analytics />
