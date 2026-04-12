@@ -24,6 +24,39 @@ export type BlogPost = {
 /** Single source of truth — slug MUST match dynamic route */
 export const blogs: BlogPost[] = [
   {
+    slug: 'best-coffee-shops-work-near-nehru-place',
+    title: 'Best Coffee Shops to Work From Near Nehru Place',
+    description:
+      'Work near Nehru Place? Find work-friendly coffee in South Delhi—Wi‑Fi, specialty coffee, food—plus Blu Turkey Cafe GK1 M Block.',
+    author: 'Blu Turkey Coffee Team',
+    date: 'Apr 13, 2026',
+    datePublished: '2026-04-13',
+    category: 'Work Cafe',
+    readTime: '6 min read',
+    faqs: [
+      {
+        question: 'What should I search for work-friendly coffee near Nehru Place?',
+        answer:
+          'Try “coffee shops Nehru Place,” “work cafes near Nehru Place,” and “laptop friendly cafes South Delhi.” Then confirm Wi‑Fi, seating, and outlet access on recent photos or a quick call.',
+      },
+      {
+        question: 'Is GK1 too far from Nehru Place for a work session?',
+        answer:
+          'For many people it is a short hop—and worth it when you want calmer seating and a stronger cafe menu than a typical mall corridor. Treat it like choosing focus over convenience.',
+      },
+      {
+        question: 'How do I know if a cafe is good for laptop work?',
+        answer:
+          'Look for stable Wi‑Fi, accessible power, seating you can sit in for 90+ minutes, and a drink menu that rewards a second cup—specialty coffee helps when you are in for the long haul.',
+      },
+      {
+        question: 'Why pick Blu Turkey Cafe for remote work near Nehru Place?',
+        answer:
+          'Blu Turkey combines specialty coffee credibility with comfort food and desserts, friendly service, and a cozy ambience in GK1 M Block—ideal when you want productivity without sacrificing flavor.',
+      },
+    ],
+  },
+  {
     slug: 'best-cafes-friends-hangout-gk1',
     title: 'Best Cafes for Friends Hangout in GK1',
     description:
