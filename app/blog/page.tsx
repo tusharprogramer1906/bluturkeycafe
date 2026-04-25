@@ -8,15 +8,15 @@ import { blogs } from '@/data/blogs';
 const baseUrl = 'https://bluturkeycafe.com';
 
 export const metadata: Metadata = {
-  title: 'Blog - Blu Turkey Cafe | Coffee Tips & Stories',
+  title: 'Blu Turkey Cafe Blog | Coffee Tips, GK1 Cafe Stories & South Delhi Guides',
   description:
-    'Read our blog for specialty coffee tips, cafe stories, and lifestyle articles about the best cafe in Greater Kailash Delhi.',
+    'Read the Blu Turkey Cafe blog for specialty coffee tips, GK1 cafe recommendations, South Delhi food guides, and stories from Greater Kailash\'s favourite cafe. Updated regularly.',
   alternates: {
     canonical: `${baseUrl}/blog`,
   },
   openGraph: {
-    title: 'Blog - Blu Turkey Cafe',
-    description: 'Coffee tips, cafe stories, and lifestyle articles',
+    title: 'Blu Turkey Cafe Blog | Coffee Tips & South Delhi Cafe Guides',
+    description: 'Specialty coffee tips, GK1 cafe stories, and South Delhi lifestyle articles from Blu Turkey Cafe.',
     url: `${baseUrl}/blog`,
   },
 };
@@ -33,6 +33,17 @@ export default function BlogPage() {
       />
 
       <main className="py-12 md:py-20 px-4 md:px-8 max-w-6xl mx-auto">
+        {/* SEO Intro */}
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+            Coffee Stories from Greater Kailash (GK1), South Delhi
+          </h1>
+          <p className="text-foreground/70 leading-relaxed">
+            Welcome to the Blu Turkey Cafe blog — your source for specialty coffee guides, work-from-cafe tips, GK1
+            neighbourhood guides, and lifestyle stories from one of South Delhi’s most loved cafes. Whether you’re
+            a first-time visitor or a regular, we write for coffee lovers and cafe culture enthusiasts across Delhi.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {blogs.map((post) => (
             <BlogCard

@@ -78,11 +78,29 @@ export default function ContactPage() {
 
       {/* FAQ Section */}
       <section className="py-12 md:py-20 px-4 md:px-8 max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">
           Frequently Asked Questions
         </h2>
+        <p className="text-center text-foreground/70 mb-12">
+          Everything you need to know about visiting Blu Turkey Cafe in Greater Kailash (GK1), New Delhi.
+        </p>
 
         <div className="space-y-6">
+          <div className="p-6 bg-card rounded-lg border border-border">
+            <h3 className="font-semibold text-primary mb-2">Where is Blu Turkey Cafe located?</h3>
+            <p className="text-foreground/70">
+              Blu Turkey Cafe is located at C-30, Ground Floor, Amara Hotel, Greater Kailash I (GK1), New Delhi – 110048.
+              We are easily accessible from Kailash Colony Metro Station, Nehru Place, and GK2.
+            </p>
+          </div>
+
+          <div className="p-6 bg-card rounded-lg border border-border">
+            <h3 className="font-semibold text-primary mb-2">What are Blu Turkey Cafe&apos;s opening hours?</h3>
+            <p className="text-foreground/70">
+              We are open daily from <strong>9:30 AM to 11:00 PM</strong>, seven days a week — Monday through Sunday.
+            </p>
+          </div>
+
           <div className="p-6 bg-card rounded-lg border border-border">
             <h3 className="font-semibold text-primary mb-2">Do you accept reservations?</h3>
             <p className="text-foreground/70">
@@ -93,7 +111,7 @@ export default function ContactPage() {
           <div className="p-6 bg-card rounded-lg border border-border">
             <h3 className="font-semibold text-primary mb-2">Can we host private events?</h3>
             <p className="text-foreground/70">
-              Absolutely! We offer private and semi-private spaces for birthday celebrations, corporate events, and special 
+              Absolutely! We offer private and semi-private spaces for birthday celebrations, corporate events, and special
               occasions. Contact us to discuss your requirements.
             </p>
           </div>
@@ -102,7 +120,7 @@ export default function ContactPage() {
             <h3 className="font-semibold text-primary mb-2">Do you have WiFi?</h3>
             <p className="text-foreground/70">
               Yes, we provide complimentary high-speed WiFi for all our customers. Great for working or browsing! While
-              you’re connected, why not{' '}
+              you&apos;re connected, why not{' '}
               <a href="/menu" className="text-primary font-medium underline underline-offset-4 hover:opacity-75 transition-opacity">
                 check out our full cafe menu in GK1
               </a>{' '}
@@ -113,28 +131,29 @@ export default function ContactPage() {
           <div className="p-6 bg-card rounded-lg border border-border">
             <h3 className="font-semibold text-primary mb-2">What payment methods do you accept?</h3>
             <p className="text-foreground/70">
-              We accept cash, credit cards, debit cards, and digital payment methods. All major payment options are welcome!
+              We accept cash, credit cards, debit cards, and digital payment methods including UPI, Google Pay, and PhonePe. All major payment options are welcome!
             </p>
           </div>
 
           <div className="p-6 bg-card rounded-lg border border-border">
-            <h3 className="font-semibold text-primary mb-2">Do you have vegetarian/vegan options?</h3>
+            <h3 className="font-semibold text-primary mb-2">Do you have vegetarian and vegan options?</h3>
             <p className="text-foreground/70">
-              Yes! Our menu includes vegetarian snacks and pastries. All beverages can be made with plant-based milk alternatives.
+              Yes! Our menu includes a wide range of vegetarian items — from Margherita pizza and veg pasta to grilled sandwiches and waffles. All beverages can be made with plant-based milk alternatives (oat, almond, or soy milk).
             </p>
           </div>
 
           <div className="p-6 bg-card rounded-lg border border-border">
-            <h3 className="font-semibold text-primary mb-2">Is the cafe easily accessible?</h3>
+            <h3 className="font-semibold text-primary mb-2">Is Blu Turkey Cafe easily accessible?</h3>
             <p className="text-foreground/70">
-              We are located in a central area with public transportation access, parking facilities, and wheelchair-accessible 
-              entrances.
+              Yes! We are located in Greater Kailash I (GK1) with easy access from Kailash Colony Metro Station (approx. 10 min walk),
+              ample street parking nearby, and wheelchair-accessible entrance.
             </p>
           </div>
         </div>
       </section>
 
-      {/* SEO Schema */}
+
+      {/* SEO Schema — CafeOrCoffeeShop + FAQPage */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -145,7 +164,7 @@ export default function ContactPage() {
             url: 'https://bluturkeycafe.com/contact',
             telephone: '+91-99711-24279',
             email: 'bluturkeycafe@gmail.com',
-            priceRange: '₹400–₹600',
+            priceRange: '\u20b9400\u2013\u20b9600',
             address: {
               '@type': 'PostalAddress',
               streetAddress: 'Ground Floor, Amara Hotel, C-30',
@@ -162,18 +181,87 @@ export default function ContactPage() {
             openingHoursSpecification: [
               {
                 '@type': 'OpeningHoursSpecification',
-                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                opens: '08:00',
-                closes: '22:00',
-              },
-              {
-                '@type': 'OpeningHoursSpecification',
-                dayOfWeek: ['Saturday', 'Sunday'],
-                opens: '09:00',
+                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                opens: '09:30',
                 closes: '23:00',
               },
             ],
           }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where is Blu Turkey Cafe located?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Blu Turkey Cafe is located at C-30, Ground Floor, Amara Hotel, Greater Kailash I (GK1), New Delhi – 110048. Easily accessible from Kailash Colony Metro Station, Nehru Place, and GK2.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "What are Blu Turkey Cafe's opening hours?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Blu Turkey Cafe is open daily from 9:30 AM to 11:00 PM, seven days a week.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does Blu Turkey Cafe accept reservations?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes! We accept reservations for groups and special occasions. Contact us in advance for the best experience.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can we host private events at Blu Turkey Cafe?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Absolutely! We offer private and semi-private spaces for birthday celebrations, corporate events, and special occasions. Contact us to discuss your requirements.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does Blu Turkey Cafe have WiFi?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes, we provide complimentary high-speed WiFi for all customers.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What payment methods does Blu Turkey Cafe accept?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'We accept cash, credit cards, debit cards, and digital payment methods including UPI, Google Pay, and PhonePe.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does Blu Turkey Cafe have vegetarian options?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes! Our menu includes a wide range of vegetarian items — from Margherita pizza and veg pasta to grilled sandwiches and waffles. All beverages can be made with plant-based milk alternatives.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Blu Turkey Cafe easily accessible?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes! We are located in Greater Kailash I (GK1) with easy access from Kailash Colony Metro Station, ample parking, and wheelchair-accessible entrance.',
+                },
+              },
+            ],
+          }).replace(/</g, '\\u003c'),
         }}
       />
 

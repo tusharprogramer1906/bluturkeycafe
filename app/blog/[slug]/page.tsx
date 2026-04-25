@@ -31,11 +31,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE_URL}/blog/${slug}`,
     },
+    robots: {
+      index: true,
+      follow: true,
+    },
     openGraph: {
-      title: post.title,
+      title: `${post.title} | Blu Turkey Cafe GK1 Delhi`,
       description: post.description,
       url: `${SITE_URL}/blog/${slug}`,
-      siteName: 'Blu Turkey Cafe',
+      siteName: 'Blu Turkey Cafe — GK1, South Delhi',
       type: 'article',
       publishedTime: post.datePublished,
       modifiedTime: post.dateModified ?? post.datePublished,
@@ -51,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.title,
+      title: `${post.title} | Blu Turkey Cafe`,
       description: post.description,
       images: [ogImage],
     },

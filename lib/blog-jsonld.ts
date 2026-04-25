@@ -7,12 +7,13 @@ export function buildArticleJsonLd(post: BlogPost, slug: string) {
 
   return {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
     image: imageUrl,
     datePublished: post.datePublished,
     dateModified: post.dateModified ?? post.datePublished,
+    inLanguage: 'en-IN',
     author: {
       '@type': 'Person',
       name: post.author,
@@ -28,6 +29,11 @@ export function buildArticleJsonLd(post: BlogPost, slug: string) {
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': pageUrl,
+    },
+    isPartOf: {
+      '@type': 'Blog',
+      name: 'Blu Turkey Cafe Blog',
+      url: `${SITE_URL}/blog`,
     },
   };
 }
