@@ -8,14 +8,16 @@ import { PriceRangeBadge } from '@/components/business-badges';
 import CTASection from '@/components/cta-section';
 
 export const metadata: Metadata = {
-  title: 'Menu - Blu Turkey Cafe | Specialty Coffee & Drinks',
-  description: 'Explore our extensive menu featuring signature coffee blends, specialty drinks, and delicious snacks. Premium quality at Blu Turkey Cafe in Delhi.',
+  title: 'Blu Turkey Cafe Menu GK1 Delhi | Coffee, Pasta, Pizza & Desserts',
+  description:
+    'Explore the full Blu Turkey Cafe menu in Greater Kailash (GK1), Delhi. Specialty coffee (espresso, lattes, cold brew), handmade pasta, wood-fired pizza, waffles, croissants & desserts. Prices from ₹80–₹430.',
   alternates: {
     canonical: 'https://bluturkeycafe.com/menu',
   },
   openGraph: {
-    title: 'Menu - Blu Turkey Cafe',
-    description: 'Our specialty coffee and cafe menu in Delhi',
+    title: 'Blu Turkey Cafe Menu GK1 Delhi | Coffee, Pasta, Pizza & Desserts',
+    description:
+      'Full menu at Blu Turkey Cafe, Greater Kailash Delhi — specialty coffee, pasta, pizza, waffles, desserts & mocktails. Prices from ₹80.',
     url: 'https://bluturkeycafe.com/menu',
   },
 };
@@ -216,6 +218,27 @@ export default function MenuPage() {
         title="Our Premium Menu"
         description="Carefully crafted beverages and delicious snacks made with premium ingredients. From signature coffee blends to specialty drinks."
       />
+
+      {/* SEO Intro — keyword-rich crawlable text */}
+      <section className="py-8 px-4 md:px-8 max-w-4xl mx-auto">
+        <div className="p-6 bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl border border-border">
+          <h1 className="text-2xl md:text-3xl font-bold text-primary mb-3">
+            Blu Turkey Cafe Menu — Greater Kailash (GK1), South Delhi
+          </h1>
+          <p className="text-foreground/75 leading-relaxed">
+            Welcome to the Blu Turkey Cafe menu — your guide to the best specialty coffee, handmade pasta, wood-fired
+            pizza, Belgian waffles, fresh croissants and signature desserts in Greater Kailash, New Delhi. Every item
+            is crafted with premium ingredients by our expert team. Browse by category below, or{' '}
+            <a href="/gallery" className="text-primary font-medium underline underline-offset-4 hover:opacity-80 transition-opacity">
+              explore our cafe photos in GK1
+            </a>{' '}
+            to see the full experience. Ready to visit?{' '}
+            <a href="/contact" className="text-primary font-medium underline underline-offset-4 hover:opacity-80 transition-opacity">
+              Get directions to our Greater Kailash cafe
+            </a>.
+          </p>
+        </div>
+      </section>
 
       {/* Price Range */}
       <section className="py-6 px-4 md:px-8">

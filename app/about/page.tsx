@@ -9,14 +9,16 @@ import { Heart, Leaf, Users, Zap } from 'lucide-react';
 import { GoogleRatingBadge, PriceRangeBadge } from '@/components/business-badges';
 
 export const metadata: Metadata = {
-  title: 'About Blu Turkey Cafe | Our Story & Mission',
-  description: 'Learn about Blu Turkey Cafe. Our story, mission to serve premium specialty coffee, and commitment to creating memorable experiences in Delhi.',
+  title: 'About Blu Turkey Cafe GK1 Delhi | Our Story, Mission & Values',
+  description:
+    'Discover the story behind Blu Turkey Cafe — Greater Kailash (GK1), South Delhi’s favourite specialty coffee destination. Learn about our mission, values, and passion for exceptional coffee & food.',
   alternates: {
     canonical: 'https://bluturkeycafe.com/about',
   },
   openGraph: {
-    title: 'About Blu Turkey Cafe',
-    description: 'Discover the story behind Blu Turkey Cafe',
+    title: 'About Blu Turkey Cafe GK1 Delhi | Our Story & Mission',
+    description:
+      'Discover the story behind Blu Turkey Cafe in GK1, South Delhi. Premium specialty coffee, thoughtful design, and a passion for creating memorable moments.',
     url: 'https://bluturkeycafe.com/about',
   },
 };
@@ -95,25 +97,34 @@ export default function AboutPage() {
 
         <div className="prose prose-lg max-w-none space-y-6 text-foreground/80">
           <p>
-            Blu Turkey Cafe is more than just a coffee shop – it's a manifestation of a dream to bring specialty coffee culture 
-            to Delhi. Founded on the belief that coffee is more than a beverage, it's an experience, a ritual, and a connection.
+            Blu Turkey Cafe is more than just a coffee shop — it’s a manifestation of a dream to bring specialty coffee
+            culture to Greater Kailash (GK1), one of South Delhi’s most beloved neighbourhoods. Founded on the belief
+            that coffee is more than a beverage, it’s an experience, a ritual, and a connection.
           </p>
 
           <p>
-            Our journey began with a simple observation: Delhi needed a cafe where quality, ambiance, and community came together 
-            seamlessly. A place where coffee enthusiasts could explore specialty brews, couples could create romantic memories, and 
-            friends could celebrate life's special moments.
+            Our journey began with a simple observation: South Delhi needed a cafe where quality, ambiance, and community
+            came together seamlessly. A place in the heart of GK1 where coffee enthusiasts could explore specialty brews,
+            couples could create romantic memories, and friends could celebrate life’s special moments.
           </p>
 
           <p>
-            We spent years sourcing premium coffee beans, training expert baristas, and designing spaces that feel both elegant and 
-            welcoming. Every decision, from the color of our walls to the origin of our beans, was made with careful consideration.
+            We spent years sourcing premium coffee beans, training expert baristas, and designing spaces that feel both
+            elegant and welcoming. Every decision — from the colour of our walls to the origin of our beans — was made
+            with careful consideration. Today, we proudly serve customers from across GK1, Kailash Colony, Nehru Place,
+            GK2, and beyond.
           </p>
 
           <p>
-            Today, Blu Turkey Cafe stands as a testament to our commitment to excellence. We're proud to serve thousands of customers 
-            who have made us their favorite cafe in Delhi. But we're not done – we're constantly innovating, learning, and improving 
-            to give you the best experience possible.
+            Today, Blu Turkey Cafe stands as a testament to our commitment to excellence at C-30, Ground Floor, Amara
+            Hotel, Greater Kailash I, New Delhi 110048. We’re proud to serve thousands of customers who have made us
+            their favourite cafe in South Delhi. But we’re not done — we’re constantly innovating, learning, and
+            improving to give you the best experience possible.
+          </p>
+
+          <p>
+            Ready to visit? <a href="/contact" className="text-primary font-medium underline underline-offset-4 hover:opacity-75 transition-opacity">Find us in GK1, New Delhi</a> or
+            {' '}<a href="/menu" className="text-primary font-medium underline underline-offset-4 hover:opacity-75 transition-opacity">browse our full menu</a> before you come.
           </p>
         </div>
       </section>

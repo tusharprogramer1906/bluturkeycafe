@@ -8,11 +8,14 @@ import CTASection from '@/components/cta-section';
 import { Trophy, Star, Heart, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Best Cafe in Delhi | Blu Turkey Cafe - Premium Coffee Experience',
-  description: 'Discover why Blu Turkey Cafe is the best cafe in Delhi. Award-winning specialty coffee, premium ambiance, and exceptional service. Perfect for dates and celebrations.',
+  title: 'Best Cafe in Delhi | Blu Turkey Cafe GK1 - Premium Coffee Experience',
+  description: 'Discover why Blu Turkey Cafe is the best cafe in Delhi. Rated 4.9⭐ on Google. Award-winning specialty coffee, premium ambiance in GK1 South Delhi. Perfect for dates and celebrations.',
+  alternates: {
+    canonical: 'https://bluturkeycafe.com/best-cafe-in-delhi',
+  },
   openGraph: {
-    title: 'Best Cafe in Delhi | Blu Turkey Cafe',
-    description: 'Experience the best cafe in Delhi with premium specialty coffee and ambiance',
+    title: 'Best Cafe in Delhi | Blu Turkey Cafe GK1',
+    description: 'Experience the best cafe in Delhi with premium specialty coffee and ambiance in Greater Kailash',
     url: 'https://bluturkeycafe.com/best-cafe-in-delhi',
   },
 };

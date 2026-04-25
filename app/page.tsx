@@ -19,14 +19,16 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Blu Turkey Cafe - Best Coffee & Specialty Cafe in Delhi',
-  description: 'Discover Blu Turkey Cafe, the premier specialty coffee destination in Delhi. Perfect for romantic dates, birthday celebrations, and coffee enthusiasts. Premium ambiance, signature coffee blends, and exceptional service.',
+  title: 'Best Cafe in Greater Kailash (GK1) Delhi | Blu Turkey Cafe ⭐4.9 Coffee & Food',
+  description:
+    'Blu Turkey Cafe in Greater Kailash (GK1), South Delhi — rated 4.9⭐ on Google. Enjoy specialty coffee, handmade pasta, wood-fired pizza, croissants & desserts. Perfect for dates, celebrations & work sessions. Visit us today!',
   alternates: {
     canonical: 'https://bluturkeycafe.com',
   },
   openGraph: {
-    title: 'Blu Turkey Cafe - Premium Specialty Coffee in Delhi',
-    description: 'Experience exceptional specialty coffee and ambiance at Blu Turkey Cafe.',
+    title: 'Best Cafe in GK1 Delhi | Blu Turkey Cafe ⭐4.9 | Coffee, Pasta & Pizza',
+    description:
+      'Rated 4.9⭐ on Google — Blu Turkey Cafe in Greater Kailash, South Delhi serves specialty coffee, fresh pasta, pizza, waffles & signature desserts. Come experience the best cafe in GK1.',
     url: 'https://bluturkeycafe.com',
     type: 'website',
   },

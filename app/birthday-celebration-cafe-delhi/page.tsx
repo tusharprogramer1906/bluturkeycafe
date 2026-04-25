@@ -8,11 +8,15 @@ import CTASection from '@/components/cta-section';
 import { Cake, Users, Gift, PartyPopper } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Birthday Celebration Cafe Delhi | Group Events | Blu Turkey Cafe',
-  description: 'Perfect birthday celebration cafe in Delhi. Group-friendly spaces, custom arrangements, and memorable experiences. Ideal for birthday parties and group celebrations.',
+  title: 'Birthday Celebration Cafe GK1 Delhi | Group Events | Blu Turkey Cafe',
+  description:
+    'Celebrate birthdays at Blu Turkey Cafe in Greater Kailash (GK1), South Delhi. Group-friendly spaces, custom party packages, and memorable experiences. Rated 4.9⭐. Book in advance!',
+  alternates: {
+    canonical: 'https://bluturkeycafe.com/birthday-celebration-cafe-delhi',
+  },
   openGraph: {
-    title: 'Birthday Celebration Cafe Delhi | Blu Turkey Cafe',
-    description: 'Best cafe for birthday celebrations and group events in Delhi',
+    title: 'Birthday Celebration Cafe GK1 Delhi | Blu Turkey Cafe',
+    description: 'Best cafe for birthday celebrations and group events in Greater Kailash, Delhi',
     url: 'https://bluturkeycafe.com/birthday-celebration-cafe-delhi',
   },
 };

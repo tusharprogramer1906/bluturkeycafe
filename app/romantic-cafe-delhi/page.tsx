@@ -8,11 +8,14 @@ import CTASection from '@/components/cta-section';
 import { Heart, Sparkles, Flame, Music } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Romantic Cafe in Delhi | Perfect for Dates | Blu Turkey Cafe',
-  description: 'Create unforgettable memories at the most romantic cafe in Delhi. Blu Turkey Cafe offers premium ambiance, candlelit corners, and exceptional service for couples.',
+  title: 'Romantic Cafe in Delhi | Perfect for Dates | Blu Turkey Cafe GK1',
+  description: 'Create unforgettable memories at the most romantic cafe in Delhi. Blu Turkey Cafe GK1 offers premium ambiance, intimate seating, and exceptional service for couples. Rated 4.9⭐.',
+  alternates: {
+    canonical: 'https://bluturkeycafe.com/romantic-cafe-delhi',
+  },
   openGraph: {
-    title: 'Romantic Cafe in Delhi | Blu Turkey Cafe',
-    description: 'Perfect romantic cafe destination for dates and special occasions in Delhi',
+    title: 'Romantic Cafe in Delhi | Blu Turkey Cafe GK1',
+    description: 'Perfect romantic cafe destination for dates and special occasions in GK1 Delhi',
     url: 'https://bluturkeycafe.com/romantic-cafe-delhi',
   },
 };

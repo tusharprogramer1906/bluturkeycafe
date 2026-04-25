@@ -12,11 +12,11 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "600", "
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Blu Turkey Cafe | Best Cafe in Greater Kailash Delhi',
-    template: '%s | Blu Turkey Cafe',
+    default: 'Best Cafe in Greater Kailash GK1 Delhi | Blu Turkey Cafe ⭐4.9',
+    template: '%s | Blu Turkey Cafe GK1 Delhi',
   },
   description:
-    'Blu Turkey Cafe is a premium cafe in Greater Kailash, New Delhi known for specialty coffee, croissants, waffles, pasta and signature desserts.',
+    'Blu Turkey Cafe is Greater Kailash (GK1)\'s favourite specialty coffee cafe. Rated 4.9⭐ on Google. Coffee, pasta, pizza, waffles & desserts in South Delhi. Open daily 9:30 AM–11 PM.',
   keywords: [
     'Blu Turkey Cafe',
     'Cafe in Greater Kailash',
@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     'Best coffee shop Delhi',
     'Cafe near Kailash Colony',
     'Cafe near Nehru Place',
+    'specialty coffee GK1',
+    'pasta pizza cafe Delhi',
+    'birthday cafe GK1',
+    'romantic cafe Delhi',
   ],
   creator: 'Blu Turkey Cafe',
   openGraph: {

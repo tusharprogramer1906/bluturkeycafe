@@ -7,14 +7,16 @@ import LocationMap from '@/components/location-map';
 import { GoogleRatingBadge, PriceRangeBadge } from '@/components/business-badges';
 
 export const metadata: Metadata = {
-  title: 'Contact Blu Turkey Cafe | Visit Us | Get In Touch',
-  description: 'Contact Blu Turkey Cafe in Delhi. Find our location, hours, phone number, and email. Book events or send us your inquiry.',
+  title: 'Blu Turkey Cafe Location GK1 Delhi | Address, Contact & Directions',
+  description:
+    'Find Blu Turkey Cafe in Greater Kailash (GK1), New Delhi. Address: C-30 Ground Floor, Amara Hotel, GK1 — 110048. Call +91-99711-24279 or email us. Open daily 9:30 AM–11 PM. Get directions on Google Maps.',
   alternates: {
     canonical: 'https://bluturkeycafe.com/contact',
   },
   openGraph: {
-    title: 'Contact Blu Turkey Cafe',
-    description: 'Get in touch with Blu Turkey Cafe in Delhi',
+    title: 'Blu Turkey Cafe Location GK1 Delhi | Address, Contact & Directions',
+    description:
+      'Visit Blu Turkey Cafe at C-30 Ground Floor, Amara Hotel, Greater Kailash I, New Delhi 110048. Open 9:30 AM–11 PM daily. Rated 4.9⭐.',
     url: 'https://bluturkeycafe.com/contact',
   },
 };
@@ -46,9 +48,24 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="py-12 md:py-20 px-4 md:px-8 bg-gradient-to-br from-primary/5 to-accent/5">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">
             Find Us on the Map
           </h2>
+          <p className="text-center text-foreground/70 mb-4">
+            We’re located at{' '}
+            <strong>C-30, Ground Floor, Amara Hotel, Greater Kailash I, New Delhi – 110048</strong>.
+            Easily accessible from Kailash Colony Metro, Nehru Place, and GK2.
+          </p>
+          <p className="text-center mb-8">
+            <a
+              href="https://maps.google.com/?q=Blu+Turkey+Cafe+Greater+Kailash+1+New+Delhi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-primary font-semibold underline underline-offset-4 hover:opacity-75 transition-opacity"
+            >
+              Open in Google Maps →
+            </a>
+          </p>
 
           <LocationMap
             address="Ground Floor, of Amara Hotel, C-30, Blu Turkey Cafe, Greater Kailash I, New Delhi, Delhi 110048"
@@ -84,7 +101,12 @@ export default function ContactPage() {
           <div className="p-6 bg-card rounded-lg border border-border">
             <h3 className="font-semibold text-primary mb-2">Do you have WiFi?</h3>
             <p className="text-foreground/70">
-              Yes, we provide complimentary high-speed WiFi for all our customers. Great for working or browsing!
+              Yes, we provide complimentary high-speed WiFi for all our customers. Great for working or browsing! While
+              you’re connected, why not{' '}
+              <a href="/menu" className="text-primary font-medium underline underline-offset-4 hover:opacity-75 transition-opacity">
+                check out our full cafe menu in GK1
+              </a>{' '}
+              and plan your order.
             </p>
           </div>
 

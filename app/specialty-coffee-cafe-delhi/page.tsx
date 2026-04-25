@@ -8,11 +8,14 @@ import CTASection from '@/components/cta-section';
 import { Coffee, Award, Leaf, BookOpen } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Specialty Coffee Cafe Delhi | Premium Coffee | Blu Turkey Cafe',
-  description: 'Discover authentic specialty coffee at Blu Turkey Cafe in Delhi. Premium bean selection, expert baristas, and coffee education for true coffee enthusiasts.',
+  title: 'Specialty Coffee Cafe Delhi | Premium Coffee GK1 | Blu Turkey Cafe',
+  description: 'Discover authentic specialty coffee at Blu Turkey Cafe in Greater Kailash (GK1), Delhi. Premium single-origin beans, expert baristas, and a genuine coffee culture. Rated 4.9⭐.',
+  alternates: {
+    canonical: 'https://bluturkeycafe.com/specialty-coffee-cafe-delhi',
+  },
   openGraph: {
-    title: 'Specialty Coffee Cafe Delhi | Blu Turkey Cafe',
-    description: 'Best specialty coffee cafe in Delhi with premium beans and expert baristas',
+    title: 'Specialty Coffee Cafe Delhi GK1 | Blu Turkey Cafe',
+    description: 'Best specialty coffee cafe in Delhi — Greater Kailash (GK1) — with premium beans and expert baristas',
     url: 'https://bluturkeycafe.com/specialty-coffee-cafe-delhi',
   },
 };

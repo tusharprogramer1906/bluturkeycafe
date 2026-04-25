@@ -40,10 +40,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/menu" className="hover:opacity-75 transition-opacity">Menu</Link></li>
-              <li><Link href="/gallery" className="hover:opacity-75 transition-opacity">Gallery</Link></li>
-              <li><Link href="/about" className="hover:opacity-75 transition-opacity">About Us</Link></li>
-              <li><Link href="/contact" className="hover:opacity-75 transition-opacity">Contact</Link></li>
+              <li><Link href="/" className="hover:opacity-75 transition-opacity">Home</Link></li>
+              <li><Link href="/menu" className="hover:opacity-75 transition-opacity">View Our Cafe Menu in GK1 Delhi</Link></li>
+              <li><Link href="/gallery" className="hover:opacity-75 transition-opacity">Cafe Photos &amp; Gallery</Link></li>
+              <li><Link href="/about" className="hover:opacity-75 transition-opacity">About Blu Turkey Cafe</Link></li>
+              <li><Link href="/contact" className="hover:opacity-75 transition-opacity">Find Us in Greater Kailash Delhi</Link></li>
               <li><Link href="/blog" className="hover:opacity-75 transition-opacity">Blog</Link></li>
             </ul>
           </div>
