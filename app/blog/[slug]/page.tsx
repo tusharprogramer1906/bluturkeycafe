@@ -24,9 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const ogImage = post.image ?? DEFAULT_OG_IMAGE_PATH;
+  const seoTitle = post.metaTitle ?? post.title;
 
   return {
-    title: post.title,
+    title: seoTitle,
     description: post.description,
     alternates: {
       canonical: `${SITE_URL}/blog/${slug}`,
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       follow: true,
     },
     openGraph: {
-      title: `${post.title} | Blu Turkey Cafe GK1 Delhi`,
+      title: seoTitle,
       description: post.description,
       url: `${SITE_URL}/blog/${slug}`,
       siteName: 'Blu Turkey Cafe — GK1, South Delhi',
@@ -55,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${post.title} | Blu Turkey Cafe`,
+      title: seoTitle,
       description: post.description,
       images: [ogImage],
     },

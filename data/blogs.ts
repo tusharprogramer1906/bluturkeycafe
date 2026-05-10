@@ -6,6 +6,8 @@ export type BlogFaq = {
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Override the <title> / OG title with a custom SEO-optimised string */
+  metaTitle?: string;
   description: string;
   author: string;
   date: string;
@@ -23,6 +25,40 @@ export type BlogPost = {
 
 /** Single source of truth — slug MUST match dynamic route */
 export const blogs: BlogPost[] = [
+  {
+    slug: 'evening-cafes-ambience-south-delhi',
+    title: 'Evening Cafes with Ambience in South Delhi',
+    metaTitle: 'Evening Cafes with Ambience in South Delhi | Blu Turkey Cafe',
+    description:
+      'Discover the best evening cafes with ambience in South Delhi for coffee, conversations, dates, and relaxing nights. Explore Blu Turkey Cafe in GK1.',
+    author: 'Blu Turkey Coffee Team',
+    date: 'Apr 8, 2026',
+    datePublished: '2026-04-08',
+    category: 'Date Cafe',
+    readTime: '7 min read',
+    faqs: [
+      {
+        question: 'Which area in South Delhi has the best evening cafe options?',
+        answer:
+          'Greater Kailash 1 (GK1) consistently ranks among the top picks for evening cafes in South Delhi—walkable, independent, and with a calmer pace than busier hubs. Kailash Colony and the area around Nehru Place are also popular starting points for a cafe evening.',
+      },
+      {
+        question: 'What makes a cafe good for an evening date in Delhi?',
+        answer:
+          'The three non-negotiables are lighting (warm, not fluorescent), seating (comfortable enough to linger), and a menu that covers both drinks and food so neither person feels limited. A space that feels designed rather than accidental makes the whole evening feel intentional.',
+      },
+      {
+        question: 'Is Blu Turkey Cafe good for evening hangouts with friends?',
+        answer:
+          'Yes—Blu Turkey in GK1 M Block is set up for groups: enough table space, a full menu covering coffee, cold drinks, pasta, snacks, and desserts, and interiors that stay comfortable into the night without feeling too formal.',
+      },
+      {
+        question: 'What should I order for an evening visit to Blu Turkey?',
+        answer:
+          'Cold coffee or a cappuccino is a strong start, especially after a long day. From there, snacks or pasta for sharing, and a dessert to finish—Blu Turkey\'s menu is designed to carry a full evening without needing to change venues.',
+      },
+    ],
+  },
   {
     slug: 'best-coffee-shops-work-near-nehru-place',
     title: 'Best Coffee Shops to Work From Near Nehru Place',
