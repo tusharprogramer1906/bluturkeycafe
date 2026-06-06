@@ -6,6 +6,7 @@ import BirthdayPartyIdeas from '@/components/blog/articles/birthday-party-ideas'
 import CoffeeBrewingMethods from '@/components/blog/articles/coffee-brewing-methods';
 import PerfectDateCafe from '@/components/blog/articles/perfect-date-cafe';
 import SpecialtyCoffeeGuide from '@/components/blog/articles/specialty-coffee-guide';
+import TopCafesSouthDelhi2026 from '@/components/blog/articles/top-cafes-south-delhi-2026';
 
 const bySlug: Record<string, ComponentType> = {
   'evening-cafes-ambience-south-delhi': EveningCafesAmbienceSouthDelhi,
@@ -15,6 +16,7 @@ const bySlug: Record<string, ComponentType> = {
   'coffee-brewing-methods': CoffeeBrewingMethods,
   'perfect-date-cafe': PerfectDateCafe,
   'specialty-coffee-guide': SpecialtyCoffeeGuide,
+  'top-cafes-south-delhi-2026': TopCafesSouthDelhi2026,
 };
 
 export default function BlogArticleBody({ slug }: { slug: string }) {

@@ -26,6 +26,55 @@ export type BlogPost = {
 /** Single source of truth — slug MUST match dynamic route */
 export const blogs: BlogPost[] = [
   {
+    slug: 'top-cafes-south-delhi-2026',
+    title: 'Top Cafes in South Delhi You Must Visit in 2026',
+    metaTitle: 'Top Cafes in South Delhi You Must Visit in 2026 | Blu Turkey',
+    description:
+      'Discover the top cafes in South Delhi for 2026 — best coffee, ambience & food in GK1, Kailash Colony & near Nehru Place. Visit Blu Turkey Cafe today.',
+    author: 'Blu Turkey Coffee Team',
+    date: 'Apr 10, 2026',
+    datePublished: '2026-04-10',
+    category: 'Local Discovery',
+    readTime: '8 min read',
+    faqs: [
+      {
+        question: 'Which area in South Delhi has the most cafes?',
+        answer:
+          'Greater Kailash 1 (GK1) is widely considered the most cafe-dense area in South Delhi — walkable, independent, and with a strong mix of specialty coffee, food, and ambience options. Kailash Colony and areas near Nehru Place also have solid options.',
+      },
+      {
+        question: 'What is the best cafe in South Delhi in 2026?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block consistently ranks among the best cafes in South Delhi for its combination of specialty coffee, premium ambience, a full food menu (pasta, sandwiches, desserts), and friendly service. It works for dates, friends hangouts, remote work, and casual visits.',
+      },
+      {
+        question: 'Are there good cafes near Nehru Place?',
+        answer:
+          'Yes — Greater Kailash 1 is a short distance from Nehru Place and is one of the best options for a cafe visit after work or between errands. Blu Turkey Cafe in GK1 M Block is a popular choice for people coming from the Nehru Place direction.',
+      },
+      {
+        question: 'What should I order at a South Delhi cafe?',
+        answer:
+          'A cappuccino or cold coffee is always a safe start at a good South Delhi cafe. From there, snacks or pasta for sharing, and a dessert to finish. At Blu Turkey, the cappuccino and cold coffee are the most-ordered items for good reason — they are consistent and well-calibrated.',
+      },
+      {
+        question: 'Are South Delhi cafes good for remote work?',
+        answer:
+          'Yes — GK1 and surrounding South Delhi areas have several cafes suitable for remote work, including Blu Turkey Cafe. Look for comfortable seating, good coffee for long sessions, and a calm sound level. Blu Turkey works well for students, freelancers, and professionals.',
+      },
+      {
+        question: 'Which cafes in South Delhi are Instagram-worthy?',
+        answer:
+          'Blu Turkey Cafe in GK1 is known for its Instagram-worthy interiors — warm tones, premium ambience, and a space that photographs well because it is designed with care. Content creators and couples both find it a great spot for photos and reels.',
+      },
+      {
+        question: 'Is GK1 a good area for a cafe date in South Delhi?',
+        answer:
+          'Absolutely. GK1 has the right combination of calm energy, walkable streets, and quality cafes for a date. Blu Turkey Cafe specifically is designed for lingering conversations — warm lighting, comfortable seating, and a menu that carries a full evening.',
+      },
+    ],
+  },
+  {
     slug: 'evening-cafes-ambience-south-delhi',
     title: 'Evening Cafes with Ambience in South Delhi',
     metaTitle: 'Evening Cafes with Ambience in South Delhi | Blu Turkey Cafe',
