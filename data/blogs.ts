@@ -26,6 +26,60 @@ export type BlogPost = {
 /** Single source of truth — slug MUST match dynamic route */
 export const blogs: BlogPost[] = [
   {
+    slug: 'best-work-friendly-cafe-gk1-wifi-great-coffee',
+    title: 'Best Work Friendly Cafe in GK1 with WiFi and Great Coffee',
+    metaTitle: 'Best Work Friendly Cafe in GK1 | WiFi & Coffee | Blu Turkey',
+    description:
+      'Looking for a work cafe in GK1? Blu Turkey Cafe offers fast WiFi, comfortable seating, great coffee, and a productive ambience for remote workers in South Delhi.',
+    author: 'Blu Turkey Coffee Team',
+    date: 'Apr 12, 2026',
+    datePublished: '2026-04-12',
+    category: 'Work Cafe',
+    readTime: '7 min read',
+    faqs: [
+      {
+        question: 'Which is the best work cafe in GK1?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block is widely regarded as one of the best work cafes in Greater Kailash 1. It offers comfortable seating, fast WiFi, charging points, a calm ambience, and premium coffee — everything a remote worker, freelancer, or student needs for a productive session.',
+      },
+      {
+        question: 'Which cafe has WiFi in South Delhi?',
+        answer:
+          'Blu Turkey Cafe in GK1 offers reliable high-speed WiFi for guests. It is one of the most popular WiFi cafes in South Delhi, especially among remote workers, students, and digital nomads looking for a productive space with great coffee.',
+      },
+      {
+        question: 'Is Blu Turkey Cafe laptop friendly?',
+        answer:
+          'Yes — Blu Turkey Cafe is fully laptop friendly. The cafe has spacious tables, comfortable seating, charging points, and a relaxed atmosphere that encourages focused work sessions. Many regulars use it as their go-to work cafe in GK1.',
+      },
+      {
+        question: 'Can I work from Blu Turkey Cafe?',
+        answer:
+          'Absolutely. Blu Turkey Cafe in GK1 M Block welcomes remote workers, freelancers, and students. The combination of fast WiFi, comfortable seating, great coffee, and fresh food makes it an ideal work cafe in South Delhi.',
+      },
+      {
+        question: 'Which cafe near Nehru Place has good coffee and WiFi?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block is a short hop from Nehru Place and offers some of the best specialty coffee in the area along with reliable WiFi. It is a popular choice for professionals and remote workers coming from the Nehru Place direction.',
+      },
+      {
+        question: 'Are there charging points available at Blu Turkey Cafe?',
+        answer:
+          'Yes, Blu Turkey Cafe has charging points available at select seating areas, making it convenient for remote workers and students who need to keep their devices powered during long work sessions.',
+      },
+      {
+        question: 'Is Blu Turkey Cafe good for meetings in GK1?',
+        answer:
+          'Yes — the relaxed, premium ambience and spacious layout of Blu Turkey Cafe make it a great venue for client meetings, team catch-ups, startup discussions, and one-on-one sessions in GK1.',
+      },
+      {
+        question: 'What is the best laptop cafe in Delhi for remote work?',
+        answer:
+          'Blu Turkey Cafe in Greater Kailash 1 (GK1), South Delhi, consistently ranks among the top laptop cafes in Delhi for remote work. It combines high-speed WiFi, comfortable seating, specialty coffee, fresh food, and a productive ambience — making it a favourite for freelancers, digital nomads, and professionals.',
+      },
+    ],
+  },
+  {
     slug: 'top-cafes-south-delhi-2026',
     title: 'Top Cafes in South Delhi You Must Visit in 2026',
     metaTitle: 'Top Cafes in South Delhi You Must Visit in 2026 | Blu Turkey',
