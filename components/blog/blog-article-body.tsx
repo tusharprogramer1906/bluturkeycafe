@@ -5,6 +5,7 @@ import BestCafesFriendsHangoutGk1 from '@/components/blog/articles/best-cafes-fr
 import BestWorkFriendlyCafeGK1 from '@/components/blog/articles/best-work-friendly-cafe-gk1-wifi-great-coffee';
 import BirthdayPartyIdeas from '@/components/blog/articles/birthday-party-ideas';
 import CoffeeBrewingMethods from '@/components/blog/articles/coffee-brewing-methods';
+import HiddenCafesGK1 from '@/components/blog/articles/hidden-cafes-gk1-you-shouldnt-miss';
 import PerfectDateCafe from '@/components/blog/articles/perfect-date-cafe';
 import SpecialtyCoffeeGuide from '@/components/blog/articles/specialty-coffee-guide';
 import TopCafesSouthDelhi2026 from '@/components/blog/articles/top-cafes-south-delhi-2026';
@@ -16,6 +17,7 @@ const bySlug: Record<string, ComponentType> = {
   'best-work-friendly-cafe-gk1-wifi-great-coffee': BestWorkFriendlyCafeGK1,
   'birthday-party-ideas': BirthdayPartyIdeas,
   'coffee-brewing-methods': CoffeeBrewingMethods,
+  'hidden-cafes-gk1-you-shouldnt-miss': HiddenCafesGK1,
   'perfect-date-cafe': PerfectDateCafe,
   'specialty-coffee-guide': SpecialtyCoffeeGuide,
   'top-cafes-south-delhi-2026': TopCafesSouthDelhi2026,

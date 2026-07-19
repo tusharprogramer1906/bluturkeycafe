@@ -26,6 +26,61 @@ export type BlogPost = {
 /** Single source of truth — slug MUST match dynamic route */
 export const blogs: BlogPost[] = [
   {
+    slug: 'hidden-cafes-gk1-you-shouldnt-miss',
+    title: "Hidden Cafes in GK1 You Shouldn't Miss",
+    metaTitle: "Hidden Cafes in GK1 You Shouldn't Miss | Blu Turkey Cafe",
+    description:
+      'Discover the best hidden cafes in GK1, South Delhi. Blu Turkey Cafe in Greater Kailash 1 M Block is one of the most underrated gems near Nehru Place — cozy, premium, and worth the visit.',
+    author: 'Blu Turkey Coffee Team',
+    date: 'Apr 15, 2026',
+    datePublished: '2026-04-15',
+    category: 'Local Discovery',
+    readTime: '8 min read',
+    image: '/images/blu-turkey-cafe-cozy-seating-delhi.webp',
+    faqs: [
+      {
+        question: 'Which are the best hidden cafes in GK1?',
+        answer:
+          'Greater Kailash 1 has several hidden cafe gems, but Blu Turkey Cafe in GK1 M Block stands out as one of the most beloved hidden cafes in the area. It offers cozy interiors, specialty coffee, a full food menu, and a relaxed ambience that feels genuinely private — perfect for anyone looking for a café away from the crowds.',
+      },
+      {
+        question: 'Are there underrated cafes in South Delhi?',
+        answer:
+          'Yes — South Delhi, particularly GK1 and Kailash Colony, is home to several underrated and independent cafes that most visitors miss. Blu Turkey Cafe in GK1 M Block is consistently mentioned as one of the best-kept secrets in South Delhi: premium interiors, specialty coffee, freshly prepared food, and warm service without the brand noise of chain cafes.',
+      },
+      {
+        question: 'Which hidden cafe in GK1 serves good coffee?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block is widely regarded as one of the best specialty coffee destinations in Greater Kailash 1. The cappuccino, cold coffee, latte, and espresso are all made with care and consistency — making it the go-to hidden coffee shop in GK1 for coffee enthusiasts who know where to look.',
+      },
+      {
+        question: 'Is Blu Turkey Cafe good for working from a cafe in GK1?',
+        answer:
+          'Absolutely. Blu Turkey Cafe in GK1 M Block is one of the best work-friendly hidden cafes in South Delhi. Comfortable seating, a calm ambience, great coffee, and fresh food make it a favourite for remote workers, freelancers, and students looking for a productive and pleasant environment in GK1.',
+      },
+      {
+        question: 'Which hidden cafes in South Delhi are near Nehru Place?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block is a short distance from Nehru Place and is considered one of the top hidden cafes near Nehru Place in South Delhi. It is a popular choice for professionals, remote workers, and cafe-hoppers who want a premium experience without heading into a busy commercial zone.',
+      },
+      {
+        question: 'Does Blu Turkey Cafe serve desserts?',
+        answer:
+          'Yes — Blu Turkey Cafe serves a selection of freshly prepared desserts including brownies, cheesecake, and seasonal sweet specials. Desserts are among the most ordered items at the cafe, making it a great hidden gem in GK1 for those who like to end their visit on a sweet note.',
+      },
+      {
+        question: 'Is Blu Turkey Cafe good for a date in GK1?',
+        answer:
+          'Yes — Blu Turkey Cafe in GK1 is one of the most popular hidden cafes for dates in South Delhi. The warm lighting, cozy seating, premium interiors, and intimate ambience make it ideal for couples looking for a relaxed and special cafe experience without the noise of busier venues.',
+      },
+      {
+        question: 'What makes Blu Turkey Cafe a hidden gem in GK1?',
+        answer:
+          'Blu Turkey Cafe earns its hidden gem status because it combines everything a great cafe should have — specialty coffee, freshly prepared food, premium interiors, comfortable seating, and genuinely friendly service — without the branding loudness of chains. It is the kind of place you discover once and keep returning to, making it one of the true hidden cafes in Greater Kailash 1.',
+      },
+    ],
+  },
+  {
     slug: 'best-work-friendly-cafe-gk1-wifi-great-coffee',
     title: 'Best Work Friendly Cafe in GK1 with WiFi and Great Coffee',
     metaTitle: 'Best Work Friendly Cafe in GK1 | WiFi & Coffee | Blu Turkey',
