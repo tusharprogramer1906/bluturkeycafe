@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function BlogArticleContent() {
@@ -124,6 +125,75 @@ export default function BlogArticleContent() {
         </Link>{' '}
         — the kind of place that rewards the people who found it without needing to advertise itself.
       </p>
+
+      {/* Gallery — mid-article */}
+      <div className="my-10 not-prose">
+        <p className="text-sm text-foreground/60 mb-4 font-medium uppercase tracking-wide">
+          Inside Blu Turkey Cafe — GK1
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="relative aspect-square rounded-xl overflow-hidden">
+            <Image
+              src="/images/blu-turkey-cafe-seating-ambience.webp"
+              alt="Cozy seating area at Blu Turkey Cafe in Greater Kailash 1"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, 33vw"
+              loading="lazy"
+            />
+          </div>
+          <div className="relative aspect-square rounded-xl overflow-hidden">
+            <Image
+              src="/images/blu-turkey-specialty-latte-coffee.webp"
+              alt="Specialty latte coffee at Blu Turkey Cafe GK1"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, 33vw"
+              loading="lazy"
+            />
+          </div>
+          <div className="relative aspect-square rounded-xl overflow-hidden">
+            <Image
+              src="/images/menu/blu-turkey-chicken-tikka-pizza-delhi.webp"
+              alt="Chicken Tikka Pizza at Blu Turkey Cafe South Delhi"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, 33vw"
+              loading="lazy"
+            />
+          </div>
+          <div className="relative aspect-square rounded-xl overflow-hidden">
+            <Image
+              src="/images/menu/blu-turkey-creamy-white-sauce-pasta-delhi.webp"
+              alt="Creamy white sauce pasta served at Blu Turkey Cafe"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, 33vw"
+              loading="lazy"
+            />
+          </div>
+          <div className="relative aspect-square rounded-xl overflow-hidden">
+            <Image
+              src="/images/menu/blu-turkey-veg-grilled-sandwich-fries-delhi.webp"
+              alt="Veg grilled sandwich with fries at Blu Turkey Cafe GK1"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, 33vw"
+              loading="lazy"
+            />
+          </div>
+          <div className="relative aspect-square rounded-xl overflow-hidden">
+            <Image
+              src="/images/blu-turkey-cafe-dining-space-delhi.webp"
+              alt="Dining space and ambience at Blu Turkey Cafe Greater Kailash 1"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, 33vw"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
 
       {/* Mid-Content CTA */}
       <div className="my-10 rounded-2xl bg-primary/10 border border-primary/20 px-6 py-8 text-center space-y-4">
