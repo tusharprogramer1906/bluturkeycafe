@@ -3,209 +3,369 @@ import Link from 'next/link';
 export default function BlogArticleContent() {
   return (
     <article className="prose prose-lg max-w-none space-y-6 text-foreground/80">
+
+      {/* Introduction */}
       <p className="text-lg leading-relaxed">
-        There is a specific kind of tiredness that hits around six in the evening in South Delhi—the traffic noise has peaked,
-        the to-do list has been wrestled into submission, and what you actually want is a corner table, warm lighting, and
-        something in a cup that tastes like someone cared about making it. That is not a luxury. That is just a good evening
-        cafe, and <strong>South Delhi</strong> has more of them than most people realise.
+        There is a particular kind of evening that South Delhi does well — the hour after the
+        traffic finally thins, when you are not quite ready to head home but not quite ready to call
+        it a night either. That in-between hour is what the best <strong>evening cafes in South
+        Delhi</strong> are designed for. Warm lighting, a coffee worth ordering twice, and a room
+        that does not rush you out the moment your cup is empty.
       </p>
       <p>
-        If you have been searching <strong>evening cafes South Delhi</strong> or scrolling through your maps app looking for{' '}
-        <strong>ambience cafes Delhi</strong> without settling on anything—this guide is for you. No lists of places you already
-        know. Just a clear-eyed look at what actually makes an evening cafe worth the trip, and why Greater Kailash 1 (GK1)
-        keeps showing up at the top of that answer.
+        If you have been scrolling through searches for <strong>evening cafes South Delhi</strong>{' '}
+        or <strong>ambience cafes Delhi</strong> without landing on anything that felt worth the
+        effort — this guide is for you. We are not talking about lists of places everyone already
+        knows. We are talking about what actually separates a great evening cafe from a place that
+        happens to have chairs, and why <strong>Greater Kailash 1 (GK1)</strong> keeps appearing at
+        the top of that conversation.
       </p>
 
+      {/* H2: What Makes an Evening Cafe Special */}
       <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
-        What &ldquo;ambience&rdquo; actually means at 7 PM (it&apos;s more than fairy lights)
+        What Makes an Evening Cafe Special?
       </h2>
       <p>
-        Ambience is one of those words that gets used a lot and means almost nothing without context. In the evening, it
-        translates to something very specific: warm lighting that does not wash you out in photos or make you squint, seating
-        that is comfortable enough to stay in for two hours, background music at a volume that lets you hear the person across
-        the table, and staff who do not rush you the moment your cup is empty.
-      </p>
-      <p>
-        That combination—lighting, seating, sound, service—is what separates an <strong>ambience cafe</strong> from a cafe that
-        just has a decent latte. Most places nail one or two of these. The ones worth returning to get all four right,
-        consistently, without making it feel like a performance.
-      </p>
-      <p>
-        If the idea of a thoughtfully designed space for an evening date is what you are after, the thinking behind{' '}
-        <Link href="/blog/perfect-date-cafe" className="text-primary font-medium hover:underline">
-          what makes a cafe perfect for a date night
-        </Link>{' '}
-        goes deeper into why these design signals matter—and how they change the whole feeling of an evening, even when romance
-        is not the only agenda.
+        The word &ldquo;ambience&rdquo; gets used so broadly it has almost lost meaning. In the
+        context of an evening cafe, it translates into something very specific — a set of sensory
+        decisions the space makes on your behalf before you have even placed an order.
       </p>
 
-      <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
-        Why GK1 and South Delhi work for an evening out
-      </h2>
+      <h3 className="text-xl font-semibold text-primary">Lighting that changes the room</h3>
       <p>
-        Greater Kailash 1 occupies a particular sweet spot in the South Delhi cafe landscape. It is close enough to Nehru Place
-        that a detour on your way home feels natural—not like a separate expedition. It sits near Kailash Colony and several
-        other residential pockets where the evening pace drops noticeably compared to commercial areas. And it has the kind of
-        cafe density where you can walk a block and find something independent, interesting, and worth sitting in.
-      </p>
-      <p>
-        The result is that <strong>evening cafes in South Delhi</strong> cluster around GK1 for good reason: the neighbourhood
-        rewards lingering. You are not competing with office crowds at 7 PM the way you might in Connaught Place or Lajpat
-        Nagar. You are in a quieter version of the city—one that still has great food, good coffee, and the kind of interiors
-        that photograph well without being built exclusively for that purpose.
+        Overhead fluorescents are a dealbreaker. Warm-toned pendant lights, Edison bulbs, and
+        candlelight all do something fluorescents cannot: they make people look awake and attractive
+        rather than washed out and tired. The right lighting does not just set a mood — it slows the
+        pace of the evening down. People linger longer, conversations run deeper, and coffee tastes
+        better in a room that does not feel like an operating theatre.
       </p>
 
-      <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
-        What to look for when you are choosing an evening cafe
-      </h2>
-
-      <h3 className="text-xl font-semibold text-primary">Lighting you can actually have a conversation in</h3>
+      <h3 className="text-xl font-semibold text-primary">Seating designed to stay in</h3>
       <p>
-        Overhead fluorescents are a dealbreaker. Look for warm-toned pendant lights, candles, Edison bulbs, or any light source
-        that makes the room feel enclosed and personal rather than open and operational. Bonus: the same lighting that makes an
-        evening feel intimate is also what makes your coffee and dessert look good in a photo—without any filters.
+        The difference between a cafe that is comfortable for twenty minutes and one that holds you
+        for two hours is almost always the seating. Cushioned sofas, chairs with back support at the
+        right height, and tables that actually match — these are not decorative choices. They are the
+        infrastructure of an evening well spent. If your back is aching by the time dessert arrives,
+        the ambience has already failed.
       </p>
 
-      <h3 className="text-xl font-semibold text-primary">A coffee menu that works past 5 PM</h3>
+      <h3 className="text-xl font-semibold text-primary">Music at a conversational volume</h3>
       <p>
-        Evening coffee orders are different from morning ones. A cappuccino at 7 PM is a social drink—you sip it, you talk, you
-        stay. Cold coffee and seasonal cold beverages serve the same function when it is warm. A strong <strong>evening cafe</strong>{' '}
-        menu understands that not everyone wants a flat white at full intensity after six, and offers options that fit the
-        slower rhythm of the evening without sacrificing quality. If you want to understand what goes into a well-made cup at
-        any hour, our{' '}
+        A great evening cafe has background music that you notice when you walk in and then
+        genuinely forget about. It fills the silence without competing with the person across the
+        table. Cafes that mistake volume for energy lose the evening crowd the moment the first
+        conversation gets strained. The best <strong>ambience cafes in Delhi</strong> understand
+        that music is a supporting character, not the lead.
+      </p>
+
+      <h3 className="text-xl font-semibold text-primary">Coffee and food worth staying for</h3>
+      <p>
+        Evening cafe visits rarely stay as a single drink. Someone orders a snack. The snack
+        becomes pasta. Pasta gives way to a dessert worth sharing. A cafe that can carry a full
+        evening without anyone feeling like they ordered the wrong thing — that is the real measure
+        of an <strong>evening cafe</strong> worth visiting. Want to understand what separates a
+        well-made espresso from an average one? Our{' '}
         <Link href="/blog/specialty-coffee-guide" className="text-primary font-medium hover:underline">
           guide to specialty coffee
         </Link>{' '}
-        explains how origin, roast, and brewing method all shape what you taste—useful context when you are trying to order
-        something worth staying for.
+        breaks down how origin, roast, and brew method shape what you actually taste — useful
+        context when you are deciding what to order on a long evening.
       </p>
 
-      <h3 className="text-xl font-semibold text-primary">Food that supports a full evening (not just a drink)</h3>
-      <p>
-        The best <strong>ambience cafes in Delhi</strong> know that evenings stretch. You come for coffee. Someone orders
-        snacks. The conversation gets good, and suddenly you are splitting pasta and eyeing the dessert menu. A cafe that can
-        carry a group from drinks through food through dessert without anyone feeling like they made the wrong menu choice—that
-        is the real test.
-      </p>
-      <ul className="list-disc pl-6 space-y-2">
-        <li>Snacks and small plates for grazers and people who ate late</li>
-        <li>Comfort food like pasta for the friend who skipped dinner</li>
-        <li>Desserts worth splitting—the unofficial signal that no one wants to leave yet</li>
-      </ul>
-
+      {/* H2: Best Evening Cafe Areas in South Delhi */}
       <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
-        Blu Turkey Cafe, GK1: built for South Delhi evenings
+        Best Evening Cafe Areas in South Delhi
       </h2>
       <p>
-        Blu Turkey Cafe in <strong>GK1 M Block</strong> is the kind of place you describe to people by saying &ldquo;you will
-        know it when you walk in.&rdquo; Warm interiors, seating that feels chosen rather than arranged, and a room that hums
-        at the right frequency for a Tuesday evening catch-up or a Friday night with your group. It is <strong>Instagram-worthy</strong>{' '}
-        in the sense that the space was designed with care—not in the sense that it exists to be photographed and then
-        forgotten.
+        South Delhi has a genuine density of good cafes — but not all neighbourhoods deliver the
+        same experience after dark.
       </p>
 
-      <h3 className="text-xl font-semibold text-primary">The evening menu at Blu Turkey</h3>
+      <h3 className="text-xl font-semibold text-primary">Greater Kailash 1 (GK1)</h3>
+      <p>
+        GK1 is the standout option for evening cafes in South Delhi, and the reason is not just the
+        cafes themselves. The neighbourhood has a walkable, residential quality that does not exist
+        in busier commercial zones. By 7 PM, the foot traffic settles into a comfortable pace. The
+        streets around M Block Market have enough independent character to feel interesting without
+        the overwhelming noise of a Delhi nightlife hub. It is the kind of area where a two-hour
+        coffee stop makes sense — and where the cafes are designed to support exactly that.
+      </p>
+
+      <h3 className="text-xl font-semibold text-primary">Kailash Colony</h3>
+      <p>
+        Kailash Colony sits close enough to GK1 that residents treat both neighbourhoods as a
+        single evening destination. The cafe-to-resident ratio is strong, the pace is calm, and the
+        evenings there carry the kind of low-pressure energy that makes a coffee stop feel like a
+        plan rather than an errand.
+      </p>
+
+      <h3 className="text-xl font-semibold text-primary">Near Nehru Place</h3>
+      <p>
+        Nehru Place is primarily a commercial hub, which means the area immediately around it comes
+        alive with post-work cafe traffic in the evenings. GK1 sits close enough that it serves as
+        a natural overflow — and upgrade — for anyone wrapping up at Nehru Place and looking for
+        somewhere to decompress before heading home.
+      </p>
+
+      {/* Mid-Content CTA */}
+      <div className="my-10 rounded-2xl bg-primary/10 border border-primary/20 px-6 py-8 text-center space-y-4">
+        <p className="text-xl font-bold text-primary">
+          Already around GK1 this evening?
+        </p>
+        <p className="text-foreground/70">
+          If you are already in the area and looking for a relaxed evening coffee spot,{' '}
+          Blu Turkey Cafe in GK1 M Block is worth adding to your list — warm interiors, great
+          coffee, and a menu that can carry a full evening.
+        </p>
+        <p className="font-semibold text-primary">
+          📍 Blu Turkey Cafe — M Block, Greater Kailash 1, South Delhi
+        </p>
+      </div>
+
+      {/* H2: Why Blu Turkey Cafe Works for an Evening Visit */}
+      <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
+        Why Blu Turkey Cafe Works for an Evening Visit
+      </h2>
+      <p>
+        Blu Turkey Cafe in <strong>GK1 M Block</strong> is one of those cafes you describe to
+        people by saying &ldquo;you will know it when you walk in.&rdquo; Warm interiors, seating
+        that feels chosen rather than arranged, and a room that operates at exactly the right
+        frequency for a Tuesday evening catch-up or a Friday night with your group.
+      </p>
+      <p>
+        It is <strong>Instagram-worthy</strong> in the honest sense — the space was designed with
+        care, not built to be photographed and then forgotten. The lighting is warm without being
+        dim, the seating is comfortable without being precious, and the layout gives every table
+        enough space to feel like its own conversation.
+      </p>
       <ul className="list-disc pl-6 space-y-2">
         <li>
-          <strong>Cappuccino and espresso classics:</strong> for people who want coffee done right, at any hour. The kind of
-          cup that earns a second order.
+          <strong>Warm, considered interiors:</strong> Designed to feel premium without feeling
+          formal — the kind of space that makes an ordinary evening feel like a proper occasion.
         </li>
         <li>
-          <strong>Cold coffee and signature cold drinks:</strong> when the evening is warm and you want something slow and
-          refreshing rather than hot and quick.
+          <strong>Comfortable, stay-worthy seating:</strong> Sofas and upright chairs for different
+          preferences, all built for sessions that run long.
         </li>
         <li>
-          <strong>Pasta and comfort plates:</strong> the inflection point where a coffee date becomes a full evening—shareable,
-          satisfying, and worth staying for.
+          <strong>Specialty coffee done right:</strong> Cappuccinos calibrated with care, cold
+          coffee with actual depth, espresso pulled consistently — the kind of coffee that earns a
+          second order.
         </li>
         <li>
-          <strong>Snacks and small plates:</strong> for groups who want variety without committing to a full meal before the
-          dessert conversation starts.
+          <strong>A menu that carries a full evening:</strong> From snacks and small plates through
+          to pasta, sandwiches, and desserts — no one has to leave and find food elsewhere.
         </li>
         <li>
-          <strong>Desserts:</strong> the honest reason no one has reached for their jacket yet. Soft, rich, worth negotiating
-          over.
+          <strong>Unhurried service:</strong> Staff who check in without hovering and understand
+          that a table lingering over dessert is not a problem — it is the point.
+        </li>
+        <li>
+          <strong>Social atmosphere without noise:</strong> The energy is alive without being
+          chaotic, and the background music stays at a volume that keeps conversation comfortable.
         </li>
       </ul>
       <p>
-        If your evening is also someone&apos;s birthday or a celebration milestone, the ideas in{' '}
-        <Link href="/blog/birthday-party-ideas" className="text-primary font-medium hover:underline">
-          how to plan the perfect birthday cafe celebration
+        For anyone wondering how Blu Turkey compares as a place to bring a group — our guide to the{' '}
+        <Link href="/blog/best-cafes-friends-hangout-gk1" className="text-primary font-medium hover:underline">
+          best cafes for friends hangouts in GK1
         </Link>{' '}
-        work especially well with Blu Turkey&apos;s setup—group seating, dessert menu, and the kind of energy that makes an
-        occasion feel properly marked.
+        covers exactly what makes the neighbourhood and the cafe work for groups of different sizes
+        and occasions.
       </p>
 
+      {/* H2: Best Drinks and Food for an Evening Cafe Visit */}
       <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
-        Evening use cases: who actually goes, and why
+        Best Drinks and Food for an Evening Cafe Visit
+      </h2>
+      <p>
+        Evening cafe orders are different from morning ones. You are not refuelling for a workday —
+        you are settling in for a conversation. The menu has to match that pace.
+      </p>
+
+      <h3 className="text-xl font-semibold text-primary">Coffee and cold drinks</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Cappuccino:</strong> The gold standard for an evening coffee — warm, social, and
+          balanced enough to sip over a long conversation without being too intense.
+        </li>
+        <li>
+          <strong>Cold coffee:</strong> When the evening is warm and you want something slow and
+          refreshing rather than hot and quick — Blu Turkey&apos;s cold coffee is one of the most
+          consistently ordered items for good reason.
+        </li>
+        <li>
+          <strong>Latte:</strong> Smoother, more relaxed, and ideal for anyone who wants something
+          to hold rather than shoot.
+        </li>
+        <li>
+          <strong>Espresso:</strong> For when you need something direct and the conversation is
+          already running at full speed.
+        </li>
+      </ul>
+      <p>
+        If you want to understand what goes into the coffee choices at a good cafe — why brew
+        method matters and how it changes the cup — our{' '}
+        <Link href="/blog/coffee-brewing-methods" className="text-primary font-medium hover:underline">
+          brewing methods guide (espresso vs pour over vs French press)
+        </Link>{' '}
+        gives you the background to order with confidence rather than guessing.
+      </p>
+
+      <h3 className="text-xl font-semibold text-primary">Food worth ordering</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Snacks and small plates:</strong> For the grazer, for the person who ate late, or
+          for the friend group that wants to keep ordering without committing to a full meal before
+          the conversation gets interesting.
+        </li>
+        <li>
+          <strong>Pasta and comfort plates:</strong> The inflection point where a coffee visit
+          becomes a full evening — shareable, satisfying, and worth staying for. This is what makes
+          a visit to a <strong>cafe in South Delhi</strong> feel like a proper night out.
+        </li>
+        <li>
+          <strong>Sandwiches:</strong> Fresh, well-built, and the right choice when you want
+          something substantial without the weight of a full plate.
+        </li>
+        <li>
+          <strong>Desserts:</strong> The honest signal that no one is ready to call it a night yet.
+          Rich, soft, worth splitting — and worth planning around if you are celebrating anything.
+        </li>
+      </ul>
+
+      {/* H2: Evening Cafes for Different Occasions */}
+      <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
+        Evening Cafes for Different Occasions
       </h2>
 
-      <h3 className="text-xl font-semibold text-primary">Date nights (first or fiftieth)</h3>
+      <h3 className="text-xl font-semibold text-primary">Casual dates (first or fiftieth)</h3>
       <p>
-        A South Delhi evening cafe works for a date the same way a good playlist works for a drive: it sets the pace without
-        demanding attention. Warm lighting, unhurried service, and a table that is comfortable enough to stay in past the first
-        coffee—that is the infrastructure of a good date, regardless of where you are in the relationship.
+        A good evening cafe works for a date the same way a good playlist works for a drive — it
+        sets the pace without demanding attention. Warm lighting, unhurried service, and seating
+        comfortable enough to stay past the first coffee. That is the infrastructure of a good date
+        regardless of where you are in the relationship. The thinking behind{' '}
+        <Link href="/blog/perfect-date-cafe" className="text-primary font-medium hover:underline">
+          what makes a cafe perfect for a date night
+        </Link>{' '}
+        goes deeper into why these small design decisions matter — and how they change the feeling
+        of an evening even when romance is not the only agenda.
       </p>
 
       <h3 className="text-xl font-semibold text-primary">Friends catching up after a long week</h3>
       <p>
-        The group chat finally delivered a plan. Now you need a spot that can handle five people ordering different things,
-        nobody being rushed through their dessert, and at least one person taking a photo. GK1&apos;s cafe density makes it
-        easy to walk in with low expectations and leave with the kind of evening you talk about the following week.
+        The group chat finally aligned on a plan. Now you need a spot that can handle five people
+        ordering different things, no one being rushed through dessert, and at least one person
+        taking a photo. GK1&apos;s cafe density makes it easy to walk in with low expectations and
+        leave with the kind of evening you talk about the following week. The menu depth at a cafe
+        like Blu Turkey means one friend can order pasta while another nurses a cold coffee and a
+        third eyes the dessert counter — everyone gets what they came for.
       </p>
 
-      <h3 className="text-xl font-semibold text-primary">The post-work unwind (solo or small group)</h3>
+      <h3 className="text-xl font-semibold text-primary">After-work unwind (solo or with a colleague)</h3>
       <p>
-        Coming in from Nehru Place or Kailash Colony after a long session and needing to exhale before going home—this is where
-        a <strong>cozy ambience cafe</strong> earns its keep. You are not looking for an event. You want a cappuccino, a
-        reliable chair, and thirty minutes of not thinking about anything that has a deadline. That is a legitimate use of a
-        good evening cafe, and it is something GK1 handles better than most Delhi neighbourhoods.
+        Coming in from Nehru Place or Kailash Colony after a long session and needing to exhale
+        before heading home — this is where a <strong>cozy ambience cafe</strong> earns its keep.
+        You are not looking for an event. You want a cappuccino, a reliable chair, and thirty
+        minutes of not thinking about anything with a deadline. GK1 handles this version of an
+        evening better than most Delhi neighbourhoods.
       </p>
 
-      <h3 className="text-xl font-semibold text-primary">Work session that turns into dinner</h3>
+      <h3 className="text-xl font-semibold text-primary">Weekend evenings and casual celebrations</h3>
       <p>
-        Some evenings start as &ldquo;I&apos;ll just finish this over coffee&rdquo; and end with pasta and a dessert split three
-        ways. If that is your pattern, look for a cafe with enough menu depth to support the pivot—and enough comfortable
-        seating that your back does not remind you it has been three hours. The brewing side of things is worth knowing about
-        too: our{' '}
-        <Link href="/blog/coffee-brewing-methods" className="text-primary font-medium hover:underline">
-          guide to espresso vs pour over vs French press
-        </Link>{' '}
-        helps you understand what you are ordering past the first cup when the evening extends.
+        A birthday. An anniversary. A promotion. A Friday that simply deserves to end well. The
+        cafe does not need to be a restaurant to make an occasion feel marked — it needs the right
+        space, the right food, and enough warmth in the room to make the people at the table feel
+        like they are somewhere deliberate.
       </p>
 
+      <h3 className="text-xl font-semibold text-primary">Solo coffee evenings</h3>
+      <p>
+        There is a particular kind of solo evening that deserves its own mention — the one where
+        you bring a book or just sit with your thoughts and a cup of something good. A great
+        evening cafe supports this without making you feel conspicuous. The right lighting, a seat
+        you can disappear into, and coffee worth the trip.
+      </p>
+
+      {/* H2: What to Look for When Choosing an Evening Cafe */}
       <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
-        The small things that define a good evening at a cafe
+        What to Look for When Choosing an Evening Cafe
       </h2>
       <p>
-        Good evenings at a cafe are built from small signals that add up: the table that is not too close to the door, the
-        music that is there but not competing, the server who checks in once and does not hover, the lighting that makes
-        everyone look warm and awake rather than tired. These are not dramatic features—they do not show up in a description
-        on Zomato. But they are exactly what you remember when you tell someone &ldquo;there is this place in GK1 you have
-        to try.&rdquo;
+        Before you commit to a destination, here are the criteria worth applying to any{' '}
+        <strong>evening cafe in South Delhi</strong> or anywhere else:
       </p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Lighting:</strong> Warm, not cold. Enclosed, not clinical. If the restaurant
+          photos show fluorescent strips, reconsider.
+        </li>
+        <li>
+          <strong>Seating:</strong> Ask yourself whether you could sit there for ninety minutes
+          without discomfort. If the chairs look designed to turn over tables quickly, they probably
+          are.
+        </li>
+        <li>
+          <strong>Coffee quality:</strong> An evening cafe that serves mediocre coffee is wasting
+          the ambience. Look for a menu that shows some thought — not just a machine behind a
+          counter.
+        </li>
+        <li>
+          <strong>Food depth:</strong> Can the menu carry a full evening from drinks to snacks to a
+          proper plate to dessert? Or does it run out of options after the second course?
+        </li>
+        <li>
+          <strong>Location and accessibility:</strong> Is it easy to get to from where you are
+          coming from? GK1 is well-connected from Nehru Place, Kailash Colony, and several other
+          South Delhi points — which is part of why it works so well as an evening destination.
+        </li>
+        <li>
+          <strong>Atmosphere:</strong> Energy without noise. Social without chaotic. A cafe that
+          has solved this balance is rare and worth returning to.
+        </li>
+        <li>
+          <strong>Suitability for conversation:</strong> Can you hear the person across the table
+          without leaning in? This is the most practical measure of a good evening cafe and the one
+          most often overlooked in reviews.
+        </li>
+      </ul>
       <p>
-        Blu Turkey is also available on <strong>Zomato</strong> and <strong>Swiggy</strong> for evenings when the plan shifts
-        and staying in makes more sense—but the cafe experience is where the ambience actually lives. Delivery gets you the
-        same flavors; it does not get you the room.
+        For a broader picture of what is working in South Delhi&apos;s cafe scene this year, our
+        guide to{' '}
+        <Link href="/blog/top-cafes-south-delhi-2026" className="text-primary font-medium hover:underline">
+          top cafes in South Delhi for 2026
+        </Link>{' '}
+        covers everything from dates to work sessions to group hangouts — with GK1 at the centre of
+        the map.
       </p>
 
+      {/* Final CTA */}
       <hr className="my-10 border-border" />
 
       <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
-        Make tonight the evening you stop postponing
+        Make Tonight the Evening You Stop Postponing
       </h2>
       <p>
-        The best <strong>evening cafes in South Delhi</strong> are not hard to find once you know what you are looking for:
-        warm lighting, seating that respects your time, a coffee menu worth ordering twice, and food that earns the stay. Blu
-        Turkey Cafe in <strong>GK1 M Block</strong> checks every one of those boxes—whether you are walking in from Nehru
-        Place, heading out from Kailash Colony, or just looking for a South Delhi evening that feels like something you
-        chose, not just something that happened.
+        The best <strong>evening cafes in South Delhi</strong> are not hard to find once you know
+        what you are looking for: warm lighting, seating that respects your time, a coffee menu
+        worth ordering twice, and food that earns the stay. <strong>Blu Turkey Cafe in GK1 M
+        Block</strong> checks every one of those boxes — whether you are walking in from Nehru
+        Place, heading out from Kailash Colony, or just looking for an evening that feels like
+        something you chose, not something that happened by default.
       </p>
       <p>
-        <strong>Visit Blu Turkey Cafe in GK1 for your next evening out</strong>—great coffee, a menu worth lingering over,
-        desserts worth sharing, and the kind of <strong>cozy, Instagram-worthy ambience</strong> that makes a Tuesday feel like
-        it deserved a plan.
+        Great coffee. A menu worth lingering over. Desserts worth sharing. The kind of{' '}
+        <strong>cozy, warm ambience</strong> that makes a Tuesday feel like it deserved a plan.
+        Bring your date, your friends, or just yourself — Blu Turkey Cafe in GK1 is open and ready
+        for your evening.
+      </p>
+      <p className="font-semibold text-primary">
+        📍 Blu Turkey Cafe — M Block Market, Greater Kailash 1, South Delhi
+      </p>
+      <p>
+        Also available on <strong>Zomato</strong> and <strong>Swiggy</strong> for evenings when the
+        plan shifts and staying in makes more sense — but the cafe experience is where the ambience
+        lives. Delivery gets you the same flavours; it does not get you the room.
       </p>
     </article>
   );

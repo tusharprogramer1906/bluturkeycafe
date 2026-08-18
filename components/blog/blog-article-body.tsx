@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react';
+import BestCafeGreaterKailash1 from '@/components/blog/articles/best-cafe-greater-kailash-1-coffee-food-vibes-2026';
 import EveningCafesAmbienceSouthDelhi from '@/components/blog/articles/evening-cafes-ambience-south-delhi';
 import BestCoffeeShopsWorkNearNehruPlace from '@/components/blog/articles/best-coffee-shops-work-near-nehru-place';
 import BestCafesFriendsHangoutGk1 from '@/components/blog/articles/best-cafes-friends-hangout-gk1';
@@ -11,6 +12,7 @@ import SpecialtyCoffeeGuide from '@/components/blog/articles/specialty-coffee-gu
 import TopCafesSouthDelhi2026 from '@/components/blog/articles/top-cafes-south-delhi-2026';
 
 const bySlug: Record<string, ComponentType> = {
+  'best-cafe-greater-kailash-1-coffee-food-vibes-2026': BestCafeGreaterKailash1,
   'evening-cafes-ambience-south-delhi': EveningCafesAmbienceSouthDelhi,
   'best-coffee-shops-work-near-nehru-place': BestCoffeeShopsWorkNearNehruPlace,
   'best-cafes-friends-hangout-gk1': BestCafesFriendsHangoutGk1,

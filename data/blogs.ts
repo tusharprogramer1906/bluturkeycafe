@@ -26,6 +26,51 @@ export type BlogPost = {
 /** Single source of truth — slug MUST match dynamic route */
 export const blogs: BlogPost[] = [
   {
+    slug: 'best-cafe-greater-kailash-1-coffee-food-vibes-2026',
+    title: 'Best Cafe in Greater Kailash 1 for Coffee Food Vibes 2026',
+    metaTitle: 'Best Cafe in Greater Kailash 1 | Coffee Food Vibes 2026',
+    description:
+      'Looking for the best cafe in Greater Kailash 1? Blu Turkey Cafe in GK1 M Block offers great coffee, food, ambience and vibes in South Delhi.',
+    author: 'Blu Turkey Coffee Team',
+    date: 'Aug 18, 2026',
+    datePublished: '2026-08-18',
+    category: 'Local Discovery',
+    readTime: '8 min read',
+    image: '/images/blu-turkey-cafe-interior-view-delhi.webp',
+    faqs: [
+      {
+        question: 'What is the best cafe in Greater Kailash 1?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block is consistently regarded as one of the best cafes in Greater Kailash 1 — combining specialty coffee, a full food menu (pasta, sandwiches, desserts), premium interiors, and a relaxed social atmosphere that works for dates, friends, remote work, and casual visits.',
+      },
+      {
+        question: 'Which are the best cafes in South Delhi for coffee and food?',
+        answer:
+          'Greater Kailash 1 (GK1) is one of the strongest areas in South Delhi for both coffee quality and food variety. Blu Turkey Cafe in GK1 M Block stands out for its specialty coffee, freshly prepared food, and thoughtfully designed interiors — making it a top pick for anyone exploring cafes in South Delhi.',
+      },
+      {
+        question: 'Is GK1 a good area for cafe hopping?',
+        answer:
+          'Yes — GK1, particularly M Block Market, is one of the best areas in South Delhi for cafe hopping. The neighbourhood is walkable, has a good density of independent cafes, and a calm residential pace that makes spending an afternoon or evening cafe-hopping genuinely enjoyable.',
+      },
+      {
+        question: 'Which cafe in Greater Kailash is good for coffee and ambience?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block is a strong choice for both coffee and ambience. The interiors are warm and carefully designed, the specialty coffee is made with care, and the overall atmosphere is relaxed enough to linger in — without being too quiet or too noisy.',
+      },
+      {
+        question: 'What can you eat at Blu Turkey Cafe?',
+        answer:
+          'Blu Turkey Cafe serves a full cafe menu including pasta, sandwiches, snacks, and desserts — alongside specialty coffee, cold coffee, cappuccino, latte, and espresso. The menu is designed to support everything from a quick coffee break to a full evening of food and drinks.',
+      },
+      {
+        question: 'Is Blu Turkey Cafe suitable for friends and couples?',
+        answer:
+          'Yes — Blu Turkey Cafe in GK1 works well for both. The seating is comfortable enough for long group sessions, the menu has enough variety for different preferences, and the warm, premium interiors create the kind of atmosphere that suits a relaxed date as much as a friends catch-up.',
+      },
+    ],
+  },
+  {
     slug: 'hidden-cafes-gk1-you-shouldnt-miss',
     title: "Hidden Cafes in GK1 You Shouldn't Miss",
     metaTitle: "Hidden Cafes in GK1 You Shouldn't Miss | Blu Turkey Cafe",
@@ -190,30 +235,41 @@ export const blogs: BlogPost[] = [
     description:
       'Discover the best evening cafes with ambience in South Delhi for coffee, conversations, dates, and relaxing nights. Explore Blu Turkey Cafe in GK1.',
     author: 'Blu Turkey Coffee Team',
-    date: 'Apr 8, 2026',
-    datePublished: '2026-04-08',
+    date: 'Aug 18, 2026',
+    datePublished: '2026-08-18',
     category: 'Date Cafe',
     readTime: '7 min read',
+    image: '/images/blu-turkey-cafe-seating-ambience.webp',
     faqs: [
       {
-        question: 'Which area in South Delhi has the best evening cafe options?',
+        question: 'What are the best evening cafes in South Delhi?',
         answer:
-          'Greater Kailash 1 (GK1) consistently ranks among the top picks for evening cafes in South Delhi—walkable, independent, and with a calmer pace than busier hubs. Kailash Colony and the area around Nehru Place are also popular starting points for a cafe evening.',
+          'Greater Kailash 1 (GK1) is one of the strongest areas for evening cafes in South Delhi — walkable, independent, and noticeably calmer than busier commercial hubs. Blu Turkey Cafe in GK1 M Block is a go-to choice for evenings: warm interiors, a full menu spanning coffee to desserts, and seating designed to make you stay longer than you planned.',
+      },
+      {
+        question: 'Which cafes in Delhi have a good ambience for evenings?',
+        answer:
+          'The best ambience cafes in Delhi prioritise warm lighting over fluorescents, comfortable seating over fast turnover, and music at a conversational volume. Blu Turkey Cafe in GK1 M Block hits all three — the interiors are warm and considered, the chairs and sofas are built for long visits, and the background music stays where it belongs: in the background.',
+      },
+      {
+        question: 'Is GK1 a good area for evening cafes?',
+        answer:
+          'Yes — GK1 is one of the best areas in South Delhi for an evening cafe visit. It sits close to Nehru Place and Kailash Colony, has a walkable, residential pace, and a concentration of independent cafes that reward lingering. The neighbourhood quiets down from the office rush by early evening, which is exactly when GK1 comes into its own.',
       },
       {
         question: 'What makes a cafe good for an evening date in Delhi?',
         answer:
-          'The three non-negotiables are lighting (warm, not fluorescent), seating (comfortable enough to linger), and a menu that covers both drinks and food so neither person feels limited. A space that feels designed rather than accidental makes the whole evening feel intentional.',
+          'Three things: warm lighting (not fluorescent), seating comfortable enough to stay in for two hours, and a menu covering drinks and food so neither person feels limited. A space that feels deliberately designed rather than accidentally assembled makes the whole evening feel intentional. Blu Turkey Cafe in GK1 checks all three.',
       },
       {
-        question: 'Is Blu Turkey Cafe good for evening hangouts with friends?',
+        question: 'Is Blu Turkey Cafe suitable for an evening visit?',
         answer:
-          'Yes—Blu Turkey in GK1 M Block is set up for groups: enough table space, a full menu covering coffee, cold drinks, pasta, snacks, and desserts, and interiors that stay comfortable into the night without feeling too formal.',
+          'Absolutely — Blu Turkey Cafe in GK1 M Block is one of the most consistent evening cafe options in South Delhi. Warm interiors, cozy seating, specialty coffee, pasta, snacks, and desserts make it easy to plan a full evening without changing venues. It works equally well for dates, friends catchups, and solo coffee sessions.',
       },
       {
-        question: 'What should I order for an evening visit to Blu Turkey?',
+        question: 'What should I order for an evening visit to Blu Turkey Cafe?',
         answer:
-          'Cold coffee or a cappuccino is a strong start, especially after a long day. From there, snacks or pasta for sharing, and a dessert to finish—Blu Turkey\'s menu is designed to carry a full evening without needing to change venues.',
+          'Cold coffee or a cappuccino is a strong start, especially after a long day. From there, snacks or pasta for sharing, and a dessert to finish — the menu is designed to carry a full evening comfortably. If you are celebrating anything, the dessert selection makes a natural centrepiece for the table.',
       },
     ],
   },
