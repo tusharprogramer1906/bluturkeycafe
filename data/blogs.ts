@@ -30,7 +30,7 @@ export const blogs: BlogPost[] = [
     title: 'Cozy Cafes in GK1 for Relaxing Evenings',
     metaTitle: 'Cozy Cafes in GK1 for Relaxing Evenings | Blu Turkey',
     description:
-      'Looking for a cozy cafe in GK1 for a peaceful evening? Discover what makes Greater Kailash 1 ideal for relaxing cafe visits — and why Blu Turkey Cafe is worth a stop.',
+      'Looking for a cozy cafe in GK1? Discover what makes Greater Kailash 1 ideal for relaxing evenings — and why Blu Turkey Cafe in M Block is your best stop.',
     author: 'Blu Turkey Coffee Team',
     date: 'Sep 12, 2026',
     datePublished: '2026-09-12',
@@ -78,9 +78,9 @@ export const blogs: BlogPost[] = [
   {
     slug: 'best-cafe-greater-kailash-1-coffee-food-vibes-2026',
     title: 'Best Cafe in Greater Kailash 1 for Coffee Food Vibes 2026',
-    metaTitle: 'Best Cafe in Greater Kailash 1 | Coffee Food Vibes 2026',
+    metaTitle: 'Best Cafe in GK1 | Coffee, Food & Great Vibes | Blu Turkey',
     description:
-      'Looking for the best cafe in Greater Kailash 1? Blu Turkey Cafe in GK1 M Block offers great coffee, food, ambience and vibes in South Delhi.',
+      'The best cafe in GK1? Blu Turkey in Greater Kailash 1 M Block — specialty coffee, pasta, sandwiches, desserts and warm ambience in South Delhi.',
     author: 'Blu Turkey Coffee Team',
     date: 'Aug 18, 2026',
     datePublished: '2026-08-18',
@@ -178,9 +178,9 @@ export const blogs: BlogPost[] = [
   {
     slug: 'best-work-friendly-cafe-gk1-wifi-great-coffee',
     title: 'Best Work Friendly Cafe in GK1 with WiFi and Great Coffee',
-    metaTitle: 'Best Work Friendly Cafe in GK1 | WiFi & Coffee | Blu Turkey',
+    metaTitle: 'Best Coffee Shop to Work From in GK1 | WiFi & Specialty Coffee',
     description:
-      'Looking for a work cafe in GK1? Blu Turkey Cafe offers fast WiFi, comfortable seating, great coffee, and a productive ambience for remote workers in South Delhi.',
+      'Need a coffee shop to work from in GK1? Blu Turkey Cafe — fast WiFi, comfortable seating, specialty coffee and food for remote workers in South Delhi.',
     author: 'Blu Turkey Coffee Team',
     date: 'Apr 12, 2026',
     datePublished: '2026-04-12',
@@ -232,9 +232,9 @@ export const blogs: BlogPost[] = [
   {
     slug: 'top-cafes-south-delhi-2026',
     title: 'Top Cafes in South Delhi You Must Visit in 2026',
-    metaTitle: 'Top Cafes in South Delhi You Must Visit in 2026 | Blu Turkey',
+    metaTitle: 'Top Cafes in South Delhi 2026 | GK1, Kailash Colony & More',
     description:
-      'Discover the top cafes in South Delhi for 2026 — best coffee, ambience & food in GK1, Kailash Colony & near Nehru Place. Visit Blu Turkey Cafe today.',
+      'Explore the top cafes in South Delhi for 2026 — from GK1 and Kailash Colony to near Nehru Place. Specialty coffee, great food, and Blu Turkey Cafe.',
     author: 'Blu Turkey Coffee Team',
     date: 'Apr 10, 2026',
     datePublished: '2026-04-10',
@@ -326,8 +326,9 @@ export const blogs: BlogPost[] = [
   {
     slug: 'best-coffee-shops-work-near-nehru-place',
     title: 'Best Coffee Shops to Work From Near Nehru Place',
+    metaTitle: 'Best Cafe Near Nehru Place | Coffee & Work | Blu Turkey GK1',
     description:
-      'Work near Nehru Place? Find work-friendly coffee in South Delhi—Wi‑Fi, specialty coffee, food—plus Blu Turkey Cafe GK1 M Block.',
+      'Looking for a cafe near Nehru Place? Blu Turkey in GK1 M Block — specialty coffee, WiFi, comfortable seating and food, just minutes from Nehru Place.',
     author: 'Blu Turkey Coffee Team',
     date: 'Apr 13, 2026',
     datePublished: '2026-04-13',

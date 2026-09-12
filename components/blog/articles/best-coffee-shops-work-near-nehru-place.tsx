@@ -191,6 +191,13 @@ export default function BlogArticleContent() {
         Turkey Cafe in <strong>GK1 M Block</strong>. Perfect for remote workers who want focus with flavor, and for anyone who
         believes the best <strong>cafe in South Delhi</strong> is the one you actually want to return to next week.
       </p>
+      <p>
+        For a deeper look at everything Blu Turkey offers as a day-to-day work base in Greater Kailash 1, our{' '}
+        <Link href="/blog/best-work-friendly-cafe-gk1-wifi-great-coffee" className="text-primary font-medium hover:underline">
+          full guide to the best work-friendly cafe in GK1
+        </Link>{' '}
+        covers WiFi, seating, coffee, food and everything else that makes a work session worth the commute.
+      </p>
     </article>
   );
 }

@@ -402,6 +402,18 @@ export default function BlogArticleContent() {
           replicate the same experience across twenty outlets.
         </li>
       </ul>
+      <p>
+        If you are planning a relaxed evening visit specifically, our{' '}
+        <Link href="/blog/cozy-cafes-gk1-relaxing-evenings" className="text-primary font-medium hover:underline">
+          guide to cozy cafes in GK1 for relaxing evenings
+        </Link>{' '}
+        covers the atmosphere and occasion in more detail. And if a work session is what brought you
+        to GK1, our{' '}
+        <Link href="/blog/best-work-friendly-cafe-gk1-wifi-great-coffee" className="text-primary font-medium hover:underline">
+          guide to the best work-friendly cafe in GK1
+        </Link>{' '}
+        covers WiFi, seating and everything a remote worker needs to plan a productive visit.
+      </p>
 
       {/* Final CTA */}
       <hr className="my-10 border-border" />

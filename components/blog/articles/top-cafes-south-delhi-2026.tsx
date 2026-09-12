@@ -244,6 +244,19 @@ export default function BlogArticleContent() {
         freelancers with a deadline, and professionals between meetings all find it functional
         without sacrificing the cafe experience.
       </p>
+      <p>
+        For a dedicated breakdown of what makes Blu Turkey the strongest work cafe option in GK1 —
+        WiFi, seating, coffee order recommendations and session planning — our{' '}
+        <Link href="/blog/best-work-friendly-cafe-gk1-wifi-great-coffee" className="text-primary font-medium hover:underline">
+          full guide to the best work-friendly cafe in GK1
+        </Link>{' '}
+        covers everything a remote worker needs to know before showing up. And if the work is done
+        and you want to stay for a relaxing evening instead, our{' '}
+        <Link href="/blog/cozy-cafes-gk1-relaxing-evenings" className="text-primary font-medium hover:underline">
+          guide to cozy cafes in GK1 for relaxing evenings
+        </Link>{' '}
+        picks up exactly where the workday ends.
+      </p>
 
       {/* H2: Why Blu Turkey stands out */}
       <h2 className="text-2xl md:text-3xl font-bold text-primary mt-8">
