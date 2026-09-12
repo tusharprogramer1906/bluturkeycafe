@@ -26,6 +26,56 @@ export type BlogPost = {
 /** Single source of truth — slug MUST match dynamic route */
 export const blogs: BlogPost[] = [
   {
+    slug: 'cozy-cafes-gk1-relaxing-evenings',
+    title: 'Cozy Cafes in GK1 for Relaxing Evenings',
+    metaTitle: 'Cozy Cafes in GK1 for Relaxing Evenings | Blu Turkey',
+    description:
+      'Looking for a cozy cafe in GK1 for a peaceful evening? Discover what makes Greater Kailash 1 ideal for relaxing cafe visits — and why Blu Turkey Cafe is worth a stop.',
+    author: 'Blu Turkey Coffee Team',
+    date: 'Sep 12, 2026',
+    datePublished: '2026-09-12',
+    category: 'Local Discovery',
+    readTime: '8 min read',
+    image: '/images/blu-turkey-cafe-cozy-seating-delhi.webp',
+    faqs: [
+      {
+        question: 'What is a cozy cafe in GK1?',
+        answer:
+          'A cozy cafe in GK1 is one that prioritises comfort over speed — warm lighting, seating you actually want to stay in, background music at a conversational volume, and a menu that rewards lingering. Greater Kailash 1 has several independent cafes that fit this description, with Blu Turkey Cafe in GK1 M Block being a standout option for its warm interiors, specialty coffee, and relaxed atmosphere.',
+      },
+      {
+        question: 'Where can I find a peaceful cafe in South Delhi?',
+        answer:
+          'Greater Kailash 1 (GK1) is consistently one of the best areas in South Delhi for peaceful cafes. The neighbourhood has a residential calm that commercial hubs lack — especially in the evenings, when the pace settles and the cafes come into their own. Blu Turkey Cafe in GK1 M Block is a strong option for anyone looking for a quiet, comfortable space for coffee and food in South Delhi.',
+      },
+      {
+        question: 'Is GK1 good for relaxing evening cafe visits?',
+        answer:
+          'Yes — GK1 is one of the most suitable areas in South Delhi for an evening cafe visit. The M Block Market area is walkable and calm by evening, the cafes are independent and designed for lingering, and the overall pace of the neighbourhood supports a slow, relaxed visit rather than a hurried one.',
+      },
+      {
+        question: 'What should I look for in a peaceful cafe?',
+        answer:
+          'Look for warm (not fluorescent) lighting, seating you can stay in for an hour or more, music kept at a conversational volume, a menu that covers both drinks and food, and a service style that does not rush you out. A good noise level — social but not overwhelming — is the practical test most people apply without consciously naming it.',
+      },
+      {
+        question: 'Which cafe in GK1 is good for coffee and a relaxed atmosphere?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block is a strong choice for both. The interiors are warm and thoughtfully designed, the specialty coffee is made with care, and the overall atmosphere encourages long visits rather than quick ones. It works for solo evenings, friends catchups, and casual dates alike.',
+      },
+      {
+        question: 'Is Blu Turkey Cafe suitable for an evening visit?',
+        answer:
+          'Absolutely — Blu Turkey Cafe in GK1 M Block is well-suited to evening visits. The warm interiors, cozy seating, specialty coffee menu, and food options spanning pasta, sandwiches, and desserts make it easy to spend a full evening there without running out of reasons to stay.',
+      },
+      {
+        question: 'Are there cozy cafes near Nehru Place?',
+        answer:
+          'Yes — Greater Kailash 1 is a short distance from Nehru Place and has several cozy, independent cafes. Blu Turkey Cafe in GK1 M Block is one of the most popular choices for people coming from the Nehru Place direction who want a comfortable, unhurried cafe experience in South Delhi.',
+      },
+    ],
+  },
+  {
     slug: 'best-cafe-greater-kailash-1-coffee-food-vibes-2026',
     title: 'Best Cafe in Greater Kailash 1 for Coffee Food Vibes 2026',
     metaTitle: 'Best Cafe in Greater Kailash 1 | Coffee Food Vibes 2026',
