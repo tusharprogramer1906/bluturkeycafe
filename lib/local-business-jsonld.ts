@@ -26,13 +26,6 @@ export const cafeLocalBusinessJsonLd = {
     latitude: '28.5494',
     longitude: '77.2410',
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    bestRating: '5',
-    worstRating: '1',
-    reviewCount: 150,
-  },
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',

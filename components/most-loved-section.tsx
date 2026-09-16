@@ -4,9 +4,9 @@ import { ArrowRight } from 'lucide-react';
 
 const mostLovedItems = [
   {
-    name: 'Veggies Pizza',
+    name: 'Chicken Tikka Pizza',
     description: 'Tandoori chicken tikka with cheese and sauce',
-    price: '₹400',
+    price: '₹430',
     image: '/images/menu/blu-turkey-chicken-tikka-pizza-delhi.webp',
     alt: 'Chicken tikka pizza at Blu Turkey Cafe in Greater Kailash Delhi',
     title: 'Chicken Tikka Pizza – Blu Turkey Cafe Delhi',

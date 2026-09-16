@@ -9,14 +9,14 @@ import { Heart, Leaf, Users, Zap } from 'lucide-react';
 import { GoogleRatingBadge, PriceRangeBadge } from '@/components/business-badges';
 
 export const metadata: Metadata = {
-  title: 'About Blu Turkey Cafe GK1 Delhi | Our Story, Mission & Values',
+  title: 'About Blu Turkey Cafe | Specialty Coffee in GK1, New Delhi',
   description:
-    'Discover the story behind Blu Turkey Cafe — Greater Kailash (GK1), South Delhi’s favourite specialty coffee destination. Learn about our mission, values, and passion for exceptional coffee & food.',
+    'Discover the story behind Blu Turkey Cafe in Greater Kailash (GK1), South Delhi. Learn about our mission, values, and passion for exceptional specialty coffee and food.',
   alternates: {
     canonical: 'https://bluturkeycafe.com/about',
   },
   openGraph: {
-    title: 'About Blu Turkey Cafe GK1 Delhi | Our Story & Mission',
+    title: 'About Blu Turkey Cafe | Specialty Coffee in GK1, New Delhi',
     description:
       'Discover the story behind Blu Turkey Cafe in GK1, South Delhi. Premium specialty coffee, thoughtful design, and a passion for creating memorable moments.',
     url: 'https://bluturkeycafe.com/about',
@@ -226,42 +226,18 @@ export default function AboutPage() {
         }}
       />
 
-      {/* Schema Markup */}
+      {/* BreadcrumbList JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'CafeOrCoffeeShop',
-            name: 'Blu Turkey Cafe',
-            url: 'https://bluturkeycafe.com',
-            logo: 'https://bluturkeycafe.com/images/blu-turkey-logo.png',
-            description: 'Premium specialty coffee cafe in Delhi',
-            sameAs: ['https://www.instagram.com/bluturkeycafe', 'https://www.facebook.com/bluturkeycafe'],
-            founded: '2023',
-            foundingLocation: 'New Delhi, India',
-            areaServed: 'New Delhi, India',
-            priceRange: '₹400–₹600',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Ground Floor, Amara Hotel, C-30',
-              addressLocality: 'Greater Kailash I',
-              addressRegion: 'Delhi',
-              postalCode: '110048',
-              addressCountry: 'IN',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: 150,
-            },
-            contactPoint: {
-              '@type': 'ContactPoint',
-              contactType: 'Customer Service',
-              telephone: '+91-99711-24279',
-              email: 'bluturkeycafe@gmail.com',
-            },
-          }),
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bluturkeycafe.com' },
+              { '@type': 'ListItem', position: 2, name: 'About', item: 'https://bluturkeycafe.com/about' },
+            ],
+          }).replace(/</g, '\\u003c'),
         }}
       />
 

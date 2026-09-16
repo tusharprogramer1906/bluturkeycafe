@@ -367,6 +367,14 @@ export default function BlogArticleContent() {
         plan shifts and staying in makes more sense — but the cafe experience is where the ambience
         lives. Delivery gets you the same flavours; it does not get you the room.
       </p>
+      <p>
+        If you are specifically looking for the most cozy and relaxed evening options in the GK1 area,
+        our guide to{' '}
+        <Link href="/blog/cozy-cafes-gk1-relaxing-evenings" className="text-primary font-medium hover:underline">
+          cozy cafes in GK1 for relaxing evenings
+        </Link>{' '}
+        goes deeper into what makes an evening well spent in Greater Kailash 1.
+      </p>
     </article>
   );
 }

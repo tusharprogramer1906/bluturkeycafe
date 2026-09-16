@@ -8,14 +8,14 @@ import CTASection from '@/components/cta-section';
 import { Trophy, Star, Heart, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Best Cafe in Delhi | Blu Turkey Cafe GK1 - Premium Coffee Experience',
-  description: 'Discover why Blu Turkey Cafe is the best cafe in Delhi. Rated 4.9⭐ on Google. Award-winning specialty coffee, premium ambiance in GK1 South Delhi. Perfect for dates and celebrations.',
+  title: 'Best Cafe in Delhi GK1 | Specialty Coffee & Ambiance | Blu Turkey Cafe',
+  description: 'Discover Blu Turkey Cafe in Greater Kailash (GK1), South Delhi. Specialty coffee, premium ambiance, and memorable moments. Rated 4.9 on Google. Perfect for dates and celebrations.',
   alternates: {
     canonical: 'https://bluturkeycafe.com/best-cafe-in-delhi',
   },
   openGraph: {
-    title: 'Best Cafe in Delhi | Blu Turkey Cafe GK1',
-    description: 'Experience the best cafe in Delhi with premium specialty coffee and ambiance in Greater Kailash',
+    title: 'Best Cafe in Delhi GK1 | Specialty Coffee & Ambiance | Blu Turkey Cafe',
+    description: 'Blu Turkey Cafe in Greater Kailash (GK1) — specialty coffee, great ambiance, and memorable experiences in South Delhi.',
     url: 'https://bluturkeycafe.com/best-cafe-in-delhi',
   },
 };
@@ -24,9 +24,9 @@ export default function BestCafePage() {
   const features = [
     {
       icon: Trophy,
-      title: 'Award-Winning Selection',
-      description: 'Carefully curated specialty coffee beans recognized by coffee enthusiasts across India.',
-      highlight: 'Multiple awards and recognition',
+      title: 'Specialty Coffee Selection',
+      description: 'Carefully curated specialty coffee beans sourced from premium estates, prepared by trained baristas.',
+      highlight: 'Rated 4.9 on Google',
     },
     {
       icon: Star,
@@ -75,9 +75,9 @@ export default function BestCafePage() {
 
       {/* Hero Section */}
       <HeroSection
-        subtitle="Rated #1 in Delhi"
-        title="The Best Cafe in Delhi"
-        description="Experience why Blu Turkey Cafe stands out as the premier specialty coffee destination in Delhi. Premium quality, exceptional ambiance, and unforgettable moments."
+        subtitle="Specialty Coffee in GK1, South Delhi"
+        title="A Cafe Worth Seeking Out in Delhi"
+        description="Blu Turkey Cafe in Greater Kailash (GK1) is built around good coffee, honest food, and a space you actually want to spend time in. Come see for yourself."
         primaryCta={{
           text: 'Visit Us Today',
           href: '/contact',
@@ -168,31 +168,18 @@ export default function BestCafePage() {
         }}
       />
 
-      {/* Schema Markup */}
+      {/* BreadcrumbList JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'CafeOrCoffeeShop',
-            name: 'Blu Turkey Cafe - Best Cafe in Delhi',
-            url: 'https://bluturkeycafe.com/best-cafe-in-delhi',
-            description: 'Best cafe in Delhi for specialty coffee and premium ambiance',
-            priceRange: '₹400–₹600',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Ground Floor, Amara Hotel, C-30',
-              addressLocality: 'Greater Kailash I',
-              addressRegion: 'Delhi',
-              postalCode: '110048',
-              addressCountry: 'IN',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: 150,
-            },
-          }),
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bluturkeycafe.com' },
+              { '@type': 'ListItem', position: 2, name: 'Best Cafe in Delhi', item: 'https://bluturkeycafe.com/best-cafe-in-delhi' },
+            ],
+          }).replace(/</g, '\\u003c'),
         }}
       />
 

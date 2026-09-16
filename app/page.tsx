@@ -19,16 +19,16 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Best Cafe in Greater Kailash (GK1) Delhi | Blu Turkey Cafe ⭐4.9 Coffee & Food',
+  title: 'Best Cafe in GK1 Delhi | Specialty Coffee, Pizza & Pasta | Blu Turkey Cafe',
   description:
-    'Blu Turkey Cafe in Greater Kailash (GK1), South Delhi — rated 4.9⭐ on Google. Enjoy specialty coffee, handmade pasta, wood-fired pizza, croissants & desserts. Perfect for dates, celebrations & work sessions. Visit us today!',
+    'Blu Turkey Cafe in Greater Kailash (GK1), South Delhi. Specialty coffee, handmade pasta, wood-fired pizza, croissants and desserts. Rated 4.9 on Google. Open daily 9:30 AM–11 PM.',
   alternates: {
     canonical: 'https://bluturkeycafe.com',
   },
   openGraph: {
-    title: 'Best Cafe in GK1 Delhi | Blu Turkey Cafe ⭐4.9 | Coffee, Pasta & Pizza',
+    title: 'Best Cafe in GK1 Delhi | Coffee, Pasta & Pizza | Blu Turkey Cafe',
     description:
-      'Rated 4.9⭐ on Google — Blu Turkey Cafe in Greater Kailash, South Delhi serves specialty coffee, fresh pasta, pizza, waffles & signature desserts. Come experience the best cafe in GK1.',
+      'Blu Turkey Cafe in Greater Kailash (GK1), South Delhi — specialty coffee, fresh pasta, pizza, waffles and signature desserts. Rated 4.9 on Google. Open 9:30 AM–11 PM.',
     url: 'https://bluturkeycafe.com',
     type: 'website',
   },
@@ -45,8 +45,8 @@ export default function Home() {
     {
       icon: MapPin,
       title: 'Perfect Location',
-      description: 'Located in the heart of Delhi, easily accessible with ample parking and comfortable seating.',
-      highlight: 'Central Delhi location',
+      description: 'Located in Greater Kailash I (GK1), easily accessible from Kailash Colony Metro, Nehru Place and GK2.',
+      highlight: 'Greater Kailash, South Delhi',
     },
     {
       icon: Users,

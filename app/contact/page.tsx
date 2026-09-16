@@ -7,16 +7,16 @@ import LocationMap from '@/components/location-map';
 import { GoogleRatingBadge, PriceRangeBadge } from '@/components/business-badges';
 
 export const metadata: Metadata = {
-  title: 'Blu Turkey Cafe Location GK1 Delhi | Address, Contact & Directions',
+  title: 'Visit Blu Turkey Cafe GK1 | Address, Hours & Contact Info',
   description:
-    'Find Blu Turkey Cafe in Greater Kailash (GK1), New Delhi. Address: C-30 Ground Floor, Amara Hotel, GK1 — 110048. Call +91-99711-24279 or email us. Open daily 9:30 AM–11 PM. Get directions on Google Maps.',
+    'Find Blu Turkey Cafe in Greater Kailash (GK1), New Delhi. Address: Ground Floor, Amara Hotel, C-30, GK1 — 110048. Call +91-99711-24279. Open daily 9:30 AM–11 PM. Get directions on Google Maps.',
   alternates: {
     canonical: 'https://bluturkeycafe.com/contact',
   },
   openGraph: {
-    title: 'Blu Turkey Cafe Location GK1 Delhi | Address, Contact & Directions',
+    title: 'Visit Blu Turkey Cafe GK1 | Address, Hours & Contact Info',
     description:
-      'Visit Blu Turkey Cafe at C-30 Ground Floor, Amara Hotel, Greater Kailash I, New Delhi 110048. Open 9:30 AM–11 PM daily. Rated 4.9⭐.',
+      'Blu Turkey Cafe at Ground Floor, Amara Hotel, C-30, Greater Kailash I, New Delhi 110048. Open 9:30 AM–11 PM daily. Rated 4.9 on Google.',
     url: 'https://bluturkeycafe.com/contact',
   },
 };
@@ -68,10 +68,10 @@ export default function ContactPage() {
           </p>
 
           <LocationMap
-            address="Ground Floor, of Amara Hotel, C-30, Blu Turkey Cafe, Greater Kailash I, New Delhi, Delhi 110048"
+            address="Ground Floor, Amara Hotel, C-30, Blu Turkey Cafe, Greater Kailash I, New Delhi, Delhi 110048"
             businessName="Blu Turkey Cafe"
-            latitude={28.5244}
-            longitude={77.1855}
+            latitude={28.5494}
+            longitude={77.2410}
           />
         </div>
       </section>
@@ -153,40 +153,18 @@ export default function ContactPage() {
       </section>
 
 
-      {/* SEO Schema — CafeOrCoffeeShop + FAQPage */}
+      {/* BreadcrumbList JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'CafeOrCoffeeShop',
-            name: 'Blu Turkey Cafe',
-            url: 'https://bluturkeycafe.com/contact',
-            telephone: '+91-99711-24279',
-            email: 'bluturkeycafe@gmail.com',
-            priceRange: '\u20b9400\u2013\u20b9600',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Ground Floor, Amara Hotel, C-30',
-              addressLocality: 'Greater Kailash I',
-              addressRegion: 'Delhi',
-              postalCode: '110048',
-              addressCountry: 'IN',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: 150,
-            },
-            openingHoursSpecification: [
-              {
-                '@type': 'OpeningHoursSpecification',
-                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-                opens: '09:30',
-                closes: '23:00',
-              },
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bluturkeycafe.com' },
+              { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://bluturkeycafe.com/contact' },
             ],
-          }),
+          }).replace(/</g, '\\u003c'),
         }}
       />
       <script

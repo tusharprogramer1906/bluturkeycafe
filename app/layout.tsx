@@ -12,30 +12,16 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "600", "
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Best Cafe in Greater Kailash GK1 Delhi | Blu Turkey Cafe ⭐4.9',
-    template: '%s | Blu Turkey Cafe GK1 Delhi',
+    default: 'Blu Turkey Cafe | Specialty Coffee Cafe in GK1, New Delhi',
+    template: '%s | Blu Turkey Cafe',
   },
   description:
-    'Blu Turkey Cafe is Greater Kailash (GK1)\'s favourite specialty coffee cafe. Rated 4.9⭐ on Google. Coffee, pasta, pizza, waffles & desserts in South Delhi. Open daily 9:30 AM–11 PM.',
-  keywords: [
-    'Blu Turkey Cafe',
-    'Cafe in Greater Kailash',
-    'Best cafe in GK1',
-    'Cafe in South Delhi',
-    'Coffee cafe Delhi',
-    'Best coffee shop Delhi',
-    'Cafe near Kailash Colony',
-    'Cafe near Nehru Place',
-    'specialty coffee GK1',
-    'pasta pizza cafe Delhi',
-    'birthday cafe GK1',
-    'romantic cafe Delhi',
-  ],
+    'Blu Turkey Cafe — Greater Kailash (GK1), South Delhi. Specialty coffee, handmade pasta, pizza, waffles, croissants and desserts. Rated 4.9 on Google. Open daily 9:30 AM–11 PM.',
   creator: 'Blu Turkey Cafe',
   openGraph: {
     title: 'Blu Turkey Cafe | Specialty Coffee & Cafe in GK1 Delhi',
     description:
-      'Experience specialty coffee, croissants, waffles and desserts at Blu Turkey Cafe in Greater Kailash, New Delhi.',
+      'Experience specialty coffee, croissants, waffles and desserts at Blu Turkey Cafe in Greater Kailash (GK1), New Delhi. Open daily 9:30 AM–11 PM.',
     url: SITE_URL,
     siteName: 'Blu Turkey Cafe',
     locale: 'en_IN',
@@ -45,15 +31,15 @@ export const metadata: Metadata = {
         url: '/images/blu-turkey-cafe-seating-area-delhi.webp',
         width: 1200,
         height: 630,
-        alt: 'Blu Turkey Cafe - Specialty Coffee in Greater Kailash Delhi',
+        alt: 'Blu Turkey Cafe — Specialty Coffee in Greater Kailash, Delhi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blu Turkey Cafe | Best Cafe in Greater Kailash',
+    title: 'Blu Turkey Cafe | Specialty Coffee in Greater Kailash, Delhi',
     description:
-      'Discover specialty coffee, desserts and cafe ambience at Blu Turkey Cafe in South Delhi.',
+      'Specialty coffee, pasta, pizza, waffles and desserts at Blu Turkey Cafe in GK1, South Delhi.',
   },
   robots: {
     index: true,

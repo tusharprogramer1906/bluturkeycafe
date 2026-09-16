@@ -176,31 +176,18 @@ export default function RomanticCafePage() {
         }}
       />
 
-      {/* Schema Markup */}
+      {/* BreadcrumbList JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'CafeOrCoffeeShop',
-            name: 'Blu Turkey Cafe - Romantic Cafe in Delhi',
-            url: 'https://bluturkeycafe.com/romantic-cafe-delhi',
-            description: 'Romantic cafe in Delhi perfect for dates and couples',
-            priceRange: '₹400–₹600',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Ground Floor, Amara Hotel, C-30',
-              addressLocality: 'Greater Kailash I',
-              addressRegion: 'Delhi',
-              postalCode: '110048',
-              addressCountry: 'IN',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: 150,
-            },
-          }),
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bluturkeycafe.com' },
+              { '@type': 'ListItem', position: 2, name: 'Romantic Cafe Delhi', item: 'https://bluturkeycafe.com/romantic-cafe-delhi' },
+            ],
+          }).replace(/</g, '\\u003c'),
         }}
       />
 

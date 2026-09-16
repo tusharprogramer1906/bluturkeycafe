@@ -6,16 +6,16 @@ import GallerySection from '@/components/gallery-section';
 import GalleryConversionCTA from '@/components/gallery-conversion-cta';
 
 export const metadata: Metadata = {
-  title: 'Blu Turkey Cafe Photos GK1 | Cafe Ambience & Food Gallery Delhi',
+  title: 'Blu Turkey Cafe Gallery | Cafe & Food Photos in GK1, South Delhi',
   description:
-    'Browse photos of Blu Turkey Cafe in Greater Kailash (GK1), South Delhi. See our cozy cafe interiors, specialty coffee art, pasta, pizza, waffles, celebration setups & more. Rated 4.9⭐ on Google.',
+    'Browse photos of Blu Turkey Cafe in Greater Kailash (GK1), South Delhi. See our cozy cafe interiors, specialty coffee, pasta, pizza, waffles and celebration setups. Rated 4.9 on Google.',
   alternates: {
     canonical: 'https://bluturkeycafe.com/gallery',
   },
   openGraph: {
-    title: 'Blu Turkey Cafe Photos GK1 | Cafe Ambience & Food Gallery Delhi',
+    title: 'Blu Turkey Cafe Gallery | Cafe & Food Photos in GK1, South Delhi',
     description:
-      'Explore high-quality photos of Blu Turkey Cafe in GK1 Delhi — interiors, specialty coffee, food, and special events. See why we\'re rated 4.9⭐.',
+      'Explore photos of Blu Turkey Cafe in GK1 Delhi — interiors, specialty coffee, food, and special events. See why we are rated 4.9 on Google.',
     url: 'https://bluturkeycafe.com/gallery',
     type: 'website',
   },
@@ -115,7 +115,7 @@ export default function GalleryPage() {
             '@context': 'https://schema.org',
             '@type': 'ImageGallery',
             name: 'Blu Turkey Cafe Gallery',
-            description: 'Photo gallery showcasing the interior ambience, signature coffee, food offerings, and celebration events at Blu Turkey Cafe Delhi.',
+            description: 'Photo gallery showcasing the interior ambience, signature coffee, food offerings, and celebration events at Blu Turkey Cafe in Greater Kailash, Delhi.',
             url: 'https://bluturkeycafe.com/gallery',
             author: {
               '@type': 'CafeOrCoffeeShop',
@@ -129,6 +129,20 @@ export default function GalleryPage() {
                 addressCountry: 'IN',
               },
             },
+          }).replace(/</g, '\\u003c'),
+        }}
+      />
+      {/* BreadcrumbList JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bluturkeycafe.com' },
+              { '@type': 'ListItem', position: 2, name: 'Gallery', item: 'https://bluturkeycafe.com/gallery' },
+            ],
           }).replace(/</g, '\\u003c'),
         }}
       />

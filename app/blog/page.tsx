@@ -4,20 +4,19 @@ import Footer from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 import BlogCard from '@/components/blog-card';
 import { blogs } from '@/data/blogs';
-
-const baseUrl = 'https://bluturkeycafe.com';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Blu Turkey Cafe Blog | Coffee Tips, GK1 Cafe Stories & South Delhi Guides',
+  title: 'Blu Turkey Cafe Blog | Coffee Guides & GK1 Cafe Stories',
   description:
-    'Read the Blu Turkey Cafe blog for specialty coffee tips, GK1 cafe recommendations, South Delhi food guides, and stories from Greater Kailash\'s favourite cafe. Updated regularly.',
+    'Read the Blu Turkey Cafe blog for specialty coffee guides, GK1 cafe recommendations, South Delhi food guides, and stories from one of Greater Kailash\'s most loved cafes. Updated regularly.',
   alternates: {
-    canonical: `${baseUrl}/blog`,
+    canonical: `${SITE_URL}/blog`,
   },
   openGraph: {
-    title: 'Blu Turkey Cafe Blog | Coffee Tips & South Delhi Cafe Guides',
-    description: 'Specialty coffee tips, GK1 cafe stories, and South Delhi lifestyle articles from Blu Turkey Cafe.',
-    url: `${baseUrl}/blog`,
+    title: 'Blu Turkey Cafe Blog | Coffee Guides & GK1 Cafe Stories',
+    description: 'Specialty coffee guides, GK1 cafe stories, and South Delhi lifestyle articles from Blu Turkey Cafe in Greater Kailash.',
+    url: `${SITE_URL}/blog`,
   },
 };
 
@@ -35,9 +34,9 @@ export default function BlogPage() {
       <main className="py-12 md:py-20 px-4 md:px-8 max-w-6xl mx-auto">
         {/* SEO Intro */}
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
             Coffee Stories from Greater Kailash (GK1), South Delhi
-          </h1>
+          </h2>
           <p className="text-foreground/70 leading-relaxed">
             Welcome to the Blu Turkey Cafe blog — your source for specialty coffee guides, work-from-cafe tips, GK1
             neighbourhood guides, and lifestyle stories from one of South Delhi’s most loved cafes. Whether you’re

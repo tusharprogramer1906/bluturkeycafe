@@ -193,31 +193,18 @@ export default function BirthdayCafePage() {
         }}
       />
 
-      {/* Schema Markup */}
+      {/* BreadcrumbList JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'CafeOrCoffeeShop',
-            name: 'Blu Turkey Cafe - Birthday Celebration Cafe Delhi',
-            url: 'https://bluturkeycafe.com/birthday-celebration-cafe-delhi',
-            description: 'Best cafe for birthday celebrations and group events in Delhi',
-            priceRange: '₹400–₹600',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Ground Floor, Amara Hotel, C-30',
-              addressLocality: 'Greater Kailash I',
-              addressRegion: 'Delhi',
-              postalCode: '110048',
-              addressCountry: 'IN',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: 150,
-            },
-          }),
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bluturkeycafe.com' },
+              { '@type': 'ListItem', position: 2, name: 'Birthday Celebration Cafe Delhi', item: 'https://bluturkeycafe.com/birthday-celebration-cafe-delhi' },
+            ],
+          }).replace(/</g, '\\u003c'),
         }}
       />
 

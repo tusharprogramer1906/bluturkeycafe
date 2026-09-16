@@ -8,16 +8,16 @@ import { PriceRangeBadge } from '@/components/business-badges';
 import CTASection from '@/components/cta-section';
 
 export const metadata: Metadata = {
-  title: 'Blu Turkey Cafe Menu GK1 Delhi | Coffee, Pasta, Pizza & Desserts',
+  title: 'Blu Turkey Cafe Menu | Coffee, Pizza, Pasta & Desserts — GK1 Delhi',
   description:
-    'Explore the full Blu Turkey Cafe menu in Greater Kailash (GK1), Delhi. Specialty coffee (espresso, lattes, cold brew), handmade pasta, wood-fired pizza, waffles, croissants & desserts. Prices from ₹80–₹430.',
+    'Explore the full Blu Turkey Cafe menu in Greater Kailash (GK1), New Delhi. Specialty coffee, espresso, lattes, cold brew, handmade pasta, pizza, waffles, croissants and desserts. Open daily 9:30 AM–11 PM.',
   alternates: {
     canonical: 'https://bluturkeycafe.com/menu',
   },
   openGraph: {
-    title: 'Blu Turkey Cafe Menu GK1 Delhi | Coffee, Pasta, Pizza & Desserts',
+    title: 'Blu Turkey Cafe Menu | Coffee, Pizza, Pasta & Desserts — GK1 Delhi',
     description:
-      'Full menu at Blu Turkey Cafe, Greater Kailash Delhi — specialty coffee, pasta, pizza, waffles, desserts & mocktails. Prices from ₹80.',
+      'Full menu at Blu Turkey Cafe, Greater Kailash (GK1), Delhi — specialty coffee, pasta, pizza, waffles, desserts and mocktails.',
     url: 'https://bluturkeycafe.com/menu',
   },
 };
@@ -283,7 +283,7 @@ export default function MenuPage() {
             '@context': 'https://schema.org',
             '@type': 'Restaurant',
             name: 'Blu Turkey Cafe',
-            url: 'https://bluturkeycafe.com/menu',
+            url: 'https://bluturkeycafe.com',
             servesCuisine: ['Cafe', 'Coffee', 'Breakfast', 'Desserts', 'Italian'],
             priceRange: '₹400–₹600',
             address: {
@@ -292,12 +292,7 @@ export default function MenuPage() {
               addressLocality: 'Greater Kailash I',
               addressRegion: 'Delhi',
               postalCode: '110048',
-              addressCountry: 'India',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: 150,
+              addressCountry: 'IN',
             },
             hasMenu: {
               '@type': 'Menu',
@@ -309,7 +304,7 @@ export default function MenuPage() {
                 { '@type': 'MenuSection', name: 'Desserts', hasMenuItem: dessertsItems.slice(0, 5).map((i) => ({ '@type': 'MenuItem', name: i.name, offers: { '@type': 'Offer', priceCurrency: 'INR', price: (i.price.match(/\d+/) || ['0'])[0] } })) },
               ],
             },
-          }),
+          }).replace(/</g, '\\u003c'),
         }}
       />
 
