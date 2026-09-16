@@ -105,8 +105,8 @@ export default function BirthdayCafePage() {
 
         <div className="prose prose-lg max-w-none space-y-6 text-foreground/80">
           <p>
-            When it's time to celebrate a birthday, you need more than just a cafe – you need a destination that can handle 
-            the occasion with style and professionalism. Blu Turkey Cafe is the perfect birthday celebration cafe in Delhi, 
+            When it's time to celebrate a birthday, you need more than just a cafe – you need a destination that can handle
+            the occasion with style and professionalism. Blu Turkey Cafe is the perfect birthday celebration cafe in Delhi,
             offering everything you need to make the day unforgettable.
           </p>
 
@@ -114,7 +114,7 @@ export default function BirthdayCafePage() {
             Spacious & Flexible Venues
           </h3>
           <p>
-            Whether you're planning an intimate gathering or a larger celebration, our cafe offers flexible spaces designed 
+            Whether you're planning an intimate gathering or a larger celebration, our cafe offers flexible spaces designed
             to accommodate groups of all sizes. We can arrange private or semi-private areas perfect for your birthday party.
           </p>
 
@@ -122,7 +122,7 @@ export default function BirthdayCafePage() {
             Stunning Ambiance
           </h3>
           <p>
-            Create the perfect party atmosphere in our beautifully designed spaces. Our elegant decor, warm lighting, and 
+            Create the perfect party atmosphere in our beautifully designed spaces. Our elegant decor, warm lighting, and
             modern aesthetic provide an upscale setting that impresses guests and makes for amazing memories and photos.
           </p>
 
@@ -130,7 +130,7 @@ export default function BirthdayCafePage() {
             Customizable Packages
           </h3>
           <p>
-            We understand that every birthday is unique. That's why we offer customizable packages tailored to your 
+            We understand that every birthday is unique. That's why we offer customizable packages tailored to your
             preferences. Choose from our extensive menu of specialty coffees, refreshing beverages, and delicious snacks.
           </p>
 
@@ -138,7 +138,7 @@ export default function BirthdayCafePage() {
             Professional Party Service
           </h3>
           <p>
-            Our experienced staff is trained to handle group events with excellence. From seating arrangements to serving, 
+            Our experienced staff is trained to handle group events with excellence. From seating arrangements to serving,
             we take care of the details so you can focus on celebrating and creating memorable moments with your loved ones.
           </p>
 
@@ -158,7 +158,7 @@ export default function BirthdayCafePage() {
             Convenient Location & Accessibility
           </h3>
           <p>
-            Located in central Delhi with easy access from all parts of the city, ample parking, and comfortable spaces – 
+            Located in central Delhi with easy access from all parts of the city, ample parking, and comfortable spaces –
             Blu Turkey Cafe is designed to be the most convenient choice for your birthday celebration.
           </p>
 
@@ -166,7 +166,7 @@ export default function BirthdayCafePage() {
             Photography-Perfect Setting
           </h3>
           <p>
-            Every moment at Blu Turkey Cafe is Instagram-worthy. Our beautiful spaces and thoughtful decor provide the 
+            Every moment at Blu Turkey Cafe is Instagram-worthy. Our beautiful spaces and thoughtful decor provide the
             perfect backdrop for capturing and sharing your birthday memories.
           </p>
 
@@ -174,7 +174,7 @@ export default function BirthdayCafePage() {
             Advance Booking & Planning
           </h3>
           <p>
-            We recommend booking in advance for birthday celebrations. Our team will work with you to ensure everything is 
+            We recommend booking in advance for birthday celebrations. Our team will work with you to ensure everything is
             perfect for your special day. Contact us to discuss your requirements and customize the perfect party experience.
           </p>
         </div>
