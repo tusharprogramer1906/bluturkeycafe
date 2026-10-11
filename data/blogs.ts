@@ -26,6 +26,56 @@ export type BlogPost = {
 /** Single source of truth — slug MUST match dynamic route */
 export const blogs: BlogPost[] = [
   {
+    slug: 'first-date-cafes-gk1',
+    title: 'Cafes for First Date in GK1',
+    metaTitle: 'First Date Cafes in GK1 | Blu Turkey Cafe',
+    description:
+      'Looking for first-date cafes in GK1? Explore coffee, food and a welcoming cafe experience at Blu Turkey Cafe in Greater Kailash 1.',
+    author: 'Blu Turkey Coffee Team',
+    date: 'Oct 11, 2026',
+    datePublished: '2026-10-11',
+    category: 'Date Cafe',
+    readTime: '8 min read',
+    image: '/images/blu-turkey-cafe-seating-ambience.webp',
+    faqs: [
+      {
+        question: 'Which cafes in GK1 are good for a first date?',
+        answer:
+          'Greater Kailash 1 has several cafes that work well for a first date — the neighbourhood has a calm, walkable pace that makes a coffee stop feel relaxed rather than pressured. Blu Turkey Cafe in GK1 M Block is a popular choice for first dates: warm interiors, comfortable seating, specialty coffee, and a menu that can carry the conversation well past the first cup.',
+      },
+      {
+        question: 'What makes a cafe suitable for a first date?',
+        answer:
+          'The essentials are warm lighting (not fluorescent), seating comfortable enough to stay in for an hour or more, music kept at a conversational volume, and a menu that covers both drinks and light food. A space where you can hear each other without leaning in and linger without feeling rushed is the foundation of any good first-date cafe.',
+      },
+      {
+        question: 'Is GK1 a good area for a first date in South Delhi?',
+        answer:
+          'Yes — GK1 is one of the most suitable areas in South Delhi for a first date. The neighbourhood has a relaxed residential pace, walkable streets, and a strong concentration of independent cafes that reward lingering. It is close enough to Nehru Place and Kailash Colony to be convenient from multiple parts of Delhi, and calm enough to feel genuinely intimate.',
+      },
+      {
+        question: 'What should I order on a coffee date at Blu Turkey Cafe?',
+        answer:
+          'A cappuccino or cold coffee is always a strong start — both are consistently made and easy to order without overthinking. From there, snacks or a sandwich for sharing, and a dessert if the conversation is still going strong. The menu is designed to carry a full afternoon or evening without anyone running out of options.',
+      },
+      {
+        question: 'Is Blu Turkey Cafe romantic for a date in GK1?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block has the qualities that make a cafe work for a date: warm lighting, comfortable seating with enough privacy between tables, a calm atmosphere, and a menu that does not force anyone to rush. It is not a formal dinner venue — it is a relaxed, welcoming space where a first date can unfold naturally over good coffee and food.',
+      },
+      {
+        question: 'Are there quiet cafes in GK1 for a first meeting?',
+        answer:
+          'Yes — GK1 has several cafes that prioritise comfort over footfall, with background music at conversational volumes and seating designed for lingering rather than quick turnover. Blu Turkey Cafe in GK1 M Block is a reliable choice: calm enough to have a real conversation, warm enough to feel like a deliberate destination.',
+      },
+      {
+        question: 'What is the best cafe for couples in GK1?',
+        answer:
+          'Blu Turkey Cafe in GK1 M Block is consistently mentioned as one of the best cafes for couples in Greater Kailash 1. The warm interiors, cozy seating, specialty coffee, and relaxed service style make it an easy first choice for a coffee date, casual first meeting, or a recurring couples outing in South Delhi.',
+      },
+    ],
+  },
+  {
     slug: 'cozy-cafes-gk1-relaxing-evenings',
     title: 'Cozy Cafes in GK1 for Relaxing Evenings',
     metaTitle: 'Cozy Cafes in GK1 for Relaxing Evenings | Blu Turkey',
