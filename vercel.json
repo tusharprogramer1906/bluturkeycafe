@@ -5,9 +5,8 @@
       "source": "/(.*)",
       "has": [
         {
-          "type": "header",
-          "key": "x-vercel-deployment-url",
-          "value": "(?!bluturkeycafe.com)(.*)"
+          "type": "host",
+          "value": "(?!bluturkeycafe\\.com$).*\\.vercel\\.app"
         }
       ],
       "headers": [
